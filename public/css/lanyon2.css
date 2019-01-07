@@ -42,28 +42,35 @@ body {
 }
 
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #313131;
   letter-spacing: -2px;
 }
 
 h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   color: #313131;
-  letter-spacing: -1.5px;
+  /* letter-spacing: -1.5px; */
   margin-top: -10px;
   margin-bottom: 32px;
 }
 
-a:hover {
+.topnav > a:hover {
   text-decoration: none;
-  color: #0e6e90 !important;
+  color: #ffffff !important;
+}
+
+#jumbotron img {
+  max-width: 100%;
+  border-radius: 0;
+  z-index: -2;
+  display: inline;
 }
 
 #myTopnav .btn::after {
@@ -74,18 +81,18 @@ a:hover {
   background: #0e6e90;
   transition: width .3s;
 }
-
+/*
 #myTopnav .btn:hover::after {
   width: 100%;
-  /* line-height: .85; */
-}
+  line-height: .85;
+} */
 
 #home-body {
   z-index: -1;
 }
 
 #home-body h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-top: 30px;
   font-weight: 300;
   color: #313131;
@@ -93,25 +100,25 @@ a:hover {
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 16px;
 }
 
 #home-research-list li {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 16px;
   margin-bottom: 10px;
 }
 
 li {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
 table {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
@@ -179,10 +186,10 @@ table {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #FFFFEC;
+  color: #ffffff;
 }
 .masthead-title a {
-  color: #FFFFEC;
+  color: #ffffff;
 }
 /* .masthead-title small {
   font-size: 75%;
@@ -192,6 +199,7 @@ table {
 } */
 
 .masthead-container {
+  vertical-align: text-bottom;
   display: flex;
   padding: 0 6%;
 }
@@ -324,7 +332,7 @@ a.pagination-item:hover {
 .topnav {
    overflow: hidden;
    box-sizing: border-box;
-
+   padding-top: 5.5px;
    /* width: 45%; */
    /* display: inline-flex; */
 }
@@ -334,10 +342,11 @@ a.pagination-item:hover {
    float: left;
    display: block;
    color: black;
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
    text-align: center;
-   padding: 0 14px;
-   font-size: 14px;
+   padding: 0 12px;
+   font-size: 11.5px;
    border-top: 2px solid transparent;
    border-bottom: 2px solid transparent;
 }
@@ -354,6 +363,51 @@ a.pagination-item:hover {
    display: none;
 }
 
+.dropdown {
+  float: left;
+  /* overflow: hidden; */
+}
+
+.dropdown .dropbtn {
+  font-size: 11.5px;
+  border: none;
+  outline: none;
+  color: #9a9889;
+  vertical-align: text-top;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: auto;
+}
+
+.dropdown-content {
+  display: none;
+  font-size: 11.5px;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f8f5f0;
+  color: #9a9889;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
 /*
@@ -486,6 +540,24 @@ a.pagination-item:hover {
   color: #1bb3e9;
 }
 
+/* Savage Custom - SIMSSA */
+
+.theme-base-sm .sidebar,
+.theme-base-sm .sidebar-toggle:active,
+.theme-base-sm #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #1bb3e9;
+}
+
+.theme-base-sm .container a,
+.theme-base-sm .sidebar-toggle,
+.theme-base-sm .related-posts li a:hover {
+  color: #1bb3e9;
+}
+
+.theme-base-sm .topnav .btn {
+  color: #9a9889;
+}
+
 
 /* Image container */
 
@@ -612,7 +684,7 @@ img {
    text-decoration: none;
    letter-spacing: .7px;
  }
- .topnav.responsive .btn:hover {
+ /* .topnav.responsive .btn:hover {
    border-bottom: 2px solid transparent !important;
  }
  .topnav.responsive .active {
@@ -620,9 +692,9 @@ img {
    border-bottom: 2px solid transparent !important;
    /* background-color: #0e6e9066; */
    /* border-radius: 4px; */
-   color: #0e6e90;
+   /* color: #0e6e90;
    border-right: 3px solid #0e6e90;
- }
+ } */
  .title-wrap {
    margin-top: 2.7px;
  }

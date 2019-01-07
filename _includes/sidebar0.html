@@ -2,46 +2,38 @@
 
 
 <div class="topnav" id="myTopnav">
-  {% if page.tab == "Home" %}
-    <a href="{{ site.baseurl }}/" class="active btn">Home</a>
-  {% else %}
-    <a href="{{ site.baseurl }}/" class="btn">Home</a>
-  {% endif %}
-  {% if page.tab == "Blog" %}
-    <a href="{{ site.baseurl }}/blog/" class="active btn">Blog</a>
-  {% else %}
-  <a href="{{ site.baseurl }}/blog/" class="btn">Blog</a>
-  {% endif %}
-  {% if page.tab == "People" %}
-    <a href="{{ site.baseurl }}/people/" class="active btn">People</a>
-  {% else %}
-    <a href="{{ site.baseurl }}/people/" class="btn">People</a>
-  {% endif %}
-  {% if page.tab == "Publications" %}
-    <a href="{{ site.baseurl }}/publications/" class="active btn">Publications</a>
-  {% else %}
-    <a href="{{ site.baseurl }}/publications/" class="btn">Publications</a>
-  {% endif %}
-  {% if page.tab == "Research" %}
-    <a href="{{ site.baseurl }}/research/" class="active btn">Research</a>
-  {% else %}
-    <a href="{{ site.baseurl }}/research/" class="btn">Research</a>
-  {% endif %}
-  {% if page.tab == "Software" %}
-    <a href="{{ site.baseurl }}/software/" class="active btn">Software</a>
-  {% else %}
-    <a href="{{ site.baseurl }}/software/" class="btn">Software</a>
-  {% endif %}
-  {% if page.tab == "Events" %}
-    <a href="{{ site.baseurl }}/events/" class="active btn">Events</a>
-  {% else %}
-    <a href="{{ site.baseurl }}/events/" class="btn">Events</a>
-  {% endif %}
-  {% if page.tab == "Resources" %}
-    <a href="{{ site.baseurl }}/resources/" class="active btn">Resources</a>
-  {% else %}
-    <a href="{{ site.baseurl }}/resources/" class="btn">Resources</a>
-  {% endif %}
+  <a href="{{ site.baseurl }}/" class="btn">ABOUT</a>
+  <a href="{{ site.baseurl }}/blog/" class="btn">PARTICIPANTS</a>
+  <div class="dropdown">
+    <button class="dropbtn">ACTIVITIES
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">PUBLICATIONS</a>
+      <a href="#">PRESENTATIONS</a>
+      <a href="#">IMPACT</a>
+      <a href="#">WORKSHOPS</a>
+      <a href="#">MEDIA</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">PROJECTS AND LINKS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">CANTUS ULTIMUS</a>
+      <a href="#">LIBER USUALIS</a>
+      <a href="#">MUSICLIBS</a>
+      <a href="#">ELVIS PROJECT</a>
+      <a href="#">JSYMBOLIC2</a>
+      <a href="#">TEAMWORK</a>
+      <a href="#">TWITTER</a>
+      <a href="#">GITHUB</a>
+    </div>
+  </div>
+  <a href="{{ site.baseurl }}/research/" class="btn">BLOG</a>
+  <a href="{{ site.baseurl }}/software/" class="btn">OPPORTUNITIES</a>
+  <a href="{{ site.baseurl }}/events/" class="btn">CONTACT US</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars" style="font-size: 1.8em;"></i>
   </a>
