@@ -37,38 +37,154 @@ tab: Home
   {% endif %}
 </div> -->
 
-<div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-</div>
-
-<section id="jumbotron">
-  <div class="box">
-    <img class="logo_img" src="{{ site.baseurl }}/assets/jumbobg.jpg"
-    alt="The Single Interface for Music Score Searching and Analysis Project"
-    title="The Single Interface for Music Score Searching and Analysis Project" >
+<section class="jumbotron">
+  <div class="container">
+      <div class="box">
+        <img class="logo_img" src="{{ site.baseurl }}/assets/SIMSSA_logo-01.png" alt="The Single Interface for Music Score Searching and Analysis Project" title="The Single Interface for Music Score Searching and Analysis Project">
+      </div>
   </div>
 </section>
-<div style="text-align:center">
-  <h1>Welcome!</h1>
-  <div style="padding-top: 15px;"></div>
-  <h2>Distributed Digital Music Archives & Libraries Lab</h2>
+
+<div class="container">
+  <div class="col-lg-12">
+    <p><br></p>
+    <p>
+    The Single Interface for Music Score Searching and Analysis project (SIMSSA) is teaching computers to recognize the musical symbols in digital images of musical scores, linking materials from the shelves of libraries and museums from around the world in a single digital&nbsp;forum.
+    </p>
+    <p>
+    Our goals&nbsp;include:
+    </p>
+    <ul>
+      <li>Creation of a 21st-century architecture for processing music&nbsp;documents</li>
+      <li>Transformation of symbolic representations into searchable&nbsp;data</li>
+      <li>Search and analysis tools for large digital music&nbsp;collections</li>
+      <li>Public access to musical data that can be studied, analyzed, and&nbsp;performed</li>
+    </ul>
+    <p>
+    For more information, please contact <a href="http://www.music.mcgill.ca/~ich">Ichiro&nbsp;Fujinaga</a>
+    </p>
+    <p><br></p>
+    <p>
+    Le Projet SIMSSA (Single Interface for Music Score Searching and Analysis, que l&#8217;on pourrait traduire en français par « Interface unique pour la recherche et l&#8217;analyse de partitions musicales ») a pour objectif d&#8217;apprendre aux ordinateurs à extraire les symboles musicaux de partitions musicales ayant été numérisées. Il a également pour objectif de réunir en un seul lieu virtuel les collections de bibliothèques et de musées du monde&nbsp;entier.
+    </p>
+    <p>
+    Nos objectifs incluent&nbsp;:
+    </p>
+    <ul>
+      <li>créer une infrastructure du XXIe siècle pour le traitement de partitions&nbsp;musicales;</li>
+      <li>transformer ces partitions musicales en données&nbsp;recherchables;</li>
+      <li>développer des outils de recherche et d&#8217;analyse pour de grandes collections de partitions musicales&nbsp;numériques;</li>
+      <li>donner accès à ces collections musicales afin qu&#8217;elles puissent être étudiées, analysées et&nbsp;interprétées.</li>
+    </ul>
+    <p>
+    Pour plus d&#8217;information, veuillez communiquer avec <a href="http://www.music.mcgill.ca/~ich">Ichiro&nbsp;Fujinaga</a>
+    </p>
+  </div>
 </div>
-<div data-aos="fade-in" id="home-body">
-  {% include textpic.html imgurl="/assets/DDMALSummer2018-1000px.jpg" %}
-  <br>
-  <p>We focus on developing and evaluating practices, frameworks, and tools for the design and construction of worldwide distributed digital music archives and libraries. Over the last few millennia, humans have amassed an enormous amount of information and cultural material that is scattered around the world. It is becoming abundantly clear that the optimal path for acquisition is to distribute the task of digitizing the wealth of historical and cultural heritage material that exists in analogue formats, which may include books, manuscripts, music scores, maps, photographs, videos, analogue tapes, and phonograph records. In order to achieve this goal, libraries, museums, and archives throughout the world, large or small, need well-researched policies, proper guidance, and efficient tools to digitize their collections and to make them available economically. The research conducted within the program will address unique and imminent challenges posed by the digitization and dissemination of music media.
-  </p>
-  <p>    We are located in the <a href="http://www.music.mcgill.ca/musictech/">Music Technology Area</a> of the <a href="http://www.mcgill.ca/music/">Schulich School of Music</a> at <a href="http://www.mcgill.ca/">McGill University</a> in Montreal, Quebec, Canada. We are affiliated with the <a href="http://www.cirmmt.mcgill.ca/"</a>Centre for Interdisciplinary Research in Music Media and Technology</a> (CIRMMT).
-  </p>
-  <h2>Research & Projects</h2>
-  <ul id="home-research-list">
-    {% for post in site.research %}
-      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+
+<!-- Logos and tweeter feed -->
+
+<br>
+<br>
+
+<style>
+  div.logo_map {
+    position: relative;
+    margin: auto;
+  }
+
+  div.logo_map > img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  div.logo_map > a {
+    display: block;
+    position: absolute;
+  }
+
+  div.logo_map > a:hover {
+    background-color: rgba(255, 0, 0, .0);
+  }
+
+  div.logo_map > a.sshrc {
+    top: 0%;
+    left: 20%;
+    width: 60%;
+    height: 25%;
+  }
+
+  div.logo_map > a.mcgill {
+    top: 20%;
+    left: 20%;
+    width: 34%;
+    height: 25%;
+  }
+
+  div.logo_map > a.ddmal {
+    top: 20%;
+    left: 54%;
+    width: 26%;
+    height: 25%;
+  }
+
+  div.logo_map > a.cirmmt {
+    top: 40%;
+    left: 20%;
+    width: 34%;
+    height: 25%;
+  }
+
+  div.logo_map > a.frqsc {
+    top: 40%;
+    left: 54%;
+    width: 26%;
+    height: 25%;
+  }
+
+  div.logo_map > a.computecanada {
+    top: 60%;
+    left: 20%;
+    width: 34%;
+    height: 25%;
+  }
+
+  div.logo_map > a.westgrid {
+    top: 60%;
+    left: 54%;
+    width: 26%;
+    height: 25%;
+  }
+
+</style>
+
+<!-- <div class="logo_map"> -->
+<!--     <img src="../_themes/simssa/img/logos_website.png"/ border="0" style="max-width:80%">  -->
+
+<!--     <a href="http://www.sshrc-crsh.gc.ca" target="_blank" class="sshrc"></a>
+<a href="https://www.mcgill.ca/music" target="_blank" class="mcgill"></a>
+<a href="http://ddmal.music.mcgill.ca/" target="_blank" class="ddmal"></a>
+<a href="http://www.cirmmt.org" target="_blank" class="cirmmt"></a>
+<a href="http://www.frqsc.gouv.qc.ca" target="_blank" class="frqsc"></a> -->
+<!-- </div> -->
+
+<div class="logo_map">
+  <img src="{{ site.baseurl }}/assets/logos_website.png"/ border="0" style="max-width:80%">
+
+  <a href="http://www.sshrc-crsh.gc.ca" target="_blank" class="sshrc"></a>
+  <a href="https://www.mcgill.ca/music" target="_blank" class="mcgill"></a>
+  <a href="http://ddmal.music.mcgill.ca/" target="_blank" class="ddmal"></a>
+  <a href="http://www.cirmmt.org" target="_blank" class="cirmmt"></a>
+  <a href="http://www.frqsc.gouv.qc.ca" target="_blank" class="frqsc"></a>
+  <a href="https://www.computecanada.ca/home/" target="_blank" class="computecanada"></a>
+  <a href="https://www.westgrid.ca/" target="_blank" class="westgrid"></a>
 </div>
-<br><br>
+
+<br>
+<br>
+<div class="container">
+  <center>
+    <a class="twitter-timeline" data-width="950" data-height="300" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/simssaproject?ref_src=twsrc%5Etfw">Tweets by simssaproject</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </center>
+</div>
