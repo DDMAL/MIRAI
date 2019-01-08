@@ -99,3 +99,15 @@ section.page {
         max-width: 66%;
     }
 }
+
+@media (max-width: 500px) {
+  .box {
+    height: 200px;
+  }
+  .jumbotron {
+    height: 200px;
+  }
+  body {
+    font-size: 14px;
+  }
+}

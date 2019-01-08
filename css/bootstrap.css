@@ -6373,3 +6373,13 @@ input:focus,
     top: 11px;
     left: -6px;
 }
+
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
+}
+
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
