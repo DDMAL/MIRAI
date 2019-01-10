@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="navbar navbar-expand-sm navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
+        <div class="container" id="nav-container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -9,30 +9,30 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ site.baseurl }}">SIMSSA</a>
+                <a class="navbar-brand" href="{{ site.baseurl }}/">SIMSSA</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav nav mr-auto">
 <!--                     <li class="active"><a href="/">Home</a></li> -->
 
 
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/people">Participants</a></li>
+                    <li><a href="{{ site.baseurl }}/about">About</a></li>
+                    <li><a href="{{ site.baseurl }}/people">Participants</a></li>
                     <!-- <li><a href="/publications">Publications</a></li> -->
 
                     <li class="dropdown">
-                      <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/activity">Activities<span class="caret"></span></a>
+                      <a class="dropdown-toggle disabled" data-toggle="dropdown" href="{{ site.baseurl }}/activity">Activities<span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu">
-                          <li><a href="/publications" target="_top">Publications</a></li>
-                          <li><a href="/presentations" target="_top">Presentations</a></li>
-                          <li><a href="/impact" target="_top">Impact</a></li>
-                          <li><a href="/workshops" target="_top">Workshops</a></li>
-                          <li><a href="/media" target="_top">Media</a></li>
+                          <li><a href="{{ site.baseurl }}/activity/publications" target="_top">Publications</a></li>
+                          <li><a href="{{ site.baseurl }}/activity/presentations" target="_top">Presentations</a></li>
+                          <li><a href="{{ site.baseurl }}/activity/impact" target="_top">Impact</a></li>
+                          <li><a href="{{ site.baseurl }}/activity/workshops" target="_top">Workshops</a></li>
+                          <li><a href="{{ site.baseurl }}/activity/media" target="_top">Media</a></li>
                       </ul>
                     </li>
 
                     <li class="dropdown">
-                      <a class="dropdown-toggle disabled" data-toggle="dropdown" href="/links">Projects and links<span class="caret"></span></a>
+                      <a class="dropdown-toggle disabled" data-toggle="dropdown" href="{{ site.baseurl }}/links">Projects and links<span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu">
                         <li><a href="http://cantus.simssa.ca" target="_blank">Cantus Ultimus</a></li>
                         <li><a href="http://liber.simssa.ca" target="_blank">Liber Usualis</a></li>
@@ -45,10 +45,10 @@
                       </ul>
                     </li>
 
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/opportunities">Opportunities</a></li>
+                    <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+                    <li><a href="{{ site.baseurl }}/opportunities">Opportunities</a></li>
 
-                    <li><a href="/contact">Contact us</a></li>
+                    <li><a href="{{ site.baseurl }}/contact">Contact us</a></li>
 
                 </ul>
             </div>

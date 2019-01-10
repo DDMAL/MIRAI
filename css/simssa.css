@@ -64,7 +64,7 @@ section.page {
     opacity: 0.25;
     height: 200px;
     padding-top: 95px;
-    background: url('../img/Cantus_A.jpg') center;
+    background: url('{{ site.baseurl }}/assets/Cantus_A.jpg') center;
 }
 .headerimage_people:before {
     content:"";
@@ -77,7 +77,7 @@ section.page {
     opacity: 0.25;
     height: 200px;
     padding-top: 95px;
-    background: url('../img/nuns.jpg') center;
+    background: url('{{ site.baseurl }}/assets/nuns.jpg') center;
 }
 .title{
     position: relative;
@@ -85,6 +85,7 @@ section.page {
     left: 110px;
     z-index: 1;
 }
+
 
 @media (min-width: 768px) {
     .jumbotron h2 {
@@ -99,6 +100,12 @@ section.page {
         max-width: 66%;
     }
 }
+
+/* @media (max-width: 992) {
+  #nav-container {
+    width: 95%;
+  }
+} */
 
 @media (max-width: 500px) {
   .box {

@@ -1397,6 +1397,9 @@ pre code {
   .container {
     width: 750px;
   }
+  #nav-container {
+    width: 850px;
+  }
 }
 @media (min-width: 992px) {
   .container {
@@ -6347,7 +6350,6 @@ input:focus,
 .dropdown-menu li:hover .sub-menu {
     visibility: visible;
 }
-
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -6377,9 +6379,4 @@ input:focus,
 .mr-auto,
 .mx-auto {
   margin-right: auto !important;
-}
-
-.ml-auto,
-.mx-auto {
-  margin-left: auto !important;
 }
