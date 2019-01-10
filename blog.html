@@ -3,27 +3,31 @@ layout: default
 title: Blog
 ---
 
-<!-- <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul> -->
+<section class="headerimage">
+  <div class="container">
+    <br>
+    <br>
+    <h1>Blog</h1>
+  </div>
+</section>
 
-<!-- {% for post in site.posts %}
-  <div class="post-container">
-    <div class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      {{ post.date | date: "%b %d, %y" }}
-    </div>
-    <div class="post-excerpt">
-      {{ post.excerpt }}
+<div class="container">
+
+  <div class="row">
+    <div class="col-lg-12">
+
+      {% for post in site.posts %}
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <br>
+      <p> Posted by {{ post.author }} on {{ post.date | date: "%b %d, %y" }}</p>
+      <br>
+      <div class="post-excerpt">
+        {{ post.excerpt | markdownify | truncatewords: 500 }}
+      </div>
+      <hr>
+      <br>
+      {% endfor %}
+
     </div>
   </div>
-  <hr>
-{% endfor %} -->
-
-
-
-<!-- -->
+</div>

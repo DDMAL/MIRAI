@@ -15,6 +15,7 @@ paginate_path:       blog/page:num
 gem "github-pages", group: :jekyll_plugins
 permalinks:          true
 
+
 collections:
   subposts:
     output: true

@@ -1410,6 +1410,9 @@ pre code {
   .container {
     width: 1170px;
   }
+  #nav-container {
+    width: 1170px;
+  }
 }
 .container-fluid {
   margin-right: auto;

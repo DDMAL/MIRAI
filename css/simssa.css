@@ -101,12 +101,6 @@ section.page {
     }
 }
 
-/* @media (max-width: 992) {
-  #nav-container {
-    width: 95%;
-  }
-} */
-
 @media (max-width: 500px) {
   .box {
     height: 200px;
