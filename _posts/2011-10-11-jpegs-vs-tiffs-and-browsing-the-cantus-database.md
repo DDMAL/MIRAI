@@ -3,6 +3,7 @@ title: JPEGs vs TIFFs and browsing the Cantus Database
 layout: post
 date: 2011-10-11 12:00:00 +0000
 author: cmotuz
+permalink: /blog/:title/
 ---
 
 First of all, a hearty congratulations to SIMSSA's Wendy Liu and lab-partner Saining Li for their [good citizenship award at the Montreal Hackathon](http://www.mcgilldaily.com/2011/10/coding-coffee-and-concrete-innovation/), for improving their wikinotes.ca site to make note sharing more accessible to students.

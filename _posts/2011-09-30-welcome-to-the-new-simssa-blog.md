@@ -14,4 +14,4 @@ The manuscript comes to us from another Canadian university: from Collection of 
 
 As a newcomer to the project myself and coming from a performer's background, I feel like I've just embarked on the beginning of a steep learning curve. Notes I can understand, but how does a computer read neumes? How does it separate out the notes from staves, from text, and from the beautiful artwork in manuscripts? And maybe the most exciting question, what can we use the searchable capabilities for? I'll try to answer these questions over the course of the coming year, as well as give updates on news from the lab, profiles of the people involved, and links to the exciting developments of our partners on this project... so, please do stay tuned!
 
-![](/assets/img/Blog_Salzinnes_Banner.jpg)
+![]({{ site.baseurl }}/assets/img/Blog_Salzinnes_Banner.jpg)

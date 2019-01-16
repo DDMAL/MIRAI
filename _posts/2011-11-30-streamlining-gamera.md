@@ -2,6 +2,7 @@
 title: Streamlining Gamera
 layout: post
 date: 2011-11-30 12:00:00 +0000
+permalink: /blog/:title/
 author: cmotuz
 ---
 
@@ -11,7 +12,7 @@ After feeding the first 60 or so pages of Salzinnes into the computer's OMR syst
 
 Here you can see that clivis and a podatus look much the same when the pixels are gathered up to the x (bottom) and y (left) axes of the images:
 
-![](/assets/img/clivis2_projections.png) ![](/assets/img/podatus2_projections.png)
+![]({{ site.baseurl }}/assets/img/clivis2_projections.png) ![]({{ site.baseurl }}/assets/img/podatus2_projections.png)
 
 Obviously with these two, Gamera uses other tools to distinguish them!
 

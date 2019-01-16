@@ -2,6 +2,7 @@
 title: A few words about our resident DIVA
 layout: post
 date: 2011-11-07 12:00:00 +0000
+permalink: /blog/:title/
 author: cmotuz
 ---
 

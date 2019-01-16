@@ -2,6 +2,7 @@
 title: Gearing up to show SIMSSA to the world
 layout: post
 date: 2011-11-04 12:00:00 +0000
+permalink: /blog/:title/
 author: cmotuz
 ---
 

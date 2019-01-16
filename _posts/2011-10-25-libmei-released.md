@@ -2,6 +2,7 @@
 title: LibMEI Released
 layout: post
 date: 2011-10-25 12:00:00 +0000
+permalink: /blog/:title/
 author: ahankins
 ---
 

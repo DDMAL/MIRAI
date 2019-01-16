@@ -1,0 +1,10 @@
+---
+title: 'Batches of Data: CMME and Sikuli'
+author: Catherine Motuz
+layout: post
+permalink: /blog/:title/
+---
+
+So far, assembling the ELVIS database has been a manual process, with each file being converted (if necessary), uploaded, and catalogued with metadata by students. (Ichiro calls this method—I presume affectionately—"gradsourcing".) This is not a bad way to begin: by having to think about every file we put on the site, we now have a good idea of what kind of database we have, what kind of metadata it's appropriate for us to collect, and problems that might come up with certain filetypes (MIDI files have been an adventure which I will relate in another post!). In order to expand our collection to the one we hoped for, we have to start automating processes. We are exploring how to automate uploading pieces that share the same metadata, and will hopefully have news on this soon. In the meantime, Ryan, a recent addition to our team, has learned a clever way to automate the conversion of pieces from a filetype our project can't use to one that it can.
+
+The files in question come from a vast database of Renaissance music graciously provided to us by [Clemens Goldberg of the Goldberg Stiftung](http://www.goldbergstiftung.org/page_home). His collection of files comes in a very clever format created by Theodor Dumitrescu, called [CMME](http://cmme.org/): a filetype that lets the user toggle the notation of the piece they are viewing. It's a great idea, but Music21 can't parse it, so it makes all these pieces unattainable for our project. Or does it? Built into the CMME Editor is a converter to MusicXML, but to open every piece, convert it, and re-save it is no small task when multiplied by 300 pieces. Theoretically, we could ask for the code behind CMME and write a conversion script ourselves, but that's no fun, and involves begging. Enter Sikuli. Sikuli is a script which operates a computer like a human does, recognizing visual elements, clicking the mouse and typing. You can see a [demo](http://youtu.be/itC9XX2luww) of how it converted our CMME files.
