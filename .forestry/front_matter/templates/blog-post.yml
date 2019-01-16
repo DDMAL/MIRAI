@@ -1,7 +1,8 @@
 ---
 label: Blog Post
 hide_body: false
-is_partial: false
+is_partial: true
+display_field: date
 fields:
 - type: text
   name: title
@@ -29,6 +30,12 @@ fields:
   label: author
   description: The author of the blog post
   config:
+    required: true
+- type: datetime
+  name: date
+  label: date
+  config:
+    date_format: YYYY-MM-DD
     required: true
 pages:
 - _posts/yeet.md
