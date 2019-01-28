@@ -1,8 +1,7 @@
 ---
 label: Blog Post
 hide_body: false
-is_partial: true
-display_field: date
+is_partial: false
 fields:
 - type: text
   name: title
@@ -15,7 +14,7 @@ fields:
   label: layout
   config:
     required: true
-  hidden: false
+  hidden: true
   description: Template for design of a blog post
   default: post
 - type: text
@@ -30,10 +29,4 @@ fields:
   label: author
   description: The author of the blog post
   config:
-    required: true
-- type: datetime
-  name: date
-  label: date
-  config:
-    date_format: YYYY-MM-DD
     required: true
