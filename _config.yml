@@ -33,6 +33,8 @@ collections:
     output: true
   events:
     output: true
+  participants:
+    output: true
 
 # About/contact
 author:

@@ -17,6 +17,7 @@ title: People
         <br>
       </div>
     </div>
+    {% assign parts = site.participants | sort:"last_name" %}
 
     <div class="row">
       <div class="col-lg-12">
@@ -24,9 +25,13 @@ title: People
         <hr>
         <div class="row">
           <div class="col-md-3">
-            <a href = "http://music.mcgill.ca/~ich" target="_blank"> <h4>Ichiro Fujinaga</h4> </a>
-            <h5>McGill University</h5>
-            <br>
+            {% for pi in site.participants %}
+              {% if pi.project_group == 'principal-investigator' %}
+                <a href = "{{ pi.link }}" target="_blank"> <h4>{{ pi.title }}</h4> </a>
+                <h5>{{ pi.institution }}</h5>
+                <br>
+              {% endif %}
+            {% endfor %}
           </div>
 
 
@@ -49,157 +54,39 @@ title: People
         <hr>
 
         <div id="co-investigators" class="collapse in">
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "http://www.dal.ca/faculty/arts/school-of-performing-arts/faculty-staff/our-faculty/musicology/jennifer-bain.html" target="_blank"> <h4>Jennifer Bain</h4> </a>
-              <h5>Dalhousie University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.mcgill.ca/music/julie-e-cumming" target="_blank"> <h4>Julie Cumming</h4> </a>
-              <h5>McGill University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.music.uwo.ca/faculty/bios/kate-helsen.html" target="_blank"> <h4>Katherine Helsen</h4> </a>
-              <h5>University of Western Ontario</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://uwaterloo.ca/music/people-profiles/debra-lacoste" target="_blank"> <h4>Debra Lacoste</h4> </a>
-              <h5>University of Waterloo</h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "http://laplante.ebsi.umontreal.ca/" target="_blank"> <h4>Audrey Laplante</h4> </a>
-              <h5>Université de Montréal, École de bibliothéconomie et des sciences de l&#8217;information</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Cynthia Leive</h4>
-              <h5>McGill University Marvin Duchow Music Library</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.music.mcgill.ca/~cmckay/" target="_blank"> <h4>Cory McKay</h4> </a>
-              <h5>Marianopolis College</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Laurent Pugin</h4>
-              <h5>Répertoire International des Sources Musicales (Switzerland)</h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "https://music.stanford.edu/people/jesse-rodin" target="_blank"> <h4>Jesse Rodin</h4> </a>
-              <h5>Stanford University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.music.umich.edu/faculty_staff/bio.php?u=ruschr" target="_blank"> <h4>René Rusch</h4> </a>
-              <h5>University of Michigan</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.mcgill.ca/music/peter-schubert" target="_blank"> <h4>Peter Schubert</h4> </a>
-              <h5>McGill University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://webhome.csc.uvic.ca/~gtzan/output/" target="_blank"> <h4>George Tzanetakis</h4> </a>
-              <h5>University of Victoria</h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "http://www.mcgill.ca/music/jonathan-wild" target="_blank"> <h4>Jonathan Wild</h4> </a>
-              <h5>McGill University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-          </div>
-
+          {% assign count = 0 %}
+          {% for coinv in parts %}
+            {% if coinv.project_group == 'coapplicants' %}
+
+              {% if count == 0 %}
+                <div class="row">
+              {% endif %}
+
+                <div class="col-md-3">
+                  {% if coinv.link %}
+                    <a href = "{{ coinv.link }}" target="_blank"> <h4>{{ coinv.title }}</h4> </a>
+                  {% else %}
+                    <h4>{{ coinv.title }}</h4>
+                  {% endif %}
+                  {% if coinv.institution != blank %}
+                    <h5>{{ coinv.institution }}</h5>
+                  {% endif %}
+                  <br>
+                </div>
+
+                {% assign count = count | plus:1 %}
+
+                {% if count == 4 %}
+                  </div>
+                  {% assign count = 0 %}
+                {% endif %}
+
+              {% endif %}
+            {% endfor %}
+
+            {% if count < 4 %}
+              </div>
+            {% endif %}
 
         </div>
 
@@ -216,248 +103,39 @@ title: People
         <hr>
 
         <div id="collaborators" class="collapse in">
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "https://www.uni-tuebingen.de/fakultaeten/philosophische-fakultaet/fachbereiche/altertums-und-kunstwissenschaften/mwi/instrumentenslg.html" target="_blank"> <h4>Inga Behrendt </h4> </a>
-              <h5>Eberhard Karls Universität Tübingen </h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://www.sas.upenn.edu/music/people/standing-faculty/mauro-calcagno" target="_blank"> <h4>Mauro Calcagno</h4> </a>
-              <h5>University of Pennsylvania</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Jorge Calvo-Zaragoza</h4>
-              <h5>Universitat Politècnica de Valencia</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Richard Chesser</h4>
-              <h5>British Library</h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Rachelle Chiasson-Taylor</h4>
-              <h5>Library and Archive Canada</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.music.ox.ac.uk/about/people/academic-staff/research-fellows-and-college-lectures/julia-craig-mcfeely/" target="_blank"> <h4>Julia Craig-McFeely</h4> </a>
-              <h5>Digital Image Archive of Medieval Music, University of Oxford</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://mta.mit.edu/person/michael-scott-cuthbert" target="_blank"> <h4>Michael Scott Cuthbert</h4> </a>
-              <h5>MIT</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Christoph Dalitz</h4>
-              <h5>Niederrhein University</h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "http://cesem.fcsh.unl.pt/en/pessoa/elsa-de-luca/" target="_blank"> <h4>Elsa De Luca</h4> </a>
-              <h5>Centro de Estudos de Sociologia e Estética Musical (CESEM) Faculdade de Ciências Sociais e Humanas, Universidade Nova de Lisboa</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.arsmusicae.org/wordpress/" target="_blank"> <h4>Karen Desmond</h4> </a>
-              <h5>Brandeis University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.devaney.ca" target="_blank"> <h4>Johanna Devaney</h4> </a>
-              <h5>Ohio State University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.rilm.org/aboutUs/bio.php?who=BMackenzie" target="_blank"> <h4>Barbara Dobbs Mackenzie</h4> </a>
-              <h5>Répertoire International de Littérature Musicale (RILM)</h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "https://www.lis.illinois.edu/people/faculty/jdownie" target="_blank"> <h4>Stephen J. Downie</h4> </a>
-              <h5>University of Illinois at Urbana-Champaign</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Massimo Gentili-Tedeschi</h4>
-              <h5>RILM-Italy</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://music.columbia.edu/people/bios/ggerbino" target="_blank"> <h4>Giuseppe Gerbino</h4> </a>
-              <h5>Columbia University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.bodleian.ox.ac.uk" target="_blank"> <h4>Andrew Hankinson</h4> </a>
-              <h5>Bodleian Libraries, University of Oxford</h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Johannes Kepper</h4>
-              <h5>University of Paderborn</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://kolacek.org" target="_blank"> <h4>Jan Koláček</h4> </a>
-              <h5>Charles University, Prague</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://music.msu.edu/faculty/profile/sarah" target="_blank"> <h4>Sarah Ann Long</h4> </a>
-              <h5>Michigan State University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Perry Roland</h4>
-              <h5>University of Virginia</h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Craig Sapp</h4>
-              <h5>Stanford University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-          </div>
+          {% assign count = 0 %}
+          {% for collab in parts %}
+            {% if collab.project_group == 'collaborators' %}
+
+              {% if count == 0 %}
+                <div class="row">
+              {% endif %}
+
+                <div class="col-md-3">
+                  {% if collab.link %}
+                    <a href = "{{ collab.link }}" target="_blank"> <h4>{{ collab.title }}</h4> </a>
+                  {% else %}
+                    <h4>{{ collab.title }}</h4>
+                  {% endif %}
+                  {% if collab.institution %}
+                    <h5>{{ collab.institution }}</h5>
+                  {% endif %}
+                  <br>
+                </div>
+
+                {% assign count = count | plus:1 %}
+
+                {% if count == 4 %}
+                  </div>
+                  {% assign count = 0 %}
+                {% endif %}
+
+              {% endif %}
+            {% endfor %}
+
+            {% if count < 4 %}
+              </div>
+            {% endif %}
 
 
         </div>
@@ -474,260 +152,36 @@ title: People
         <hr>
 
         <div id="partners" class="collapse in">
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "http://www.diamm.ac.uk/" target="_blank"> <h4>DIAMM Centre for Studies in Early Music</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.virginia.edu/" target="_blank"> <h4>University of Virginia</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.juilliard.edu/" target="_blank"> <h4>The Juilliard School</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.washington.edu/" target="_blank"> <h4>University of Washington</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "http://www.bnf.fr/fr/acc/x.accueil.html" target="_blank"> <h4>Bibliothèque nationale de France</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.bl.uk/" target="_blank"> <h4>British Library</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.bodleian.ox.ac.uk/" target="_blank"> <h4>Bodleian Libraries</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.library.upenn.edu/" target="_blank"> <h4>University of Pennsylvania Libraries</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "http://www.rism-ch.org/" target="_blank"> <h4>RISM Switzerland</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.dal.ca/" target="_blank"> <h4>Dalhousie University</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.rilm.org/" target="_blank"> <h4>Repertoire International de Literature Musicale (RILM)</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://www.thewalters.org/" target="_blank"> <h4>The Walters Art Museum</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "http://www.umontreal.ca/" target="_blank"> <h4>Université de Montréal</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.gold.ac.uk/" target="_blank"> <h4>University of London, Goldsmiths</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://alexanderstreet.com/" target="_blank"> <h4>Alexander Street Press</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://www.computecanada.ca/" target="_blank"> <h4>Compute Canada / Calcul Québec</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "http://library.harvard.edu/mus" target="_blank"> <h4>Harvard University Music Library</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://archives.nyphil.org/" target="_blank"> <h4>New York Philharmonic Archives</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://uwaterloo.ca/" target="_blank"> <h4>University of Waterloo</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://www.hathitrust.org/htrc" target="_blank"> <h4>Hathi Trust Research Center</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "https://www.bsb-muenchen.de/en/" target="_blank"> <h4>Bavarian State Library</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.uvic.ca/" target="_blank"> <h4>University of Victoria</h4> </a>
-              <h5></h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-          </div>
-
+          {% assign count = 0 %}
+          {% assign partner_arr = site.participants | sort:"role" | sort:"title" %}
+          {% for partner in partner_arr %}
+            {% if partner.role == "Partner" %}
+              {% if count == 0 %}
+                <div class="row">
+              {% endif %}
+
+                <div class="col-md-3">
+                  {% if partner.link %}
+                    <a href = "{{ partner.link }}" target="_blank"> <h4>{{ partner.title }}</h4> </a>
+                  {% else %}
+                    <h4>{{ partner.title }}</h4>
+                  {% endif %}
+                  <br>
+                </div>
+
+                {% assign count = count | plus:1 %}
+
+                {% if count == 4 %}
+                  </div>
+                  {% assign count = 0 %}
+                {% endif %}
+
+              {% endif %}
+            {% endfor %}
+
+            {% if count < 4 %}
+              </div>
+            {% endif %}
 
         </div>
       </div>
@@ -743,41 +197,39 @@ title: People
         <hr>
 
         <div id="advisory" class="collapse in">
-          <div class="row">
+          {% assign count = 0 %}
+          {% for advisor in parts %}
+            {% if advisor.project_group == 'advisory' %}
 
+              {% if count == 0 %}
+                <div class="row">
+              {% endif %}
 
-            <div class="col-md-3">
-              <a href = "http://www.oerc.ox.ac.uk/people/David%20De%20Roure" target="_blank"> <h4>David de Roure</h4> </a>
-              <h5>Oxford University</h5>
-              <br>
-            </div>
+                <div class="col-md-3">
+                  {% if advisor.link %}
+                    <a href = "{{ advisor.link }}" target="_blank"> <h4>{{ advisor.title }}</h4> </a>
+                  {% else %}
+                    <h4>{{ advisor.title }}</h4>
+                  {% endif %}
+                  {% if advisor.institution %}
+                    <h5>{{ advisor.institution }}</h5>
+                  {% endif %}
+                  <br>
+                </div>
 
+                {% assign count = count | plus:1 %}
 
-            <!-- Adds a final <div> if final element in pages:listing -->
+                {% if count == 4 %}
+                  </div>
+                  {% assign count = 0 %}
+                {% endif %}
 
+              {% endif %}
+            {% endfor %}
 
-
-            <div class="col-md-3">
-              <a href = "http://research.google.com/pubs/author39086.html" target="_blank"> <h4>Douglas Eck</h4> </a>
-              <h5>Google</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Susan Vita</h4>
-              <h5>Library of Congress</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-          </div>
-
+            {% if count < 4 %}
+              </div>
+            {% endif %}
 
         </div>
       </div>
@@ -793,17 +245,25 @@ title: People
 
         <div id="project-manager" class="collapse in">
           <div class="row">
+            {% for pm in site.participants %}
+              {% if pm.project_group == 'project-manager' %}
+                <div class="col-md-3">
+                  {% if pm.link %}
+                    <a href = "{{ pm.link }}" target="_blank"> <h4>{{ pm.title }}</h4> </a>
+                  {% else %}
+                    <h4>{{ pm.title }}</h4>
+                  {% endif %}
+                  <h5>{{ pm.institution }}</h5>
+                  {% if pm.participation_date_start %}
+                    <h6>{{ pm.participation_date_start | date: "%B %Y"}} &#8212;{% if pm.participation_date_end %} {{ pm.participation_date_end | date: "%B %Y" }}{% endif %}
+                    </h6>
+                  {% endif %}
 
+                  <br>
+                {% endif %}
+              {% endfor %}
 
-            <div class="col-md-3">
-              <h4>Emily Hopkins</h4>
-              <h5>McGill University</h5>
-              <h6>July 2015 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
+          </div>
           </div>
 
 
@@ -820,29 +280,39 @@ title: People
         <hr>
 
         <div id="post-doc" class="collapse in">
-          <div class="row">
+          {% assign count = 0 %}
+          {% for postdoc in parts %}
+            {% if postdoc.project_group == 'post-doctoral-fellow' %}
 
+              {% if count == 0 %}
+                <div class="row">
+              {% endif %}
 
-            <div class="col-md-3">
-              <h4>Barbara Swanson</h4>
-              <h5>Dalhousie University</h5>
-              <br>
-            </div>
+                <div class="col-md-3">
+                  {% if postdoc.link %}
+                    <a href = "{{ postdoc.link }}" target="_blank"> <h4>{{ postdoc.title }}</h4> </a>
+                  {% else %}
+                    <h4>{{ postdoc.title }}</h4>
+                  {% endif %}
+                  {% if postdoc.institution %}
+                    <h5>{{ postdoc.institution }}</h5>
+                  {% endif %}
+                  <br>
+                </div>
 
+                {% assign count = count | plus:1 %}
 
-            <!-- Adds a final <div> if final element in pages:listing -->
+                {% if count == 4 %}
+                  </div>
+                  {% assign count = 0 %}
+                {% endif %}
 
+              {% endif %}
+            {% endfor %}
 
-
-            <div class="col-md-3">
-              <a href = "http://vigliensoni.com" target="_blank"> <h4>Gabriel Vigliensoni</h4> </a>
-              <h5>McGill University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-          </div>
+            {% if count < 4 %}
+              </div>
+            {% endif %}
 
 
         </div>
@@ -859,19 +329,43 @@ title: People
         <hr>
 
         <div id="researchers" class="collapse in">
-          <div class="row">
+          {% assign count = 0 %}
+          {% for research in parts %}
+            {% if research.project_group == 'researchers' %}
 
+              {% if count == 0 %}
+                <div class="row">
+              {% endif %}
 
-            <div class="col-md-3">
-              <h4>Sonia Wronkowska</h4>
-              <h5>The National Library of Poland</h5>
-              <h6>July 2016 &#8212; </h6>
-              <br>
-            </div>
+                <div class="col-md-3">
+                  {% if research.link %}
+                    <a href = "{{ research.link }}" target="_blank"> <h4>{{ research.title }}</h4> </a>
+                  {% else %}
+                    <h4>{{ research.title }}</h4>
+                  {% endif %}
+                  {% if research.institution %}
+                    <h5>{{ research.institution }}</h5>
+                  {% endif %}
+                  {% if research.participation_date_start %}
+                    <h6>{{ research.participation_date_start | date: "%B %Y"}} &#8212;{% if research.participation_date_end %} {{ research.participation_date_end | date: "%B %Y" }}{% endif %}
+                    </h6>
+                  {% endif %}
+                  <br>
+                </div>
 
+                {% assign count = count | plus:1 %}
 
-            <!-- Adds a final <div> if final element in pages:listing -->
-          </div>
+                {% if count == 4 %}
+                  </div>
+                  {% assign count = 0 %}
+                {% endif %}
+
+              {% endif %}
+            {% endfor %}
+
+            {% if count < 4 %}
+              </div>
+            {% endif %}
 
 
         </div>
@@ -888,281 +382,43 @@ title: People
         <hr>
 
         <div id="students" class="collapse in">
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Sr. Ilaria Culshaw</h4>
-              <h5>Dalhousie University</h5>
-              <h6>September 2018 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://www.github.com/deepio" target="_blank"> <h4>Alex Daigle</h4> </a>
-              <h5>McGill University</h5>
-              <h6>May 2017 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Tim de Reuse</h4>
-              <h5>McGill University</h5>
-              <h6>April 2017 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Lucia Denk</h4>
-              <h5>Dalhousie University</h5>
-              <h6>September 2018 &#8212; </h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "https://github.com/DavidGarfinkle" target="_blank"> <h4>David Garfinkle</h4> </a>
-              <h5>McGill University</h5>
-              <h6>May 2016 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Samuel Howes</h4>
-              <h5>McGill University</h5>
-              <h6>September 2015 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Alessandra Ignesti</h4>
-              <h5>McGill University</h5>
-              <h6>September 2014 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://onlineacademiccommunity.uvic.ca/davidjohnson/" target="_blank"> <h4>David Johnson </h4> </a>
-              <h5>University of Victoria</h5>
-              <h6>September 2014 &#8212; </h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Yaolong Ju</h4>
-              <h5>McGill University</h5>
-              <h6>September 2016 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Andrew Kam</h4>
-              <h5>McGill University</h5>
-              <h6>April 2017 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Ian Lorenz</h4>
-              <h5>McGill University</h5>
-              <h6>September 2015 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Carlotta Marturano</h4>
-              <h5>McGill University</h5>
-              <h6>January 2017 &#8212; </h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "https://github.com/zoemcl" target="_blank"> <h4>Zoé McLennan</h4> </a>
-              <h5>McGill University</h5>
-              <h6>May 2017 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://github.com/nminnie" target="_blank"> <h4>Minh Anh Nguyen</h4> </a>
-              <h5>McGill University</h5>
-              <h6>May 2018 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Néstor Nápoles López</h4>
-              <h5>McGill University</h5>
-              <h6>September 2017 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Brayden Olson</h4>
-              <h5>Dalhousie University</h5>
-              <h6>September 2017 &#8212; </h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "https://github.com/blueNoteb5" target="_blank"> <h4>Gustavo Polins Pedro</h4> </a>
-              <h5>McGill University</h5>
-              <h6>May 2018 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Juliette Regimbal</h4>
-              <h5>McGill University</h5>
-              <h6>May 2018 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Evan Savage</h4>
-              <h5>McGill University</h5>
-              <h6>September 2018 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Rebecca Shaw</h4>
-              <h5>Dalhousie University</h5>
-              <h6>August 2016 &#8212; </h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Martha Thomae</h4>
-              <h5>McGill University</h5>
-              <h6>September 2015 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Vi-An Tran</h4>
-              <h5>McGill University</h5>
-              <h6>August 2014 &#8212; </h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-          </div>
+          {% assign count = 0 %}
+          {% for student in parts %}
+            {% if student.project_group == 'students' %}
+
+              {% if count == 0 %}
+                <div class="row">
+              {% endif %}
+
+                <div class="col-md-3">
+                  {% if student.link %}
+                    <a href = "{{ student.link }}" target="_blank"> <h4>{{ student.title }}</h4> </a>
+                  {% else %}
+                    <h4>{{ student.title }}</h4>
+                  {% endif %}
+                  {% if student.institution %}
+                    <h5>{{ student.institution }}</h5>
+                  {% endif %}
+                  {% if student.participation_date_start %}
+                    <h6>{{ student.participation_date_start | date: "%B %Y"}} &#8212;{% if student.participation_date_end %} {{ student.participation_date_end | date: "%B %Y" }}{% endif %}
+                    </h6>
+                  {% endif %}
+                  <br>
+                </div>
+
+                {% assign count = count | plus:1 %}
+
+                {% if count == 4 %}
+                  </div>
+                  {% assign count = 0 %}
+                {% endif %}
+
+              {% endif %}
+            {% endfor %}
+
+            {% if count < 4 %}
+              </div>
+            {% endif %}
 
 
         </div>
@@ -1178,1007 +434,44 @@ title: People
         <hr>
 
         <div id="alumni" class="collapse in">
-          <div class="row">
+          {% assign count = 0 %}
+          {% for alumnus in parts %}
+            {% if alumnus.project_group == 'alumni' %}
+
+              {% if count == 0 %}
+                <div class="row">
+              {% endif %}
+
+                <div class="col-md-3">
+                  {% if alumnus.link %}
+                    <a href = "{{ alumnus.link }}" target="_blank"> <h4>{{ alumnus.title }}</h4> </a>
+                  {% else %}
+                    <h4>{{ alumnus.title }}</h4>
+                  {% endif %}
+                  {% if alumnus.institution %}
+                    <h5>{{ alumnus.institution }}</h5>
+                  {% endif %}
+                  {% if alumnus.participation_date_start %}
+                    <h6>{{ alumnus.participation_date_start | date: "%B %Y"}} &#8212;{% if alumnus.participation_date_end %} {{ alumnus.participation_date_end | date: "%B %Y" }}{% endif %}
+                    </h6>
+                  {% endif %}
+                  <br>
+                </div>
+
+                {% assign count = count | plus:1 %}
+
+                {% if count == 4 %}
+                  </div>
+                  {% assign count = 0 %}
+                {% endif %}
+
+              {% endif %}
+            {% endfor %}
+
+            {% if count < 4 %}
+              </div>
+            {% endif %}
 
-
-            <div class="col-md-3">
-              <h4>Christopher Antila</h4>
-              <h5>McGill University</h5>
-              <h6>May 2014 &#8212; December 2014</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Claire Arthur</h4>
-              <h5>Georgia Institute of Technology</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>William Bain</h4>
-              <h5>Cisco Systems</h5>
-              <h6>May 2015 &#8212; May 2016</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Ryan Bannon</h4>
-              <h5>CaseWare</h5>
-              <h6>May 2013 &#8212; March 2017</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Laurier Baribeau</h4>
-              <h5>McGill University</h5>
-              <h6>May 2013 &#8212; August 2013</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Noah Baxter</h4>
-              <h5>McGill University</h5>
-              <h6>May 2018 &#8212; December 2018</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://www.linkedin.com/in/laurabeauchamp" target="_blank"> <h4>Laura Beauchamp</h4> </a>
-              <h5>Bibliothèque et Archives nationales du Québec</h5>
-              <h6>May 2018 &#8212; June 2018</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://github.com/belljustin" target="_blank"> <h4>Justin Bell</h4> </a>
-              <h5>McGill University</h5>
-              <h6>May 2016 &#8212; April 2017</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Ruth Berkow</h4>
-              <h5>McGill University</h5>
-              <h6>May 2014 &#8212; August 2014</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>John Ashley Burgoyne</h4>
-              <h5>University of Amsterdam</h5>
-              <h6>July 2005 &#8212; June 2012</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Greg Burlet</h4>
-              <h5>Frettable</h5>
-              <h6>September 2011 &#8212; August 2013</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Remi Chiu</h4>
-              <h5>Loyola University, Maryland</h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Morgane Ciot</h4>
-              <h5>DataRobot</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Nat Condit-Schultz</h4>
-              <h5>Georgia Institute of Technology</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Marina Cottrell</h4>
-              <h5>Stanford University (CCRMA)</h5>
-              <h6>May 2015 &#8212; July 2016</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Natasha Dillabough</h4>
-              <h5>McGill University</h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Daniel Donnelly</h4>
-              <h5>Centre for Reformation and Renaissance Studies, Victoria University in the University of Toronto</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Michèle Duguay</h4>
-              <h5>McGill University</h5>
-              <h6>September 2015 &#8212; January 2016</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Neda Eshraghi</h4>
-              <h5>McGill University</h5>
-              <h6>August 2016 &#8212; October 2016</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://andrewfogarty.net/" target="_blank"> <h4>Andrew Fogarty</h4> </a>
-              <h5>Microsoft</h5>
-              <h6>May 2014 &#8212; May 2016</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Wei Gao</h4>
-              <h5>FANS Entertainment</h5>
-              <h6>April 2013 &#8212; December 2013</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Mahtab Ghamsari</h4>
-              <h5>Kheiron Medical</h5>
-              <h6>February 2011 &#8212; April 2011</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Arielle Goldman</h4>
-              <h5>McGill University</h5>
-              <h6>May 2016 &#8212; August 2016</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Matan Gover</h4>
-              <h5>McGill University</h5>
-              <h6>July 2017 &#8212; May 2018</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Ryan Groves</h4>
-              <h5>Melodrive</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Tom Harding</h4>
-              <h5>Dalhousie University</h5>
-              <h6>September 2014 &#8212; August 2015</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Zackary Harrison</h4>
-              <h5>Dalhousie University</h5>
-              <h6>September 2015 &#8212; April 2017</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://music.utah.edu/faculty/JaneHatter.php" target="_blank"> <h4>Jane Hatter</h4> </a>
-              <h5>University of Utah</h5>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Peter Henderson</h4>
-              <h5>McGill University</h5>
-              <h6>September 2012 &#8212; November 2012</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Shawn Henry</h4>
-              <h5>Dalhousie University</h5>
-              <h6>September 2016 &#8212; August 2018</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Jason Hockman</h4>
-              <h5>Birmingham City University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://ahwitz.com" target="_blank"> <h4>Andrew Horwitz</h4> </a>
-              <h5>Répertoire International de Littérature Musicale (RILM)</h5>
-              <h6>May 2014 &#8212; April 2015</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Ian Karp</h4>
-              <h5>McGill University</h5>
-              <h6>May 2015 &#8212; December 2015</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Anton Khelou</h4>
-              <h5>Autodesk</h5>
-              <h6>May 2012 &#8212; July 2012</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Rajarshi Rivu Khoda</h4>
-              <h5>IBM</h5>
-              <h6>May 2015 &#8212; August 2015</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Jamie Klassen</h4>
-              <h5>CGI</h5>
-              <h6>May 2011 &#8212; September 2013</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Andrea Klassen</h4>
-              <h5>Dalhousie University</h5>
-              <h6>September 2017 &#8212; July 2018</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://arts.unco.edu/music/faculty-staff/kramer-reiner.aspx" target="_blank"> <h4>Reiner Krämer</h4> </a>
-              <h5>University of Northern Colorado</h5>
-              <h6>July 2015 &#8212; June 2017</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Véronique Lagacé</h4>
-              <h5>McGill University</h5>
-              <h6>May 2016 &#8212; September 2016</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Saining Li</h4>
-              <h5>Ayuda Media Systems</h5>
-              <h6>May 2011 &#8212; May 2014</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Wendy Liu</h4>
-              <h5>Macromeasures</h5>
-              <h6>February 2011 &#8212; August 2012</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "http://erichanliu.github.io" target="_blank"> <h4>Eric Liu</h4> </a>
-              <h5>McGill University</h5>
-              <h6>May 2018 &#8212; October 2018</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Yihong Luo</h4>
-              <h5>Manulife</h5>
-              <h6>May 2015 &#8212; August 2015</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Evan Magoni</h4>
-              <h5>Autodesk</h5>
-              <h6>May 2014 &#8212; February 2016</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Sheila Meadley Dunphy</h4>
-              <h5>Dalhousie University</h5>
-              <h6>May 2015 &#8212; December 2016</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://www.linkedin.com/in/negareh?trk=nav_responsive_tab_profile_pic" target="_blank"> <h4>Nicky Mirfallah</h4> </a>
-              <h5>McGill University</h5>
-              <h6>May 2016 &#8212; August 2016</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Lillio Mok</h4>
-              <h5>Autodesk</h5>
-              <h6>May 2014 &#8212; April 2015</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Alexander Morgan</h4>
-              <h5>L&#8217;université libre de Bruxelles</h5>
-              <h6>August 2012 &#8212; October 2016</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Catherine Motuz</h4>
-              <h5>McGill University</h5>
-              <h6>September 2011 &#8212; August 2017</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Clare Neil</h4>
-              <h5>Dalhousie University</h5>
-              <h6>May 2014 &#8212; August 2016</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Chris Niven</h4>
-              <h5>Never Be Normal</h5>
-              <h6>May 2010 &#8212; August 2010</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Rory O&#8217;Connor</h4>
-              <h5>McGill University</h5>
-              <h6>September 2014 &#8212; December 2015</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Joel Oliver-Cormier</h4>
-              <h5>Dalhousie University</h5>
-              <h6>September 2016 &#8212; August 2018</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Laura Osterlund</h4>
-              <h5>Chicago Symphony Orchestra</h5>
-              <h6>January 2014 &#8212; August 2014</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Phyllis Ouyang</h4>
-              <h5></h5>
-              <h6>May 2008 &#8212; August 2008</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://ca.linkedin.com/in/j%C3%A9r%C3%B4me-parent-l%C3%A9vesque-a75966112" target="_blank"> <h4>Jérôme Parent-Lévesque</h4> </a>
-              <h5>Vigilant Global</h5>
-              <h6>May 2016 &#8212; August 2016</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Alexandre Parmentier</h4>
-              <h5>Amilia</h5>
-              <h6>May 2015 &#8212; May 2017</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://www.ninapenner.com/" target="_blank"> <h4>Nina Penner</h4> </a>
-              <h5>Duke University</h5>
-              <h6>July 2015 &#8212; February 2016</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Sacha Perry-Fagant</h4>
-              <h5></h5>
-              <h6>May 2017 &#8212; December 2017</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Alastair Porter</h4>
-              <h5>Universitat Pompeu Fabra</h5>
-              <h6>August 2010 &#8212; August 2012</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Neven Prostran</h4>
-              <h5>Dalhousie University</h5>
-              <h6>September 2016 &#8212; August 2017</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Laura Risk</h4>
-              <h5>McGill University</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Deepanjan Roy</h4>
-              <h5>Google</h5>
-              <h6>May 2013 &#8212; August 2013</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://jsagrans.wordpress.com/" target="_blank"> <h4>Jacob Sagrans</h4> </a>
-              <h5>McGill University</h5>
-              <h6>January 2012 &#8212; July 2016</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Malcolm Sailor</h4>
-              <h5>Yale University</h5>
-              <h6>May 2016 &#8212; July 2018</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://github.com/zeyadhazem" target="_blank"> <h4>Zeyad Saleh</h4> </a>
-              <h5>Apple</h5>
-              <h6>May 2017 &#8212; December 2017</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Andie Sigler</h4>
-              <h5>McGill University</h5>
-              <h6>July 2014 &#8212; April 2015</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Harry Simmonds</h4>
-              <h5>Apple</h5>
-              <h6>May 2014 &#8212; August 2014</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Caylin Smith</h4>
-              <h5>British Library</h5>
-              <h6>January 2011 &#8212; July 2011</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Brian Stern</h4>
-              <h5>ToonBox Entertainment  </h5>
-              <h6>May 2012 &#8212; August 2012</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://www.jonathanstuchbery.com/" target="_blank"> <h4>Jonathan Stuchbery</h4> </a>
-              <h5>McGill University</h5>
-              <h6>July 2017 &#8212; August 2018</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Tristano Tenaglia</h4>
-              <h5>McGill University</h5>
-              <h6>May 2015 &#8212; April 2017</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Jessica Thompson</h4>
-              <h5>Université de Montréal</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Moe Touizrar</h4>
-              <h5>McGill University</h5>
-              <h6>May 2014 &#8212; August 2014</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <a href = "https://github.com/ATranimal" target="_blank"> <h4>Andrew Tran</h4> </a>
-              <h5>McGill University</h5>
-              <h6>May 2017 &#8212; May 2018</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Tim Wilfong</h4>
-              <h5>McGill University</h5>
-              <h6>April 2013 &#8212; August 2014</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <h4>Mike Winters</h4>
-              <h5>Georgia Institute of Technology</h5>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Reiko Yamada</h4>
-              <h5></h5>
-              <h6>April 2010 &#8212; May 2014</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Ling-Xiao Yang</h4>
-              <h5>The Yang</h5>
-              <h6>September 2014 &#8212; April 2016</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-
-
-
-            <div class="col-md-3">
-              <h4>Nan Zhang</h4>
-              <h5>Dalhousie University</h5>
-              <h6>May 2014 &#8212; August 2015</h6>
-              <br>
-            </div>
-
-          </div>
-
-          <!-- Adds a final <div> if final element in pages:listing -->
-
-          <div class="row">
-
-
-            <div class="col-md-3">
-              <a href = "https://github.com/PotassiumK" target="_blank"> <h4>Ké Zhang</h4> </a>
-              <h5>McGill University</h5>
-              <h6>May 2017 &#8212; April 2018</h6>
-              <br>
-            </div>
-
-
-            <!-- Adds a final <div> if final element in pages:listing -->
-          </div>
 
 
         </div>
