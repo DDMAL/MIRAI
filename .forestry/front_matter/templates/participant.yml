@@ -57,5 +57,3 @@ fields:
   name: link
   label: Link
   description: Website url for individual/partner
-pages:
-- _participants/advisory-board/test-advisory-person.md

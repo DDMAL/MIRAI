@@ -5,9 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: contact.html
+  label: Contact
+  match: "**/*"
+- type: document
   path: about.html
   label: About
-  match: "**/*"
 - type: jekyll-posts
   label: Blog
   create: all
