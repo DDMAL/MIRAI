@@ -1,0 +1,43 @@
+---
+label: Participant
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: title
+  name: title
+  description: Full name of the individual/institution
+  config:
+    required: true
+- type: text
+  name: first_name
+  label: First Name
+  description: First name of the participant
+- type: text
+  name: last_name
+  label: Last Name
+  description: Last name of the participant
+- type: text
+  name: institution
+  label: Institution
+  description: Affiliation of individual (Company/university)
+- type: select
+  name: project_group
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - advisory
+    - alumni
+    - coapplicants
+    - collaborators
+    - partners
+    - post-doctoral-fellow
+    - principal-investigator
+    - project-manager
+    - researchers
+    - students
+  label: Project Group
+  description: Individual/partner connection to SIMSSA
+  default: advisory
