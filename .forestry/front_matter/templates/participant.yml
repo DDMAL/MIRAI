@@ -6,17 +6,17 @@ fields:
 - type: text
   label: title
   name: title
-  description: Full name of the individual/institution
+  description: Full name of the individual/partner
   config:
     required: true
 - type: text
   name: first_name
   label: First Name
-  description: First name of the participant
+  description: First name of the individual (clear for partner)
 - type: text
   name: last_name
   label: Last Name
-  description: Last name of the participant
+  description: Last name of the individual (clear for partner)
 - type: text
   name: institution
   label: Institution
@@ -41,3 +41,19 @@ fields:
   label: Project Group
   description: Individual/partner connection to SIMSSA
   default: advisory
+- type: datetime
+  name: participation_date_start
+  label: Participation Date Start
+  description: When did the student/alumni/researcher/etc start their time with SIMSSA?
+  config:
+    date_format: YYYY-MM-DD
+- type: datetime
+  name: participation_date_end
+  label: Participation Date End
+  description: When did the individual finish their time with SIMSSA?
+  config:
+    date_format: YYYY-MM-DD
+- type: text
+  name: link
+  label: Link
+  description: Website url for individual/partner
