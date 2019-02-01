@@ -35,6 +35,8 @@ collections:
     output: true
   participants:
     output: true
+  workshops:
+    output: true
 
 # About/contact
 author:
