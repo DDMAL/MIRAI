@@ -4,7 +4,8 @@ title: Workshops
 ---
 
 
-{% assign workyears = site.workshops | map: "event_year" | reverse %}
+{% assign workyears = site.workshops | map: "event_year" | uniq | reverse %}
+
 {% for year in workyears %}
 
   <div class="row">
@@ -19,21 +20,20 @@ title: Workshops
       <div id="{{ year }}" class="collapse in">
 
         {% for workshop in site.workshops %}
-          {% assign year2 = year %}
           {% if workshop.event_year == year %}
             <div class="row">
               <div class="col-lg-12">
                 <h2>{{ workshop.title }}</h2>
                 <h4 class="event">
 
-                  {% if workshop.place %}
-                    {{ workshop.place }}
+                  {% if workshop.venue %}
+                    {{ workshop.venue }}
                   {% endif %}
-
+                  ,
                   {% if workshop.location %}
                     {{ workshop.location }}
                   {% endif %}
-
+                  ,
                   {{ workshop.event_date | date: "%B %d, %Y" }}
 
                 </h4>
@@ -50,8 +50,6 @@ title: Workshops
     </div>
   </div>
 {% endfor %}
-
-
 
 <script>
 $(document).ready(function(){
