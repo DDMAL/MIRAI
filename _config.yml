@@ -40,6 +40,9 @@ collections:
   presentations:
     output: true
 
+scholar:
+  style: chicago17th-author-date-edited-for-web-use.csl
+
 # About/contact
 author:
   name:              Mark Otto
