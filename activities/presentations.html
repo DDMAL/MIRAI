@@ -14,8 +14,9 @@ title: Presentations
   </h2>
   <hr>
   <div id="{{ year }}" class="collapse in">
+    {% assign presentation_list = site.presentations | sort: 'content' %}
     <ul>
-      {% for presentation in site.presentations %}
+      {% for presentation in presentation_list %}
         {% if presentation.presentation_year == year %}
           <li>
 
