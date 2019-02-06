@@ -5,7 +5,7 @@ title: Presentations
 
 {% comment %}
 
-{% bibliography --file SIMSSAPresentations %}
+{% bibliography --file SIMSSAPresentations  %}
 
 {% endcomment %}
 
@@ -27,21 +27,6 @@ title: Presentations
 
             {{ presentation.content }}
 
-            {% comment %}
-
-            {{ presentation.presentation_author }}.
-            {{ presentation.presentation_year }}.
-            "{{ presentation.title }}."
-            {% if presentation.format == 'presentation' %}
-              Presented at the
-            {% else %}
-              {{ presentation.format | capitalize }} presented at the
-            {% endif %}
-            {{ presentation.conference }},
-            {{ presentation.location }},
-            {{ presentation.presentation_date | date: "%B %d"}}.
-
-            {% endcomment %}
           </li>
         {% endif %}
       {% endfor %}
