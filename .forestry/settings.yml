@@ -5,18 +5,27 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: about.html
+  path: about.md
   label: About
 - type: jekyll-posts
   label: Blog
   create: all
 - type: document
-  path: contact.html
+  path: contact.md
   label: Contact
-  match: "**/*"
 - type: directory
   path: _participants
   label: Participants
+  create: all
+  match: "**/*"
+- type: directory
+  path: _presentations
+  label: Presentations
+  create: all
+  match: "**/*"
+- type: directory
+  path: _workshops
+  label: Workshops
   create: all
   match: "**/*"
 upload_dir: assets/img

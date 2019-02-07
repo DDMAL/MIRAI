@@ -1,0 +1,50 @@
+---
+label: Workshop
+hide_body: false
+is_partial: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+  description: Name of the workshop
+  config:
+    required: true
+- name: author
+  label: Author
+  type: text
+  hidden: false
+  default: ''
+- name: upload
+  label: Upload
+  type: text
+  hidden: false
+  default: ''
+- name: categories
+  label: Categories
+  type: tag_list
+  hidden: false
+  default: ''
+- name: location
+  label: Location
+  type: text
+  hidden: false
+  default: ''
+  description: City/Country where the event took place
+- name: event_date
+  label: Event date
+  type: datetime
+  hidden: false
+  default: ''
+- name: event_year
+  label: Event year
+  type: text
+  hidden: false
+  default: ''
+- name: venue
+  label: Venue
+  type: text
+  hidden: false
+  default: ''
+  description: The space that the workshop took place in
