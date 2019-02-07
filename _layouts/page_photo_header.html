@@ -24,6 +24,7 @@ layout: default
 
 
 <div class="container">
+
   <div class="row">
     <div class="col-lg-12">
 
@@ -33,3 +34,17 @@ layout: default
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function(){
+    $('.icon_rotation').on({
+      'click': function () {
+        var origsrc = $(this).attr('src');
+        var src = '';
+        if (origsrc == '{{ site.baseurl }}/assets/0-expand_off.png') src = '{{ site.baseurl }}/assets/0-expand_on.png';
+        if (origsrc == '{{ site.baseurl }}/assets/0-expand_on.png') src = '{{ site.baseurl }}/assets/0-expand_off.png';
+        $(this).attr('src', src);
+      }
+    });
+  });
+</script>
