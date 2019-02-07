@@ -20,21 +20,21 @@ On 27 April, we held a workshop with CIRMMT RA 2 — Music Information Research.
 
 Speakers:
 
-- Claire Arthur, SIMSSA postdoc
-- Martha Thomae, McGill University
-- Cory McKay, Marianapolis College
-- Ian Lorenz, McGill University
-- Néstor Nápoles, McGill University
-- Nat Condit-Schultz, SIMSSA postdoc
+* Claire Arthur, SIMSSA postdoc
+* Martha Thomae, McGill University
+* Cory McKay, Marianapolis College
+* Ian Lorenz, McGill University
+* Néstor Nápoles, McGill University
+* Nat Condit-Schultz, SIMSSA postdoc
 
 Also in attendance:
 
-- Peter Schubert, McGill University
-- Glen Ethier, Vanier College
-- Gabriel Vigliensoni, McGill University
-- Kristin Franseen, McGill University
-- Laura Beauchamp, McGill University
-- Alessandra Ignesti, McGill University
-- Matan Gover, McGill University
-- Tim De Reuse, McGill University
-- Emily Hopkins, SIMSSA Project Manager
+* Peter Schubert, McGill University
+* Glen Ethier, Vanier College
+* Gabriel Vigliensoni, McGill University
+* Kristin Franseen, McGill University
+* Laura Beauchamp, McGill University
+* Alessandra Ignesti, McGill University
+* Matan Gover, McGill University
+* Tim De Reuse, McGill University
+* Emily Hopkins, SIMSSA Project Manager

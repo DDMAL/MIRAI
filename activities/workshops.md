@@ -18,8 +18,8 @@ title: Workshops
       <hr>
 
       <div id="{{ year }}" class="collapse in">
-
-        {% for workshop in site.workshops %}
+        {% assign workshop_list = site.workshops | sort: 'event_date' | reverse %}
+        {% for workshop in workshop_list %}
           {% if workshop.event_year == year %}
             <div class="row">
               <div class="col-lg-12">

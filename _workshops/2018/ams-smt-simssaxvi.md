@@ -19,17 +19,18 @@ Workshop on SIMSSA XVI took place in San Antonio, Texas, adjacent to the joint m
 ![]({{ site.baseurl }}/assets/img/simssaxvi-amssmt.png/)
 
 Presenters:
-- Ichiro Fujinaga, SIMSSA PI
-- Peter Schubert, McGill University
-- Jennifer Bain, Dalhousie University
-- Karen Desmond, Brandeis University
+
+* Ichiro Fujinaga, SIMSSA PI
+* Peter Schubert, McGill University
+* Jennifer Bain, Dalhousie University
+* Karen Desmond, Brandeis University
 
 Guests:
 
-- Jessie Ann Owens, UC Davis Arts
-- Dolores Pesce, Washington University in St. Louis
-- David Day, Brigham Young University
-- Trevor de Clercq, Middle Tennessee State University
-- Richard Freedman, Haverford College
-- Sarah Ann Long, Michigan State University
-- René Rusch, University of Michigan
+* Jessie Ann Owens, UC Davis Arts
+* Dolores Pesce, Washington University in St. Louis
+* David Day, Brigham Young University
+* Trevor de Clercq, Middle Tennessee State University
+* Richard Freedman, Haverford College
+* Sarah Ann Long, Michigan State University
+* René Rusch, University of Michigan

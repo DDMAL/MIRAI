@@ -11,11 +11,11 @@ upload: ""
 
 Guests included:
 
-- Michael Alan Anderson, Eastman School of Music</li>
-- Jennifer Bain, Dalhousie University</li>
-- Kate Helsen, University of Western Ontario</li>
-- Debra Lacoste, University of Waterloo</li>
-- Sarah Long, Michigan State University</li>
-- Tamsyn Rose-Steel, Johns Hopkins University</li>
-- Rebecca Shaw, Dalhousie University</li>
-- Barbara Swanson, York University</li>
+* Michael Alan Anderson, Eastman School of Music
+* Jennifer Bain, Dalhousie University
+* Kate Helsen, University of Western Ontario
+* Debra Lacoste, University of Waterloo
+* Sarah Long, Michigan State University
+* Tamsyn Rose-Steel, Johns Hopkins University
+* Rebecca Shaw, Dalhousie University
+* Barbara Swanson, York University

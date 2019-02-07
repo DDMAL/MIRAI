@@ -8,4 +8,5 @@ location: Montreal, QC
 author: gvigliensoni
 upload: ""
 ---
+
 [Read the summary of all presentations of this workshop in its blog post.](http://simssa.ca/blog/cirmmt-workshop-september-7th-2013-part-iii-music-digitization-in-the-world)

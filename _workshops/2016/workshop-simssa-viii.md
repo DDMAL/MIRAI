@@ -17,14 +17,14 @@ This is the eighth in the series of SIMSSA Workshops, highlighting recent develo
 
 Guests included:
 
-- Ryan Bannon, Schulich School of Music, McGill University
-- Marina Borsodi-Benson, Schulich School of Music, McGill University
-- Jorge Calvo-Zaragoza, University of Alicante (visiting PhD researcher)
-- Karen Desmond, Schulich School of Music, McGill University
-- Andrew Fogarty, McGill University
-- Ichiro Fujinaga, CIRMMT, Schulich School of Music, McGill University
-- Andrew Hankinson, CIRMMT, Schulich School of Music, McGill University
-- Emily Hopkins, SIMSSA Project Manager, Schulich School of Music, McGill University
-- Reiner Krämer, CIRMMT, Schulich School of Music, McGill University
-- Ian Lorenz, Schulich School of Music, McGill University
-- Alexandre Parmentier, McGill University
+* Ryan Bannon, Schulich School of Music, McGill University
+* Marina Borsodi-Benson, Schulich School of Music, McGill University
+* Jorge Calvo-Zaragoza, University of Alicante (visiting PhD researcher)
+* Karen Desmond, Schulich School of Music, McGill University
+* Andrew Fogarty, McGill University
+* Ichiro Fujinaga, CIRMMT, Schulich School of Music, McGill University
+* Andrew Hankinson, CIRMMT, Schulich School of Music, McGill University
+* Emily Hopkins, SIMSSA Project Manager, Schulich School of Music, McGill University
+* Reiner Krämer, CIRMMT, Schulich School of Music, McGill University
+* Ian Lorenz, Schulich School of Music, McGill University
+* Alexandre Parmentier, McGill University

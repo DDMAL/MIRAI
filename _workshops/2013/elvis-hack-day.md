@@ -8,5 +8,6 @@ location: Montreal, QC
 author: jhatter
 upload: ""
 ---
+
 Searching symbolic musical data for repeated patterns: The ELVIS project.
 For a summary of this event and photos see the related [blog post](http://simssa.ca/blog/may-11-hack-day).
