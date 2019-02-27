@@ -7,17 +7,17 @@ sections:
 - type: document
   path: about.md
   label: About
+- type: directory
+  path: _participants
+  label: Participants
+  create: all
+  match: "**/*"
 - type: jekyll-posts
   label: Blog
   create: all
 - type: document
   path: contact.md
   label: Contact
-- type: directory
-  path: _participants
-  label: Participants
-  create: all
-  match: "**/*"
 - type: directory
   path: _presentations
   label: Presentations
