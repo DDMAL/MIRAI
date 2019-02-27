@@ -12,6 +12,11 @@ sections:
   label: Participants
   create: all
   match: "**/*"
+- type: directory
+  path: activities
+  label: Activities
+  create: all
+  match: "**/*"
 - type: jekyll-posts
   label: Blog
   create: all
