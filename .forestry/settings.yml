@@ -17,6 +17,7 @@ sections:
   label: Activities
   create: all
   match: "**/*"
+  exclude: "/**/p*.md"
 - type: directory
   path: _presentations
   label: Presentations
