@@ -13,7 +13,7 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
+  hidden: true
   default: page_photo_header
   config:
     required: true
@@ -30,3 +30,4 @@ fields:
     required: true
   label: Image Class
   description: Choose which header photo to use for the page
+  default: headerimage
