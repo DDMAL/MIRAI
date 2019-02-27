@@ -8,8 +8,12 @@ fields:
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
+  description: Name of the external project
 - name: link
   label: Link
   type: textarea
   hidden: false
   default: ''
+  description: 'URL for external project '
