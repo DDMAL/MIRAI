@@ -43,9 +43,13 @@ collections:
     output: true
   media:
     output: true
+  activities:
+    output: true
+  projects:
+    output: true
 
 scholar:
-  style: chicago17th-author-date-edited-for-web-use.csl
+  style: _bibliography/SIMSSA-citations.csl
   sort_by: author
   use_raw_bibtex_entry: true
   group_by: year

@@ -23,23 +23,20 @@
                     <li class="dropdown">
                       <a class="dropdown-toggle disabled" data-toggle="dropdown" href="#">Activities<span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu">
-                          <li><a href="{{ site.baseurl }}/activities/publications" target="_top">Publications</a></li>
-                          <li><a href="{{ site.baseurl }}/activities/presentations" target="_top">Presentations</a></li>
-                          <li><a href="{{ site.baseurl }}/activities/impact" target="_top">Impact</a></li>
-                          <li><a href="{{ site.baseurl }}/activities/workshops" target="_top">Workshops</a></li>
-                          <li><a href="{{ site.baseurl }}/activities/media" target="_top">Media</a></li>
+                        {% for activity in site.activities %}
+                          {% if activity.title != 'Activities' %}
+                            <li><a href='{{ activity.link }}' target='_top' >{{ activity.title }}</a></li>
+                          {% endif %}
+                        {% endfor %}
                       </ul>
                     </li>
 
                     <li class="dropdown">
                       <a class="dropdown-toggle disabled" data-toggle="dropdown" href="#">Projects and links<span class="caret"></span></a>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="http://cantus.simssa.ca" target="_blank">Cantus Ultimus</a></li>
-                        <li><a href="http://liber.simssa.ca" target="_blank">Liber Usualis</a></li>
-                        <li><a href="https://musiclibs.net" target="_blank">Musiclibs</a></li>
-                        <li><a href="http://elvisproject.ca/ " target="_blank">ELVIS Project</a></li>
-                        <li><a href="http://jmir.sourceforge.net/index_jSymbolic.html" target="_blank">jSymbolic2</a></li>
-                        <li><a href="http://ddmal.teamwork.com" target="_blank">Teamwork</a></li>
+                        {% for project in site.projects %}
+                            <li><a href='{{ project.link }}' target='_top' >{{ project.title }}</a></li>
+                        {% endfor %}
                         <li><a href="http://twitter.com/simssaproject" target="_blank">Twitter</a></li>
                         <li><a href="http://github.com/DDMAL" target="_blank">Github</a></li>
                       </ul>

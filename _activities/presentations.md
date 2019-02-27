@@ -3,11 +3,6 @@ layout: page
 title: Presentations
 ---
 
-{% comment %}
-
-{% bibliography --file SIMSSAPresentations  %}
-
-{% endcomment %}
 
 {% assign presentation_years = site.presentations | map: "presentation_year" | uniq | reverse %}
 
