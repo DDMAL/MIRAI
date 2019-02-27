@@ -17,6 +17,10 @@ sections:
   label: Activities
   create: all
   match: "**/*"
+  exclude: "/**/p*.md"
+  templates:
+  - page
+  - page-with-photo-header
 - type: directory
   path: _presentations
   label: Presentations
