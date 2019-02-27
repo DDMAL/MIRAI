@@ -7,15 +7,14 @@ sections:
 - type: document
   path: about.md
   label: About
-- type: jekyll-posts
-  label: Blog
-  create: all
-- type: document
-  path: contact.md
-  label: Contact
 - type: directory
   path: _participants
   label: Participants
+  create: all
+  match: "**/*"
+- type: directory
+  path: activities
+  label: Activities
   create: all
   match: "**/*"
 - type: directory
@@ -24,10 +23,26 @@ sections:
   create: all
   match: "**/*"
 - type: directory
+  path: _publications
+  label: Publications
+  create: all
+  match: "**/*"
+- type: directory
   path: _workshops
   label: Workshops
   create: all
   match: "**/*"
+- type: jekyll-posts
+  label: Blog
+  create: all
+- type: directory
+  path: _opportunities
+  label: Opportunities
+  create: all
+  match: "**/*"
+- type: document
+  path: contact.md
+  label: Contact
 upload_dir: assets/img
 public_path: "{{ site.baseurl }}/assets/img"
 front_matter_path: ''
