@@ -25,7 +25,7 @@
                       <ul class="dropdown-menu" role="menu">
                         {% for activity in site.activities %}
                           {% if activity.title != 'Activities' %}
-                            <li><a href='{{ activity.link }}' target='_top' >{{ activity.title }}</a></li>
+                            <li><a href='{{ site.baseurl }}{{ activity.url }}' target='_top' >{{ activity.title }}</a></li>
                           {% endif %}
                         {% endfor %}
                       </ul>
@@ -37,8 +37,9 @@
                         {% for project in site.projects %}
                             <li><a href='{{ project.link }}' target='_top' >{{ project.title }}</a></li>
                         {% endfor %}
-                        <li><a href="http://twitter.com/simssaproject" target="_blank">Twitter</a></li>
+                        <hr style="margin: 5px">
                         <li><a href="http://github.com/DDMAL" target="_blank">Github</a></li>
+                        <li><a href="http://twitter.com/simssaproject" target="_blank">Twitter</a></li>
                       </ul>
                     </li>
 
