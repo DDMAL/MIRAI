@@ -45,14 +45,21 @@ sections:
   label: Projects
   create: all
   match: "**/*"
+  templates:
+  - project
 - type: jekyll-posts
   label: Blog
   create: all
+  templates:
+  - blog-post
 - type: directory
   path: _opportunities
   label: Opportunities
   create: all
   match: "**/*"
+  templates:
+  - page
+  - page-with-photo-header
 - type: document
   path: contact.md
   label: Contact

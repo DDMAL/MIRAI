@@ -2,21 +2,22 @@
 layout: page_photo_header
 title: Opportunities
 image_class: headerimage
-permalink: /opportunities/
+permalink: "/opportunities/"
+
 ---
-<br>  
+<br>
 
 ## We are hiring a Postdoctoral Researcher in Music Information Retrieval!
 
 For details on how to apply please see [here.]({{ site.baseurl }}/opportunities/postdoc-analysis)
 
-<br>  
+<br>
 
 ## Call for Summer Software Developers (Undergraduate and Graduate Students)
 
-We are now accepting applications for Summer 2019\. For details on how to apply please see [here.]({{ site.baseurl }}/opportunities/summer-developers)
+We are now accepting applications for Summer 2019. For details on how to apply please see [here.]({{ site.baseurl }}/opportunities/summer-developers)
 
-<br>  
+<br>
 
 ## Call for Graduate Students
 
