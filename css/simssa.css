@@ -86,11 +86,19 @@ section.page {
     z-index: 1;
 }
 
+#menu-divider {
+  width: 70%;
+  margin: 5px 5px 5px 20px;
+}
+
 
 @media (min-width: 768px) {
     .jumbotron h2 {
         margin-top: 80px;
         font-size: 40px;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
     }
 }
 
@@ -110,5 +118,11 @@ section.page {
   }
   body {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-divider {
+    width: 40%;
   }
 }
