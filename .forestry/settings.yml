@@ -38,6 +38,8 @@ sections:
   label: Workshops
   create: all
   match: "**/*"
+  templates:
+  - workshop
 - type: directory
   path: _projects
   label: Projects
