@@ -12,6 +12,8 @@ sections:
   label: Participants
   create: all
   match: "**/*"
+  templates:
+  - participant
 - type: directory
   path: _activities
   label: Activities
@@ -36,19 +38,28 @@ sections:
   label: Workshops
   create: all
   match: "**/*"
+  templates:
+  - workshop
 - type: directory
   path: _projects
   label: Projects
   create: all
   match: "**/*"
+  templates:
+  - project
 - type: jekyll-posts
   label: Blog
   create: all
+  templates:
+  - blog-post
 - type: directory
   path: _opportunities
   label: Opportunities
   create: all
   match: "**/*"
+  templates:
+  - page
+  - page-with-photo-header
 - type: document
   path: contact.md
   label: Contact
@@ -66,3 +77,5 @@ build:
   - JEKYLL_ENV=production
   preview_output_directory: _site
   output_directory: _site
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
+    --port 8080 --host 0.0.0.0 -d _site
