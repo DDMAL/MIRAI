@@ -5,9 +5,9 @@ This is the repository for the SIMSSA website distributed via GitHub Pages. It i
 
 ## Contents
 
-- [Local Setup](#setup)
+- [Local Setup](#local-setup)
 - [CMS](#cms)
-  - [Sidebar Navigation](#sidebar)
+  - [Sidebar Navigation](#sidebar-navigation)
     - [Participants](#participants)
     - [Activities](#activities)
     - [Workshops](#workshops)
@@ -76,7 +76,7 @@ The content management system (CMS) used for this site is [Forestry](https://for
 
 Blog entries are written in Markdown, which makes it easy to add text, headers, images, and lists to a new post. Here is a [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to consult for any necessary formatting.  
 
-### Sidebar Navigation (#sidebar)
+### Sidebar Navigation 
 
 To add a new post, select 'Blog' on the sidebar. On the next screen, click the 'Create New' dropdown and select 'Blog'. The left column that appears is the minimum amount of Front Matter (YAML) required for each new post. Choose a title that will display at the top of the blog post. 
 
