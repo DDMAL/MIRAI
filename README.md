@@ -20,18 +20,10 @@ This is the repository for the SIMSSA website distributed via GitHub Pages. It i
 
 You will need to download a full [Ruby development environment](https://jekyllrb.com/docs/installation/) to install Jekyll. Follow steps 1 and 2 of [these instructions](https://jekyllrb.com/docs/) after installing Ruby. 
 
-Create a new directory and initialize an empty repository in it. This is assuming you have [Git](https://www.atlassian.com/git/tutorials/install-git) installed. 
+Assuming you have [Git](https://www.atlassian.com/git/tutorials/install-git) installed, clone the repository into any known location on your computer. 
 
 ```
-mkdir <your_repo>
-cd <your_repo>
-git init
-```
-
-Set the remote repository to the url of the GitHub repository.
-
-```
-git remote add origin https://github.com/DDMAL/simssa-website.git
+git clone https://github.com/DDMAL/simssa-website.git
 ```
 
 Pull from the repository to your local folder. Specifically, pull from the 'gh-pages' branch, the branch used by GitHub Pages to host the site. 
@@ -39,14 +31,6 @@ Pull from the repository to your local folder. Specifically, pull from the 'gh-p
 ```
 git pull origin gh-pages
 ```
-
-By default, this will create one branch locally (master). Create a new local 'gh-pages' branch from the master.
-
-```
-git checkout gh-pages
-```
-
-The command above both creates the branch and switches to it. This new branch will include everything that master contained from the time of its creation. 
 
 At this point, the site is able to be edited and run locally. Assuming steps 1 and 2 of the Jekyll documentation were followed correctly, run:
 
@@ -56,7 +40,7 @@ bundle exec jekyll serve --watch
 
 The built site can then be viewed at 'localhost:4000/simssa-website/'. The `--watch` option automatically checks for updates to the local files and can be immediately viewed by refreshing the page. `--watch` is not supported by Windows, thus the command above will need to be rerun after each edit. 
 
-If any changes need to be made to the 'Gemfile', run: 
+If any changes need to be made to the 'Gemfile' at the root directory, run: 
 
 ```
 bundle install
