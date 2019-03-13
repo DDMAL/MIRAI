@@ -16,7 +16,7 @@ This is the repository for the SIMSSA website distributed via GitHub Pages. It i
     - [Opportunities](#opportunities)
     - [Contact](#contact)
 
-## Local Setup (#setup)
+## Local Setup
 
 You will need to download a full [Ruby development environment](https://jekyllrb.com/docs/installation/) to install Jekyll. Follow steps 1 and 2 of [these instructions](https://jekyllrb.com/docs/) after installing Ruby. 
 
