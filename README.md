@@ -9,7 +9,12 @@ This is the repository for the SIMSSA website distributed via GitHub Pages. It i
 - [CMS](#cms)
   - [Sidebar Navigation](#sidebar)
     - [Participants](#participants)
-
+    - [Activities](#activities)
+    - [Workshops](#workshops)
+    - [Projects](#projects)
+    - [Blog](#blog)
+    - [Opportunities](#opportunities)
+    - [Contact](#contact)
 
 ## Local Setup
 
