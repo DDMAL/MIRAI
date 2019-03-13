@@ -7,6 +7,8 @@ This is the repository for the SIMSSA website distributed via GitHub Pages. It i
 
 - [Local Setup](#setup)
 - [CMS](#cms)
+  - Sidebar Navigation (#sidebar)
+    - Participants
 
 
 ## Local Setup
