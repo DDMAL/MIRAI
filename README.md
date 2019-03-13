@@ -66,6 +66,12 @@ to install any updated or newly-added gems for the build. Then, the site can be 
 
 ## CMS
 
+<br> 
+
+![](readme_img/SIMSSA-to-Forestry.png)
+
+<br>  
+
 The content management system (CMS) used for this site is [Forestry](https://forestry.io/). This is where blog entries are added, edited, and maintained. Contact [Evan Savage](mailto:evan.savage@mail.mcgill.ca) or [Emily Hopkins](mailto:emily.hopkins@mcgill.ca) to gain access to the CMS.
 
 Blog entries are written in Markdown, which makes it easy to add text, headers, images, and lists to a new post. Here is a [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to consult for any necessary formatting.  
