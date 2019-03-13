@@ -16,7 +16,7 @@ This is the repository for the SIMSSA website distributed via GitHub Pages. It i
     - [Opportunities](#opportunities)
     - [Contact](#contact)
 
-## Local Setup {#setup}
+## Local Setup (#setup)
 
 You will need to download a full [Ruby development environment](https://jekyllrb.com/docs/installation/) to install Jekyll. Follow steps 1 and 2 of [these instructions](https://jekyllrb.com/docs/) after installing Ruby. 
 
@@ -76,7 +76,7 @@ The content management system (CMS) used for this site is [Forestry](https://for
 
 Blog entries are written in Markdown, which makes it easy to add text, headers, images, and lists to a new post. Here is a [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to consult for any necessary formatting.  
 
-### Sidebar Navigation {#sidebar}
+### Sidebar Navigation (#sidebar)
 
 To add a new post, select 'Blog' on the sidebar. On the next screen, click the 'Create New' dropdown and select 'Blog'. The left column that appears is the minimum amount of Front Matter (YAML) required for each new post. Choose a title that will display at the top of the blog post. 
 
