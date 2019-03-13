@@ -24,16 +24,6 @@ sections:
   - page
   - page-with-photo-header
 - type: directory
-  path: _presentations
-  label: Presentations
-  create: all
-  match: "**/*"
-- type: directory
-  path: _publications
-  label: Publications
-  create: all
-  match: "**/*"
-- type: directory
   path: _workshops
   label: Workshops
   create: all
@@ -63,6 +53,16 @@ sections:
 - type: document
   path: contact.md
   label: Contact
+- type: directory
+  path: _presentations
+  label: Presentations
+  create: all
+  match: "**/*"
+- type: directory
+  path: _publications
+  label: Publications
+  create: all
+  match: "**/*"
 upload_dir: assets/img
 public_path: "{{ site.baseurl }}/assets/img"
 front_matter_path: ''
