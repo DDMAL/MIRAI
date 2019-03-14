@@ -80,7 +80,7 @@ Every Markdown file has a number of fields in the leftmost column to edit which 
 
 <br>  
 
-In the example above, selecting the group "co-investigator" from the dropdown for __Project Group__ automatically will place the individual in that respective group on the website. Other details such as "link" and "affiliation" are not required, but they can be used to link to others' work and provide more context. 
+In the example above, selecting the group "co-investigator" from the dropdown for __Project Group__ automatically will place the individual in that respective group on the website. Other details such as "link" and "institution" are not required, but they can be used to link to others' work and provide more context. 
 
 #### Participants
 
