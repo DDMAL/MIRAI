@@ -8,13 +8,7 @@ This is the repository for the SIMSSA website distributed via GitHub Pages. It i
 - [Local Setup](#local-setup)
 - [CMS](#cms)
   - [CMS Navigation](#cms-navigation)
-    - [Participants](#participants)
-    - [Activities](#activities)
-    - [Workshops](#workshops)
-    - [Projects](#projects)
-    - [Blog](#blog)
-    - [Opportunities](#opportunities)
-    - [Contact](#contact)
+  - [Media](#media)
 
 ## Local Setup
 
@@ -64,13 +58,14 @@ In the picture above, you can see how each of the links for navigation on the SI
 
 ### CMS Navigation
 
-Any content that needs to be added or adjusted on the SIMSSA site can mostly be done in the Forestry CMS. When selecting any of the tabs on the sidebar, you will either be taken to a Markdown file or folder. When editing or adding a new Markdown file, the default editing style is a What-You-See-Is-What-You-Get (WYSIWIG [wiss-e-wig]) editor. Formatting for each paragraph, header, link, etc. will automatically take place, and explicit Markdown syntax will automatically be reflected in the editor.
+Any content that needs to be added or adjusted on the SIMSSA site can mostly be done in the Forestry CMS. When selecting any of the tabs on the sidebar, you will either be taken to a Markdown file or folder. When editing or adding a new Markdown file, the default editing style is a What-You-See-Is-What-You-Get (WYSIWIG [wiss-e-wig]) editor. Formatting for each paragraph, header, link, etc. will automatically take place, and explicit Markdown syntax will automatically be reflected in the editor. If it is preferred, click on the ellipsis in the upper right hand corner to change to edit in 'Raw' mode, where the Markdown is explicitly written.
 
 <br>  
 
 ![](readme-img/wysiwyg-vs-raw.png)
 
 <br>  
+
 
 Every Markdown file has a number of fields in the leftmost column to edit which are referred to as Front Matter. This information is used for automatically placing content where the CMS suggests it should be added. Each tab on the sidebar is restricted to a subset of Front Matter templates respectively that require the content manager to add titles, descriptors, and other information for organizing the new content properly. 
 
@@ -82,33 +77,12 @@ Every Markdown file has a number of fields in the leftmost column to edit which 
 
 In the example above, selecting the group "co-investigator" from the dropdown for __Project Group__ automatically will place the individual in that respective group on the website. Other details such as "link" and "institution" are not required, but they can be used to link to others' work and provide more context. 
 
-#### Participants
+Some tabs such as "Participants" and "Projects" only include editable Front Matter as their respective Markdown files contain little information other than names, affiliations, and links to external websites. Otherwise, tabs like "Workshops" and "Blog" include Front Matter and Markdown editing for correctly filing and editing entire pages. 
+
+### Media
+
+Blog posts, workshops, and individual pages often include images and downloads on the SIMSSA website, and Forestry includes a "Media" area to upload these files. On the sidebar under "Site, select "Media" to view all of the existing media present in the website's repository. By selecting the "Upload" button in the top rigjht corner, you can upload any files directly to the CMS/repository for later usage in various posts.
+
+When writing or editing a Markdown entry that will include an image or file, hit `ctrl+shift+u` to open the Media folder. Then, you can select any existing media and drop it right into the new post; Forestry handles the file path automatically, and it should not need to be altered. Images will be center-justified when posted to the website. 
 
 
-
-#### Activities
-
-
-
-#### Workshops
-
-
-
-#### Projects
-
-
-
-#### Blog
-
-To add a new post, select 'Blog' on the sidebar. On the next screen, click the 'Create New' dropdown and select 'Blog'. The left column that appears is the minimum amount of Front Matter (YAML) required for each new post. Choose a title that will display at the top of the blog post.
-
-The right column is where the content of each post is added. The default mode is a What-You-See-Is-What-You-Get (WYSIWYG)
-editor, which will give you immediate feedback on the desired Markdown formatting. If it is preferred, click on the ellipsis in the upper right hand corner to change to edit in 'Raw' mode, where the Markdown is explicitly written.
-
-If the blog post will feature images and files, upload them to the 'Media' library which can be accessed on the sidebar. To add them in the WYSIWYG post editor, hit `ctrl+shift+u`. This will open the media library where each image or file can be selected and added inline to the post. The images will be center-justified when posted to the blog.
-
-#### Opportunities
-
-
-
-#### Contact
