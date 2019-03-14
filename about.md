@@ -2,9 +2,8 @@
 layout: page_photo_header
 title: About the SIMSSA project
 image_class: headerimage
+
 ---
-
-
 ## Why We Need a Single Interface for Music Score Searching and Analysis (SIMSSA)
 
 <br>  
