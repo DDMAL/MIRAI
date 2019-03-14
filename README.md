@@ -72,13 +72,15 @@ Any content that needs to be added or adjusted on the SIMSSA site can mostly be 
 
 <br>  
 
-Every Markdown file has a number of fields in the leftmost column to edit which are referred to as Front Matter. This information is used for automatically placing content where the CMS suggests it should be added. Each tab on the sidebar is restricted to a subset of Front Matter templates respectively that requires the content manager to add titles, descriptors, and other information for organizing the new content properly. 
+Every Markdown file has a number of fields in the leftmost column to edit which are referred to as Front Matter. This information is used for automatically placing content where the CMS suggests it should be added. Each tab on the sidebar is restricted to a subset of Front Matter templates respectively that require the content manager to add titles, descriptors, and other information for organizing the new content properly. 
 
 <br>  
 
 ![](readme-img/participant-example.png)
 
 <br>  
+
+In the example above, selecting the group "co-investigator" from the dropdown for __Project Group__ automatically will place the individual in that respective group on the website. Other details such as "link" and "affiliation" are not required, but they can be used to link to others' work and provide more context. 
 
 #### Participants
 
