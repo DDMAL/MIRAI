@@ -7,7 +7,7 @@ This is the repository for the SIMSSA website distributed via GitHub Pages. It i
 
 - [Local Setup](#local-setup)
 - [CMS](#cms)
-  - [Sidebar Navigation](#sidebar-navigation)
+  - [CMS Navigation](#cms-navigation)
     - [Participants](#participants)
     - [Activities](#activities)
     - [Workshops](#workshops)
@@ -56,11 +56,35 @@ to install any updated or newly-added gems for the build. Then, the site can be 
 
 <br>  
 
-The content management system (CMS) used for this site is [Forestry](https://forestry.io/). This is where blog entries are added, edited, and maintained. Contact [Evan Savage](mailto:evan.savage@mail.mcgill.ca) or [Emily Hopkins](mailto:emily.hopkins@mcgill.ca) to gain access to the CMS.
+The content management system (CMS) used for this site is [Forestry](https://forestry.io/). This is where blog entries and website contents are added, edited, and maintained. Contact [Evan Savage](mailto:evan.savage@mail.mcgill.ca) or [Emily Hopkins](mailto:emily.hopkins@mcgill.ca) to gain access to the CMS.
 
-Blog entries are written in Markdown, which makes it easy to add text, headers, images, and lists to a new post. Here is a [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to consult for any necessary formatting.  
+Blog entries and website content are written in Markdown, which makes it easy to add text, headers, images, and lists to a new post. Here is a [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to consult for any necessary formatting. 
 
-### Sidebar Navigation 
+In the picture above, you can see how each of the links for navigation on the SIMSSA website correspond to an editable tab on the sidebar of the CMS. The next section will explain in further detail how each component is edited and what output should be expected. 
+
+### CMS Navigation 
+
+Any content that needs to be added or adjusted on the SIMSSA site can mostly be done in the Forestry CMS. When selecting any of the tabs on the sidebar, you will either be taken to a Markdown file or folder. When editing or adding a new Markdown file, the default editing style is a What-You-See-Is-What-You-Get (WYSIWIG [wiss-e-wig]) editor. Formatting for each paragraph, header, link, etc. will automatically take place, and explicit Markdown syntax will automatically be reflected in the editor. 
+
+
+
+#### Participants
+
+
+
+#### Activities
+
+
+
+#### Workshops
+
+
+
+#### Projects
+
+
+
+#### Blog
 
 To add a new post, select 'Blog' on the sidebar. On the next screen, click the 'Create New' dropdown and select 'Blog'. The left column that appears is the minimum amount of Front Matter (YAML) required for each new post. Choose a title that will display at the top of the blog post. 
 
@@ -68,3 +92,9 @@ The right column is where the content of each post is added. The default mode is
 editor, which will give you immediate feedback on the desired Markdown formatting. If it is preferred, click on the ellipsis in the upper right hand corner to change to edit in 'Raw' mode, where the Markdown is explicitly written. 
 
 If the blog post will feature images and files, upload them to the 'Media' library which can be accessed on the sidebar. To add them in the WYSIWYG post editor, hit `ctrl+shift+u`. This will open the media library where each image or file can be selected and added inline to the post. The images will be center-justified when posted to the blog. 
+
+#### Opportunities
+
+
+
+#### Contact
