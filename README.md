@@ -20,13 +20,13 @@ This is the repository for the SIMSSA website distributed via GitHub Pages. It i
 
 You will need to download a full [Ruby development environment](https://jekyllrb.com/docs/installation/) to install Jekyll. Follow steps 1 and 2 of [these instructions](https://jekyllrb.com/docs/) after installing Ruby.
 
-Assuming you have [Git](https://www.atlassian.com/git/tutorials/install-git) installed, clone the repository into any known location on your computer.
+Assuming you have [Git](https://www.atlassian.com/git/tutorials/install-git) installed, open a terminal and clone the repository into any known location on your computer. THe documents folder is recommended, though it is up to you. 
 
 ```
 git clone https://github.com/DDMAL/simssa-website.git
 ```
 
-Pull from the repository to your local folder. Specifically, pull from the 'gh-pages' branch, the branch used by GitHub Pages to host the site.
+Enter the directory with `cd simssa-website`, and pull from the repository to your local folder. Specifically, pull from the 'gh-pages' branch, the branch used by GitHub Pages to host the site.
 
 ```
 git pull origin gh-pages
@@ -66,7 +66,19 @@ In the picture above, you can see how each of the links for navigation on the SI
 
 Any content that needs to be added or adjusted on the SIMSSA site can mostly be done in the Forestry CMS. When selecting any of the tabs on the sidebar, you will either be taken to a Markdown file or folder. When editing or adding a new Markdown file, the default editing style is a What-You-See-Is-What-You-Get (WYSIWIG [wiss-e-wig]) editor. Formatting for each paragraph, header, link, etc. will automatically take place, and explicit Markdown syntax will automatically be reflected in the editor.
 
+<br>  
 
+![](readme-img/wysiwyg-vs-raw.png)
+
+<br>  
+
+Every Markdown file has a number of fields in the leftmost column to edit which are referred to as Front Matter. This information is used for automatically placing content where the CMS suggests it should be added. Each tab on the sidebar is restricted to a subset of Front Matter templates respectively that requires the content manager to add titles, descriptors, and other information for organizing the new content properly. 
+
+<br>  
+
+![](readme-img/participant-example.png)
+
+<br>  
 
 #### Participants
 
