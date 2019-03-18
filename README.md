@@ -1,6 +1,6 @@
 # [SIMSSA](https://ddmal.github.io/simssa-website/)
 
-This is the repository for the SIMSSA website distributed via GitHub Pages. It is a static website built using Jekyll, meaning that there is no backend presence, and the entirety of the site is stored in this repository, blog contents included. The formatting was adapted from the previous statamic theme, with slight adjustments to the blog and responsive upgrades.
+This is the repository for the SIMSSA website distributed via GitHub Pages. It is a static website built using Jekyll, meaning that there is no backend presence, and the entirety of the site is stored in this repository, blog contents included. The formatting was adapted from the previous statamic theme, with adjustments to the blog, navbar, and responsiveness.
 
 
 ## Contents
@@ -14,7 +14,7 @@ This is the repository for the SIMSSA website distributed via GitHub Pages. It i
 
 You will need to download a full [Ruby development environment](https://jekyllrb.com/docs/installation/) to install Jekyll. Follow steps 1 and 2 of [these instructions](https://jekyllrb.com/docs/) after installing Ruby.
 
-Assuming you have [Git](https://www.atlassian.com/git/tutorials/install-git) installed, open a terminal and clone the repository into any known location on your computer. THe documents folder is recommended, though it is up to you. 
+Assuming you have [Git](https://www.atlassian.com/git/tutorials/install-git) installed, open a terminal and clone the repository into any known location on your computer. The documents folder is recommended, though it is up to you. 
 
 ```
 git clone https://github.com/DDMAL/simssa-website.git
@@ -52,13 +52,13 @@ to install any updated or newly-added gems for the build. Then, the site can be 
 
 The content management system (CMS) used for this site is [Forestry](https://forestry.io/). This is where blog entries and website contents are added, edited, and maintained. Contact [Evan Savage](mailto:evan.savage@mail.mcgill.ca) or [Emily Hopkins](mailto:emily.hopkins@mcgill.ca) to gain access to the CMS.
 
-Blog entries and website content are written in Markdown, which makes it easy to add text, headers, images, and lists to a new post. Here is a [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to consult for any necessary formatting.
+Blog entries and website content are written in Markdown, which make it easy to add text, links, images, and lists to a new post. Here is a [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to consult for any necessary formatting.
 
 In the picture above, you can see how each of the links for navigation on the SIMSSA website correspond to an editable tab on the sidebar of the CMS. The next section will explain in further detail how each component is edited and what output should be expected.
 
 ### CMS Navigation
 
-Any content that needs to be added or adjusted on the SIMSSA site can mostly be done in the Forestry CMS. When selecting any of the tabs on the sidebar, you will either be taken to a Markdown file or folder. When editing or adding a new Markdown file, the default editing style is a What-You-See-Is-What-You-Get (WYSIWIG [wiss-e-wig]) editor. Formatting for each paragraph, header, link, etc. will automatically take place, and explicit Markdown syntax will automatically be reflected in the editor. If it is preferred, click on the ellipsis in the upper right hand corner to change to edit in 'Raw' mode, where the Markdown is explicitly written.
+Any content that needs to be added or adjusted on the SIMSSA site can mostly be done in the Forestry CMS. When selecting any of the tabs on the sidebar, you will either be taken to a Markdown file or folder. When editing or adding a new Markdown file, the default editing style is a What-You-See-Is-What-You-Get (WYSIWIG [wiss-e-wig]) editor. Formatting for each paragraph, header, link, etc. will automatically take place, and explicit Markdown syntax will automatically be reflected in the editor. If it is preferred, click on the ellipsis in the upper right hand corner to change to edit in 'Raw' mode, where the Markdown is explicitly written. Markdown files can also be injected with HTML if the default styling is not satisfactory. 
 
 <br>  
 
@@ -79,9 +79,11 @@ In the example above, selecting the group "co-investigator" from the dropdown fo
 
 Some tabs such as "Participants" and "Projects" only include editable Front Matter as their respective Markdown files contain little information other than names, affiliations, and links to external websites. Otherwise, tabs like "Workshops" and "Blog" include Front Matter and Markdown editing for correctly filing and editing entire pages. 
 
+
+
 ### Media
 
-Blog posts, workshops, and individual pages often include images and downloads on the SIMSSA website, and Forestry includes a "Media" area to upload these files. On the sidebar under "Site, select "Media" to view all of the existing media present in the website's repository. By selecting the "Upload" button in the top rigjht corner, you can upload any files directly to the CMS/repository for later usage in various posts.
+Blog posts, workshops, and individual pages often include images and downloads on the SIMSSA website, and Forestry includes a "Media" area to upload these files. On the sidebar under "Site", select "Media" to view all of the existing media present in the website's repository. By selecting the "Upload" button in the top right corner, you can upload any files directly to the CMS/repository for later usage in various posts.
 
 When writing or editing a Markdown entry that will include an image or file, hit `ctrl+shift+u` to open the Media folder. Then, you can select any existing media and drop it right into the new post; Forestry handles the file path automatically, and it should not need to be altered. Images will be center-justified when posted to the website. 
 
