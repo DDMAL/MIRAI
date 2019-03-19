@@ -8,6 +8,7 @@ This is the repository for the SIMSSA website distributed via GitHub Pages. It i
 - [Local Setup](#local-setup)
 - [CMS](#cms)
   - [CMS Navigation](#cms-navigation)
+  - [Organization](#organization)
   - [Media](#media)
 - [Troubleshooting](#troubleshooting)
 
@@ -80,7 +81,18 @@ In the example above, selecting the group "co-investigator" from the dropdown fo
 
 Some tabs such as "Participants" and "Projects" only include editable Front Matter as their respective Markdown files contain little information other than names, affiliations, and links to external websites. There is no need for a body of content for those files. Otherwise, tabs like "Workshops" and "Blog" include Front Matter and Markdown editing for correctly filing and editing entire pages. 
 
+### Organization
 
+For most of the tabs on the sidebar in Forestry, there is a corresponding Markdown file for each at the root of the respective tab's folder. For example, the **Opportunities** tab features a file called **opportunities.md** within it. This is the the landing page that a user will see when selecting "Opportunities" from the navigation bar on the actual website.
+
+The folder architecture automatically appends to the URL based on the progression from the root URL through each child folder. The front matter for the **opportunities.md** file at the root of the Opportunities folder requires a "permalink" field since we would like to see that page at "simssa-website/opportunities/" instead of "simssa-website/opportunities/opportunities/". The permalink should only need to be specified for landing pages found within the subfolder they are representing with the same name. Here's a quick example:
+
+* Opportunities [folder]
+  * opportunities.md (permalink: /opportunities/) ---|
+  * postdoc-analysis.md <--------------------------| 
+  * summer-developers.md <-----------------------|
+
+The **postdoc-analysis.md** and **summer-developers.md** files are linked to from **opportunities.md**, and their URLs will immediately be correct without the need for a permalink since they are a subset of the opportunities landing page inside the opportunities folder. As folders are nested in an increasing website architecture, the same principle applies, and each parent folder will be one further step back in the entire URL.
 
 ### Media
 
