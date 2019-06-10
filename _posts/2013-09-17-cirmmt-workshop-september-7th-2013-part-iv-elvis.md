@@ -14,10 +14,10 @@ Julie began the session with an introduction to what ELVIS is and how it all got
 The idea behind ELVIS dates from a 15th-century music treatise by Johannes Tinctoris, the Liber de arte contrapuncti of 1477. This treatise hashes out the pairs of successive intervals allowed in Renaissance counterpoint, showing not only all possibilities but also judging some better than others. 536 years later, these same interval pairs (and the ones he omitted) are stored in our computers in numeric form as 2-grams, allowing them to be searched and analyzed with a lot less effort. The time and mental processing saved by cataloguing intervals that took Tinctoris years to compile in a few seconds means not that we work less hard though, rather we can extend these searches to extend over many pieces at a time, driving musical analysis into the areas of corpus studies and Big Data.
 
 So far, thanks to the [Digging into Data](http://diggingintodata.org/) grant, the ELVIS team has assembled a database, developed software to analyze music based on vertical interval successions, and begun using these tools to learn more about the style of composers. This last task involves the quantification of qualitative data, or using statistics to test observations about trends in music. For instance, Julie asked which vertical interval was the most commonly used by Palestrina in the Kyrie of his Missa Dies Sanctificatus. Octaves? Thirds? Fifths? By counting up all of the vertical intervals in all the pieces of Palestrina, we could say that, counting major and minor thirds as separate, the perfect 5th was most common, whereas counting them together, thirds outnumbered every other interval by a great deal. The following graph shows all:
-![]({{ site.baseurl }}/assets/img/Palestrina_Interval_Frequency.jpg)
+![]({{ site.url }}/assets/img/Palestrina_Interval_Frequency.jpg)
 
 Counting up intervals already provides a rudimentary way of talking about composer style. In the following slide, Julie showed how the distribution of intervals varies from composer to composer:
-![]({{ site.baseurl }}/assets/img/Composer_Intervals.jpg)
+![]({{ site.url }}/assets/img/Composer_Intervals.jpg)
 
 Julie then went on to explain a more sophisticated way of analysing style than simply counting intervals, producing a table of the most common 3-grams for the composers Dufay, Josquin, and Palestrina. It was clear that while some progressions were shared by two or even all three composers, other progressions were common in one and less common or even rare in the others. This kind of sophisticated analysis represents a new way of analyzing composer style, and the first results were quite promising.
 
@@ -45,11 +45,11 @@ Alex decided to take ELVIS back to its roots and use it to test Johannes Tinctor
 
 Alex began by looking at Tinctoris' list, which in theory outlined all possibilities of two successive consonant intervals that followed the rules of avoiding parallel perfect motion, that stayed within the range of a triple octave, and which involved melodic motion smaller or equal to a perfect fifth. Alex discovered that of all the possibilities remaining, for all the pages upon pages of lists, Tinctoris in fact only gets through three quarters of them. Which ones were omitted? He noted that no progressions involving unisons were omitted, but many were omitted which involved the use of a vertical sixth—an observation that complies with Tinctoris' writings on the desirability of each of the two intervals. Indeed, Tinctoris calls the unison "The fountain and origin of all concords," while the vertical sixth he described as having “by the judgment of my ears...have more asperity than sweetness.” A few interval pairs involving 8ves were also left out, such as the motion from a twelfth to an octave. Over one hundred years later, Thomas Morely singles out this progression as crass, calling it "hitting the eight on the face.
 
-![]({{ site.baseurl }}/assets/img/Alex_Intervals_Slide.jpg)
+![]({{ site.url }}/assets/img/Alex_Intervals_Slide.jpg)
 
 Alex then went on to the trickier task of trying to see if there was method to Tinctoris' use of language in describing the frequency of successive interval pairs. He found that verbs such as "postulat" ("demands") were inconsistent indictators as to the popularity of 2-grams, while adverbs such as "saepissime" and "rarissime" ("most frequently" and "most rarely") did in fact accurately describe the statistics churned out by VIS.
 
-![]({{ site.baseurl }}/assets/img/Alex_Verbs_Adverbs-20141028165754.jpg)
+![]({{ site.url }}/assets/img/Alex_Verbs_Adverbs-20141028165754.jpg)
 
 One of the frustrations about Renaissance theorists is that many of them present outdated ideas about how music works—even what they understood to be ancient Greek ideas—as valid in their own day. Alex's study showed that Tinctoris was not only a very well-read man as we all knew, but refreshingly, that he was also very in touch with the music of his own time.
 

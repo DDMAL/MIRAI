@@ -8,11 +8,11 @@ upload: ""
 
 I recently visited the McGill music technology labs, meeting many of the students (plus one postdoc) who are working on the SIMSSA project and learning about the work they are doing this summer.
 
-![]({{ site.baseurl }}/assets/img/Untitled-20150630175229-20150701101023.png)
+![]({{ site.url }}/assets/img/Untitled-20150630175229-20150701101023.png)
 Post author [Jacob Sagrans](http://www.jacob.sagrans.com/) talking with Ian Karp at the [Digital Distributed Music Archives and Libraries (DDMAL) lab](http://ddmal.music.mcgill.ca) at McGill University’s [Schulich School of Music](http://www.mcgill.ca/music). Photo taken by Ling-Xiao Yang, June 22, 2015.
 
 
-![]({{ site.baseurl }}/assets/img/Untitled-20150701101102.png)
+![]({{ site.url }}/assets/img/Untitled-20150701101102.png)
 Photo of SIMSSA project members outside the Schulich School of Music in Montreal. From left to right: Alexander Morgan, Ryan Bannon, René Rusch, Ian Karp, Evan Magoni, William Bain, Julie Cumming, Yihong Luo, Jacob Sagrans, Ichiro Fujinaga, Jon Wild, Catherine Motuz, Marina Borsodi-Benson, Andrew Hankinson, Alexandre Parmentier, Tristano Tenaglia, Karen Desmond, Jane Hatter. Photo taken by Darryl Cameron, June 3, 2015.
 
 Below are brief profiles of everyone I talked to and summaries of the work they are doing. This will also serve as an introduction to many of the projects that are currently going on as part of SIMSSA.

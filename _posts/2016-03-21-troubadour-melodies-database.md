@@ -8,7 +8,7 @@ upload: ""
 
 Today’s blog post features the [Troubadour Melodies Database](http://www.troubadourmelodies.org/), a project developed by Katie Chapman that uses tools and resources developed through SIMSSA and the [Cantus Ultimus](http://cantus.simssa.ca/) project. Working with [Jan Koláček](http://kolacek.org/), one of our international SIMSSA collaborators, she has developed a fully searchable online database of troubadour melodies encoded in the [Volpiano font](http://www.uni-regensburg.de/Fakultaeten/phil_Fak_I/Musikwissenschaft/cantus/volpiano.html). Katie is currently a PhD candidate in Musicology at [Indiana University](http://music.indiana.edu/departments/academic/musicology/). Originally from Rock Hill, South Carolina, she also studied Music Theory and History at Furman University (Greenville, SC) and performed on bassoon and contrabassoon.
 
-![]({{ site.baseurl }}/assets/img/IMG_0682.jpg)
+![]({{ site.url }}/assets/img/IMG_0682.jpg)
 
 **Emily Hopkins:** What inspired the creation of the database? Can you tell us more about how you are using the database in your dissertation research?
 
@@ -24,7 +24,7 @@ Today’s blog post features the [Troubadour Melodies Database](http://www.troub
 
 _A screenshot of the melody search on the Global Chant Database. [Try it yourself](http://globalchant.org/search.php)!_
 
-[![]({{ site.baseurl }}/assets/img/Melody_search.png)](http://globalchant.org/search.php)
+[![]({{ site.url }}/assets/img/Melody_search.png)](http://globalchant.org/search.php)
 
 
 **EH:** What other uses do you imagine for the database?
@@ -39,22 +39,22 @@ _A screenshot of the melody search on the Global Chant Database. [Try it yoursel
 
 **KC:** I recently started using statistical analysis software to analyze troubadour poems for part of my dissertation; it occurred to me that the same text mining programs should be able to analyze Volpiano-encoded melodies since they are text strings (with two adjustments to the encoding system). I started applying the text analysis program [AntConc](http://www.laurenceanthony.net/software/antconc/) to the repertoire, using versions of the melodies without accidentals or plicas as a starting point to see what the software could do. AntConc can auto-generate a Word-list (in this case, every unique note or note-group in the repertoire) The program can also find patterns in the melodies based on set parameters for pattern length and the minimum number of melodies that have the pattern automatically (called N-grams, or expressions). The following image is an excerpt of the results for note patterns from 2-7 notes or note-groups in length. Freq(uency) is the number of total appearances; Range is the number of different melodies the pattern appears in.
 
-![]({{ site.baseurl }}/assets/img/Image1.png)
+![]({{ site.url }}/assets/img/Image1.png)
 
 Results can be sorted by frequency or starting pitch. (The program can be set to show results in Volpiano, but then the file names also view in notation). The program shows each result in the concordance for each pattern. The following images show the same concordance results displayed as text and below as Volpiano for E-F-G-F-E-D appearing as a pattern of single pitches (The catalog number is given in the file name):
 
-![]({{ site.baseurl }}/assets/img/Image2text.png)
+![]({{ site.url }}/assets/img/Image2text.png)
 
-![]({{ site.baseurl }}/assets/img/Image2Volpiano.png)
+![]({{ site.url }}/assets/img/Image2Volpiano.png)
 
 The program also finds collocates within parameters you set (appearances of notes or note-groups within a certain distance from each other but non-sequentially). For example, you can tell it to find every time a particular note group has another one appear within five notes of it, like every time F-E (in the Volpiano alphabet, N-M) appears within five notes of D-C (Volpiano L-K), regardless of the order of note groups within that set of five. Below is the text representation, followed by Volpiano.
 
-![]({{ site.baseurl }}/assets/img/Image3Text.png)
+![]({{ site.url }}/assets/img/Image3Text.png)
 
-![]({{ site.baseurl }}/assets/img/Image3Volpiano.png)
+![]({{ site.url }}/assets/img/Image3Volpiano.png)
 
 AntConc allows you to see each appearance of a given pattern (analogous to a word in actual text analysis) in the distribution plots showing placement within each melody. Below is the distribution plots for D-C (L-K) over six different pieces.
 
-![]({{ site.baseurl }}/assets/img/Image4DistributionPlot.png)
+![]({{ site.url }}/assets/img/Image4DistributionPlot.png)
 
 _Thank you Katie for sharing your research with us!_

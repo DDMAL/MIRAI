@@ -17,6 +17,6 @@ Ichiro went on to mention that a web-based approach allows for crowdsourcing mus
 
 What may not be commercially viable is nevertheless worthwhile, however, and the SIMSSA project already received $200K in a partnership development grant spanning from 2011-2014. Having developed numerous partnerships with libraries, institutions, academics and programmers (as shown in a list on the screen), we are now preparing a partnership grant application which would see the project through another seven years. The Letter of Intent for this grant was submitted in February and passed in June, ranked sixth out of eighty-six applicants. While this preliminary result is encouraging, we need to keep up the hard work to give the grant proper our best shot.
 
-![]({{ site.baseurl }}/assets/img/CIRMMT_Workshop_Sept13_0.jpg)
+![]({{ site.url }}/assets/img/CIRMMT_Workshop_Sept13_0.jpg)
 
 Standing (Left to Right): [Unknown Guest], Wei Gao, Jamie Klassen, Cory McKay, Audrey Laplante, Christopher Antila, Giuseppe Gerbino, Timothy Wilfong, Rene Rusch, Alexander Morgan, Julie Cumming, Gabriel Vigliensoni, Jennifer Bain, Jean-Pierre Noiseux, Deepanjan Roy, Ichiro Fujinaga, Laurier Baribeau, Mitchell Brodsky, Perry Roland, Laurent Pugin, Ryan Bannon, Andrew Hankinson, Craig Sapp, Daniel Donnely, Reiko Yamada; Sitting: Debra Lacoste, Kate Helsen, Catherine Motuz, Rachelle Taylor.

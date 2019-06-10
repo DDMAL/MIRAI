@@ -5,7 +5,7 @@ image_class: headerimage
 ---
 
 {% for post in site.posts %}
-  <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+  <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
   <br>
   <p> Posted by {{ post.author }} on {{ post.date | date: "%B %d, %Y" }}</p>
   <br>
@@ -28,7 +28,7 @@ image_class: headerimage
   </div>
   <br />
   <p>
-    <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
+    <a href="{{ site.url }}{{ post.url }}">Read more</a>
   </p>
   <hr>
   <br>

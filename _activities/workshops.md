@@ -13,7 +13,7 @@ title: Workshops
 
       <h2 data-toggle="collapse" data-target="#{{ year }}">
         {{ year }}
-        <img class="icon_rotation" src="{{ site.baseurl }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#{{ year }}" />
+        <img class="icon_rotation" src="{{ site.url }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#{{ year }}" />
       </h2>
       <hr>
 
@@ -57,8 +57,8 @@ $(document).ready(function(){
     'click': function () {
       var origsrc = $(this).attr('src');
       var src = '';
-      if (origsrc == '{{ site.baseurl }}/assets/0-expand_off.png') src = '{{ site.baseurl }}/assets/0-expand_on.png';
-      if (origsrc == '{{ site.baseurl }}/assets/0-expand_on.png') src = '{{ site.baseurl }}/assets/0-expand_off.png';
+      if (origsrc == '{{ site.url }}/assets/0-expand_off.png') src = '{{ site.url }}/assets/0-expand_on.png';
+      if (origsrc == '{{ site.url }}/assets/0-expand_on.png') src = '{{ site.url }}/assets/0-expand_off.png';
       $(this).attr('src', src);
     }
   });

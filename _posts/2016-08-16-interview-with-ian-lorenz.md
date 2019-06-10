@@ -16,7 +16,7 @@ upload: ""
 
 _Today’s post comes to us from Musicology PhD student Ian Lorenz. Entering his second year working with Julie Cumming and Peter Schubert, he’s working on a project using SIMSSA software to investigate lesser-known 16th-century composer Nicolas Gombert._
 
-![]({{ site.baseurl }}/assets/img/ian-headshot.png)
+![]({{ site.url }}/assets/img/ian-headshot.png)
 
 **Emily Hopkins:** How did you first become interested in using computers for music research? Had you done it at all before coming to McGill?
 
@@ -36,7 +36,7 @@ In my opinion, there is a depth and a focused intensity about Gombert’s music 
 
 _Example 1: Sample N-grams from the Sanctus of Josquin des Prez’s_ Missa Pange lingua          
 
-![]({{ site.baseurl }}/assets/img/ian-1-600.png)
+![]({{ site.url }}/assets/img/ian-1-600.png)
 
 Thus in line 76 of Example 1, the leftmost bracket indicates the intervals of a third between the soprano and bass, an octave between the alto and bass, and a fifth between the tenor and bass. The number one in parenthesis means that the bass rearticulates the same pitch, and the same intervals occur after the bass motion. In reducing the musical surface into its bare intervallic structure, N-grams facilitate the process of finding modular repetition.
 
@@ -45,7 +45,7 @@ Thus in line 76 of Example 1, the leftmost bracket indicates the intervals of a 
 **IL:** Modular analysis greatly aids in quantifying one of the trickiest aspects of music from the sixteenth century—namely, imitation.  Modules—a term coined by [Jessie Ann Owens](http://arts.ucdavis.edu/faculty-profile/jessie-ann-owens)—occur when there is repeated counterpoint, with one of the most obvious forms of module being the intervallic motion at cadences.  Most of the time the term imitation is invoked in order to account for the local musical activity of a particular phrase or section in a general way (e.g. see example 2; at the opening of _Media vita_, the tenor is in periodic imitation with the bassus and later the quintus).  But the beauty of modular analysis is that it goes one step further.  It not only takes into account whether one voice imitates another, but it also describes the specific intervallic patterns that are being imitated.  Prominent types of repeated contrapuntal patterns can be aligned with specific time intervals of imitation to form what Peter Schubert has termed presentation types.  What appeals to me specifically about this type of analysis is that it has not been applied to the music of Gombert and his concurrent generation because of the challenges and complexities contained therein.  Let me demonstrate an example of the type of challenge I am referring to from the above-mentioned six-voice motet, _Media vita in morte sumus_:  
 
 _Example 2: The opening point of imitation in_ Media vita
-![]({{ site.baseurl }}/assets/img/ian-2-600.png)
+![]({{ site.url }}/assets/img/ian-2-600.png)
 
 The tenor initiates the point of imitation at the very beginning of the piece, which is successively followed in two-measure increments by the bassus and the quintus, respectively.  There are two modules contained within this point of imitation: the first is indicated by the green box between the tenor and the bassus, and the second is between the bassus and the quintus in the black box (the numbers indicate the intervals at the rhythmic level of a half note).  This type of imitation, formed from periodic entries of all voices participating in the point of imitation, is termed a periodic entry (or PEn) presentation type, with one notable error.  The continuation of the original melody in the tenor is not the same as the continuation in the bassus and later on the quintus, which is a fundamental requirement for a PEn presentation type.  Another challenge occurs when we add together all of the intervals from their respective positions within the modules.  We see that Gombert has written counterpoint that is invertible at the twelfth (i.e. all of the numbers add up to thirteen) except for the octave contained in the parenthesis over the black box.  Strictly speaking, a PEn presentation type should contain the same modules.  Therefore, there are problems with calling this a PEn—as the melody of the tenor does not continue in the same way as those of the bassus and quintus—and one of the four intervals of the module is altered to avoid a striking dissonance on a downbeat.  Yet there is clearly a structure behind how Gombert organized this point of imitation, which can be seen from the time intervals of imitation and his use of invertible counterpoint.  It is because of this that I call this an example of an altered PEn.  This opening typifies the struggle of examining imitation and counterpoint in Gombert, and it speaks to the urgency of what I hope to achieve with this project.  Saying that the opening of this six-voice motet is simply “imitative” says nothing about what Gombert is actually doing, and it is through the use of modular analysis that I will be able to shed new light on the music of this forgotten master.  And with the help of the Rodan Client, I will quickly be able to parse the intervallic content contained within a multi-voiced work to find repeated intervallic patterns.
 
@@ -53,14 +53,14 @@ The tenor initiates the point of imitation at the very beginning of the piece, w
 
 **IL:** This summer I was fortunate enough to be chosen as a Student Analyst—one of an international team of graduate students (and advanced undergraduates) selected by an advisory board—to participate in the activities of [CRIM](https://digitalpolyphonyblog.wordpress.com/), including the École (School of Analysis), and successive summers of analysis.  I also had the opportunity to work with top scholars in the field of Renaissance music analysis, including [Richard Freedman](https://www.haverford.edu/users/rfreedma), [Peter Schubert](http://www.music.mcgill.ca/~schubert/), [Jesse Rodin](https://music.stanford.edu/people/jesse-rodin), [David Crook](http://www.music.wisc.edu/faculty/david-crook/), and [David Fiala](http://www.cesr.cnrs.fr/chercheurs/david-fiala).  The goal of the project is to elucidate how composers of the sixteenth century treated imitation.  In order to do this we plan on analyzing both the models of pieces imitated by later composers and masses based upon those models according to a pre-defined set of terms.  From there we will create a searchable database from our findings that will also allow people to see exactly where in the score the musical event is taking place.  This is made possible by rendering our scores into [MEI](http://music-encoding.org/) format and viewing them through [Verovio](http://www.verovio.org/index.xhtml), a music notation engraving library, which allows for dynamic rendering of the music in the browser. The screenshot below shows Josquin’s motet _Ave Maria_, rendered from an MEI file using Verovio.
 
-![]({{ site.baseurl }}/assets/img/ian-3-600.png)
+![]({{ site.url }}/assets/img/ian-3-600.png)
 
 In the next example, I select the opening point of imitation—a four-voice periodic entry.  
 
-![]({{ site.baseurl }}/assets/img/ian-4-600.png)
+![]({{ site.url }}/assets/img/ian-4-600.png)
 
 Once I am finished selecting the notes, I am able to create a permanent web address for this musical event that anyone will be able to access (see the final example below).
 
-![]({{ site.baseurl }}/assets/img/ian-5-600.png)  
+![]({{ site.url }}/assets/img/ian-5-600.png)  
 
 Musicologists and music theorists will no longer have to reference other auxiliary sources in order to understand a given analysis; they need only click on the given link and go straight to that point in the music. This means that you could query a specific corpus for a particular musical event—for instance, all four-voice PEns—and return the results with permanent links directly to those musical events in the score. In terms of being able to quantify imitation, this project will give both musicologists and music theorists many new avenues to study and analyze imitation in the mid-sixteenth-century repertoire.

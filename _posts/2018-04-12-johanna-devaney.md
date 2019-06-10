@@ -15,7 +15,7 @@ upload: ""
 
 _[Johanna Devaney](http://www.devaney.ca) is Assistant Professor of Music Theory and Cognition at [Ohio State University](https://music.osu.edu/people/devaney.12), currently teaching in the [music technology program at NYU](https://steinhardt.nyu.edu/music/technology), and the newest SIMSSA Collaborator. We had a chance to talk over Skype about music and the digital humanities, learning to program, and the ways that music research can drive technological advances even beyond disciplinary bounds._
 
-![]({{ site.baseurl }}/assets/img/devaney_sm.png)
+![]({{ site.url }}/assets/img/devaney_sm.png)
 
 
 **EH:** Thank you so much for agreeing to talk with me today. We’re pretty excited to have you on board as a SIMSSA collaborator. Since music information retrieval as I’ve experienced it attracts folks with a lot of different disciplinary interests, I’m always curious about the paths people have taken to end up here. I looked at your CV and it looks like you started out playing piano and oboe and doing some composing, and then you did a BFA in music and history, and then a computer programming diploma, all before ever getting into Music Information Retrieval specifically. Can you tell me a little bit more about that early education and how you got into computer programming?
@@ -44,7 +44,7 @@ _[Johanna Devaney](http://www.devaney.ca) is Assistant Professor of Music Theory
 
 **EH:** I wanted to ask you a little about [AMPACT](http://ampact.tumblr.com/) since you did that workshop at the Digital Humanities Week in New York recently. Tell me a little bit about the development of AMPACT and the workshop and future plans for it.
 
-[![]({{ site.baseurl }}/assets/img/ampactLOGO.png)](http://ampact.tumblr.com/)
+[![]({{ site.url }}/assets/img/ampactLOGO.png)](http://ampact.tumblr.com/)
 
 **JD:** [AMPACT](http://ampact.tumblr.com/) uses scored-guided  techniques to extract timing, tuning, dynamics and tempo from recordings of musical performances. [AMPACT](http://ampact.tumblr.com/) really came out of my dissertation — it was the tools that I was using to do the analysis of the vocal performances. The name came out of a solid hour-long meeting with Ich, going through all the possible acronyms. I got funding from the NEH Digital Humanities program and that allowed me to do some additional development, specifically to develop the technology to not just do monophonic performances but polyphonic performances as well. The music performance encoding project also fell under that so that’s how I got funding for that too.
 
@@ -54,7 +54,7 @@ _[Johanna Devaney](http://www.devaney.ca) is Assistant Professor of Music Theory
 
 _Shown below is a schematic representing the AMPACT process. See [here](http://ampact.tumblr.com/documentation) for more._
 
-![]({{ site.baseurl }}/assets/img/ampactSchematic.png)
+![]({{ site.url }}/assets/img/ampactSchematic.png)
 
 **EH:** The [Frontiers in Digital Humanities journal](https://www.frontiersin.org/journals/digital-humanities#)— you’re currently the Specialty Chief Editor for the [Digital Musicology](https://www.frontiersin.org/journals/digital-humanities/sections/digital-musicology#) section. Can you tell me a little bit more about that publication, what sorts of work you do and what its goals are?
 

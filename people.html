@@ -52,7 +52,7 @@ image_class: headerimage_people
       <div class="col-lg-12">
         <h2 data-toggle="collapse" data-target="#co-investigators">
           Co-Investigators
-          <img class="icon_rotation" src="{{ site.baseurl }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#co-investigators" />
+          <img class="icon_rotation" src="{{ site.url }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#co-investigators" />
         </h2>
         Scholars leading different research axes of SIMSSA and other affiliated projects.
         <hr>
@@ -101,7 +101,7 @@ image_class: headerimage_people
       <div class="col-lg-12">
         <h2 data-toggle="collapse" data-target="#collaborators">
           Collaborators
-          <img class="icon_rotation" src="{{ site.baseurl }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#collaborators" />
+          <img class="icon_rotation" src="{{ site.url }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#collaborators" />
         </h2>
         Leaders of projects or organizations aligned with the goals of the SIMSSA project.
         <hr>
@@ -150,7 +150,7 @@ image_class: headerimage_people
       <div class="col-lg-12">
         <h2 data-toggle="collapse" data-target="#partners">
           Partners
-          <img class="icon_rotation" src="{{ site.baseurl }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#partners" />
+          <img class="icon_rotation" src="{{ site.url }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#partners" />
         </h2>
         Libraries, museums, and other organizations affiliated with the project.
         <hr>
@@ -195,7 +195,7 @@ image_class: headerimage_people
       <div class="col-lg-12">
         <h2 data-toggle="collapse" data-target="#advisory">
           Advisory Board
-          <img class="icon_rotation" src="{{ site.baseurl }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#advisory" />
+          <img class="icon_rotation" src="{{ site.url }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#advisory" />
         </h2>
         Recognized leaders who have provided feedback on the goals and mission of SIMSSA.
         <hr>
@@ -243,7 +243,7 @@ image_class: headerimage_people
       <div class="col-lg-12">
         <h2 data-toggle="collapse" data-target="#project-manager">
           Project Manager
-          <img class="icon_rotation" src="{{ site.baseurl }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#project-manager" />
+          <img class="icon_rotation" src="{{ site.url }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#project-manager" />
         </h2>
         <hr>
 
@@ -279,7 +279,7 @@ image_class: headerimage_people
       <div class="col-lg-12">
         <h2 data-toggle="collapse" data-target="#post-doc">
           Post-Doctoral Fellows
-          <img class="icon_rotation" src="{{ site.baseurl }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#post-doc" />
+          <img class="icon_rotation" src="{{ site.url }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#post-doc" />
         </h2>
         <hr>
 
@@ -327,7 +327,7 @@ image_class: headerimage_people
       <div class="col-lg-12">
         <h2 data-toggle="collapse" data-target="#researchers">
           Researchers
-          <img class="icon_rotation" src="{{ site.baseurl }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#researchers" />
+          <img class="icon_rotation" src="{{ site.url }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#researchers" />
         </h2>
         Researchers engaged in research and development of the SIMSSA project.
         <hr>
@@ -380,7 +380,7 @@ image_class: headerimage_people
       <div class="col-lg-12">
         <h2 data-toggle="collapse" data-target="#students">
           Students
-          <img class="icon_rotation" src="{{ site.baseurl }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#students" />
+          <img class="icon_rotation" src="{{ site.url }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#students" />
         </h2>
         Undergraduate and graduate students engaged in research and development of the SIMSSA project.
         <hr>
@@ -433,7 +433,7 @@ image_class: headerimage_people
       <div class="col-lg-12">
         <h2 data-toggle="collapse" data-target="#alumni">
           Alumni
-          <img class="icon_rotation" src="{{ site.baseurl }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#alumni" />
+          <img class="icon_rotation" src="{{ site.url }}/assets/0-expand_on.png" style="float:right;width:50px;height:50px" data-toggle="collapse" data-target="#alumni" />
         </h2>
         <hr>
 
@@ -492,8 +492,8 @@ image_class: headerimage_people
       'click': function () {
         var origsrc = $(this).attr('src');
         var src = '';
-        if (origsrc == '{{ site.baseurl }}/assets/0-expand_off.png') src = '{{ site.baseurl }}/assets/0-expand_on.png';
-        if (origsrc == '{{ site.baseurl }}/assets/0-expand_on.png') src = '{{ site.baseurl }}/assets/0-expand_off.png';
+        if (origsrc == '{{ site.url }}/assets/0-expand_off.png') src = '{{ site.url }}/assets/0-expand_on.png';
+        if (origsrc == '{{ site.url }}/assets/0-expand_on.png') src = '{{ site.url }}/assets/0-expand_off.png';
         $(this).attr('src', src);
       }
     });

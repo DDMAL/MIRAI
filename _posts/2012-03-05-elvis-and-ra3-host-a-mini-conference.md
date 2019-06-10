@@ -29,4 +29,4 @@ Christopher White followed by presenting the problem of making a musical "spellc
 Both days finished with discussions, on Friday about the differences and relationship between audio and music notation, while Saturday's round-table began to address the issues surrounding managing the large corpus that will be the ELVIS database. Since then, we've started collecting and McGill's contribution is growing daily. Come back next week for a tour of how we're putting this database together!
 
 Here are the conference-goers gathered for a photo-op:
-![]({{ site.baseurl }}/assets/img/CIRMMT_RA_3_WORKSHOP.jpg)
+![]({{ site.url }}/assets/img/CIRMMT_RA_3_WORKSHOP.jpg)

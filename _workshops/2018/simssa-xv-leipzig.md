@@ -16,7 +16,7 @@ upload: ""
 
 Our fifteenth SIMSSA Workshop took place in Leipzig on 28 July 2018 immediately following the annual congress of the International Association of Music Librarians.
 
-![]({{ site.baseurl }}/assets/img/simssaxv.png)
+![]({{ site.url }}/assets/img/simssaxv.png)
 
 Presenters:
 

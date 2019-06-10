@@ -18,7 +18,7 @@ upload: ""
 
 _Sam Howes is a PhD student in Music Theory at McGill, and a researcher for the SIMSSA project. He recently presented a paper at the [SMT Early Music Analysis Interest Group Conference in Indiana](http://www.music.indiana.edu/departments/academic/music-theory/SMT%20Early%20Music%20Analysis%20Interest%20Group%20Conference.shtml), "From Module to Schema in Corelli's Trio Sonatas." I interviewed him for the blog to talk about his research and his experiences with computer music analysis and SIMSSA._
 
-![]({{ site.baseurl }}/assets/img/sam-violin600.png)
+![]({{ site.url }}/assets/img/sam-violin600.png)
 
 **Emily Hopkins:** When did you first become interested in using computers to do musical analysis?
 
@@ -32,36 +32,36 @@ _Sam Howes is a PhD student in Music Theory at McGill, and a researcher for the 
 
 First I had to define the scope of my search. Having played many of Corelli’s sonatas, I decided to focus on suspensions, which are ubiquitous in the upper voices, as any violinist will tell you. Like the rules for improvising a canon, the rules for suspensions relate a vertical event (a dissonant interval) to the horizontal events around it (preparation and resolution). Finding a second or a seventh between the violins means more than just finding a suspension: it means finding a little snippet of counterpoint necessitated by those rules.
 
-![]({{ site.baseurl }}/assets/img/1st_pic-scaleddown.png)
+![]({{ site.url }}/assets/img/1st_pic-scaleddown.png)
 
 The tools I started with—the [VIS Framework](http://vis-framework.readthedocs.io/en/stable/) and the [Rodan Client](https://github.com/DDMAL/rodan-client)—converted all the intervals in all the sonatas into numbers. Then, I wrote a Python script to search for suspensions in the violins. When a suspension was found, the script would also record the interval on the next strong beat.
 
 From there, the patterns of intervals that were most common are what I chose to think of as “important words” in Corelli’s vocabulary. There were four of these, which I called Modules A through D.
 
-![]({{ site.baseurl }}/assets/img/moduleABCD-2-600-20160708133510.png)
+![]({{ site.url }}/assets/img/moduleABCD-2-600-20160708133510.png)
 
 **EH:** For those of us who are newer to this area of music theory, can you explain what a module is? A schema?
 
 **SH:** The term module was first defined by [Jessie Ann Owens](http://arts.ucdavis.edu/faculty-profile/jessie-ann-owens) in her 1997 book [_Composers at Work_.](https://global.oup.com/academic/product/composers-at-work-9780195129045?cc=ca&lang=en&) More recently, this term has gained a lot of attention in the work of [Peter Schubert](http://www.music.mcgill.ca/~schubert/) and [Julie Cumming](https://www.mcgill.ca/music/about-us/bio/julie-e-cumming), who show how modules function as basic structural units in Renaissance music. In short, a module is any contrapuntal combination, of any length, that appears more than once in a piece. Modules are usually labelled with a series of numbers that represent the vertical intervals between the voices, as in the example below:
 
-![]({{ site.baseurl }}/assets/img/sample_module-600-20160711115431.png)
+![]({{ site.url }}/assets/img/sample_module-600-20160711115431.png)
 
 The term schema (pl. schemata) comes from [Robert Gjerdingen](http://faculty-web.at.northwestern.edu/music/gjerdingen/)’s book [_Music in the Galant Style_](https://global.oup.com/academic/product/music-in-the-galant-style-9780195313710?cc=ca&lang=en&), in which he describes and names several common harmonic patterns in music around the turn of the eighteenth century. Schemata are similar to modules in that they feature a prescribed relationship between two voices (usually the outer voices, with inner voices being optional) and the title of my paper, “From Module to Schema in Corelli’s Trio Sonatas,” hints at this similarity, suggesting a sort of evolution from one to the other. The picture below is of a popular schema known as the "Romanesca."
-![]({{ site.baseurl }}/assets/img/romanesca-600.png)
+![]({{ site.url }}/assets/img/romanesca-600.png)
 
 **EH:** Can you explain a couple of your most interesting findings?
 
 **SH:** There were two major findings. The first is that modules often combine with themselves and with each other to form sequences. Modules A and B are especially likely to do this.
 
-![]({{ site.baseurl }}/assets/img/corelli_ex1-600.png)
+![]({{ site.url }}/assets/img/corelli_ex1-600.png)
 
 The second is that all modules are likely to be supported by certain bass lines more than others. Module A has a wide variety of possible harmonizations, while Module B begins to show a preference for basslines that move up by a fifth or a second. Module C is harmonized almost exclusively by descending fifths, and Module D prefers root motions of descending fifth or ascending second.
 
-![]({{ site.baseurl }}/assets/img/piecharts-5-600-20160708133659.png)
+![]({{ site.url }}/assets/img/piecharts-5-600-20160708133659.png)
 
 Combining these two findings, I was able to show how chains of modules begin to behave like schemata. Imagine a chain of suspensions that progresses downwards (a sequence composed entirely of Module A). If this chain is harmonized with alternating five-four chords and ninth chords, the schema that emerges is a Romanesca.
 
-![]({{ site.baseurl }}/assets/img/corelli_ex.2.png)
+![]({{ site.url }}/assets/img/corelli_ex.2.png)
 
 **EH:** What was your technical background in terms of coding and computer analysis before coming to McGill? What have you learned since starting here?
 

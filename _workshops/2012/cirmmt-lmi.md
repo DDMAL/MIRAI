@@ -24,4 +24,4 @@ Speakers including:
 * George Tzanetakis, Computer Science Department, University of Victoria
 * Christopher White, Music Department, Yale University
 
-![]({{ site.baseurl }}/assets/img/CIRMMT12Workshop81-20150217111329.jpg)
+![]({{ site.url }}/assets/img/CIRMMT12Workshop81-20150217111329.jpg)

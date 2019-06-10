@@ -18,7 +18,7 @@ upload: ""
 
 _During the Summer, the SIMSSA team at McGill expands as we hire several undergraduate students to work full-time on projects over the summer. Since SIMSSA is such an interdisciplinary project, we usually attract a wide range of really interesting backgrounds and skillsets, and this year is no exception! This summer, we're focussing on the OMR side of the project (the Content Axis) and we have six new faces in the lab, so I thought it would be fun to introduce them._
 
-![]({{ site.baseurl }}/assets/img/teamneon.png)
+![]({{ site.url }}/assets/img/teamneon.png)
 
 [Andrew Tran](https://github.com/ATranimal) (left) and [Zoé McLennan](https://github.com/zoemcl) (right) are working on [Neon.js](https://github.com/DDMAL/Neon.js), a web-based editor for digitally encoded early music scores. They’re extending its current functionality, including being able to edit staffless scores.
 
@@ -40,7 +40,7 @@ _During the Summer, the SIMSSA team at McGill expands as we hire several undergr
 
 **ZM:** A very fun project I recently worked on was for the music technology course MUMT307. I made a [chorus effect](https://sites.google.com/view/mumt307zm/home) using Max/MSP that could be used to implement the "Call and Response" musical tradition found in traditional Quebecois music and many other cultures.
 
-![]({{ site.baseurl }}/assets/img/teamgamera.png)
+![]({{ site.url }}/assets/img/teamgamera.png)
 
 [Sacha Perry-Fagant](https://github.com/pf-physics) (left) and [Alex Daigle](https://github.com/deepio) (right) are developing the [Gamera Interactive Classifier](https://github.com/DDMAL/Interactive-Classifier) web application. This program is a key part of training our OMR process. Human users create classes of musical symbols and identify them in a given subset of a score, and the classifier can use that to label the rest of the score, or a new score in a similar style.
 
@@ -62,7 +62,7 @@ _During the Summer, the SIMSSA team at McGill expands as we hire several undergr
 
 **AD:** I wrote some programs that used the Twitter, Instagram, and Facebook APIs to help market and grow social media accounts.
 
-![]({{ site.baseurl }}/assets/img/teampixel.png)
+![]({{ site.url }}/assets/img/teampixel.png)
 
 [Zeyad Saleh](http://zeyadsaleh.me) (left) and [Ké Zhang](https://github.com/PotassiumK) (right) are developing [Pixel.js](https://github.com/DDMAL/Pixel.js), a layering tool for sheet music images, which will be used to facilitate labelling ground-truth data for the machine learning algorithm that classifies different parts of musical scores. [Pixel.js](https://github.com/DDMAL/Pixel.js) will be built as a layering plugin on top of SIMSSA's [Diva.js](https://github.com/DDMAL/diva.js), so Ké and Zeyad will be developing that project as well.
 

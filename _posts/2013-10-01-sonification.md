@@ -13,7 +13,7 @@ To give you an idea of what each interval sounds like, imagine a pianist lightly
 
 To really experiment and play around with these corpora, I quickly found that just listening was not going to be good enough.  With over 25,000 intervals in each database, I needed a way that I simultaneously view the data, zoom in on local events, quickly swap between listening to horizontal and vertical intervals, and the corpora (e.g. Beethoven, Josquin, etc.).  That's why I made a GUI (a graphical user interface).  With it, I can also understand properties of the data visually, and use sound to expose patterns that I previously could not see.  
 
-![]({{ site.baseurl }}/assets/img/interface.png)
+![]({{ site.url }}/assets/img/interface.png)
 
 My favorite part so far is the speed knob.  It's fun to see how many notes I can play at a time before my computer starts notably combusting.  It's not so bad, it just sounds like holes in the data.  The knob goes up to 10,000 intervals per second, but on my small laptop, I can usually get it up to ~6,500 (sometimes less if recording).  
 

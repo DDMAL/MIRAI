@@ -21,7 +21,7 @@ at the IIIF conference, and he's taken the time to share his experience in a blo
 In early June I traveled to the [IIIF conference in the Vatican](http://iiif.io/event/2017/vatican/) to present
 my work on [Tripoli](https://github.com/DDMAL/tripoli), a IIIF Presentation API validator and corrector.
 
-![]({{ site.baseurl }}/assets/img/Tripoli-AlexP.png)
+![]({{ site.url }}/assets/img/Tripoli-AlexP.png)
 
 The IIIF conference is a yearly gathering of developers and librarians who work with IIIF,
 a framework which, among other features, facilitates the publishing and consuming of archival
@@ -31,7 +31,7 @@ the images without incurring the costs of hosting the images themselves. This di
 is a key part of SIMSSA's infrastructure, as we make images from around the world accessible in a single
 place, while still maintaining the relationship with the original collection.
 
-[![]({{ site.baseurl }}/assets/img/iiif-logo.png)](http://iiif.io/)
+[![]({{ site.url }}/assets/img/iiif-logo.png)](http://iiif.io/)
 
 Part of how this framework works is that those who wish to share a set images (for instance,
 scans of a manuscript) publish documents called manifests which describe where the images are
@@ -47,13 +47,13 @@ checker for these very particular documents. On top of providing this automatic 
 delivers a set of tools for extending the scope of validation and applying corrections in the course of
 validating.
 
-![]({{ site.baseurl }}/assets/files/tripoli-validate.png)
+![]({{ site.url }}/assets/files/tripoli-validate.png)
 _An example of validating in the browser._
 
 This tool was presented in a 7 minute lightning talk on the main conference stage and in a
 1 hour demo session. Response from the IIIF community was very positive, and many developers
 reported that they had already successfully made use of the tool, and others were interested
-in adopting it in the future. The presentation poster is available [here]({{ site.baseurl }}/assets/files/tripoliPoster3-1.pdf).
+in adopting it in the future. The presentation poster is available [here]({{ site.url }}/assets/files/tripoliPoster3-1.pdf).
 
 More information about Tripoli and IIIF is available below:
 
