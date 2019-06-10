@@ -18,7 +18,7 @@ _Nat Condit-Schultz began his work with the SIMSSA project as a [CIRMMT](http://
 
 **Nat Condit-Schultz:** I was born and lived my earliest years in Massachussetts and New Jersey, but the first place I lived that I was old enough to remember was in the Republic of Panama. My dad worked as a biologist for the Smithsonian Tropical Research Institute in Panama (a US government project) for 25 years, and we lived there with him from when I was 3-9, and went back to visit frequently after that. We lived in a small town called Gamboa, which was built by the United States in the 1930s as a place for US engineers operating the Panama Canal to live with their families. Gamboa (_see below_) is nestled in deep rainforest, right where the Chagres river flows into the Canal.
 
-![]({{ site.baseurl }}/assets/img/Gamboa.png)
+![]({{ site.url }}/assets/img/Gamboa.png)
 
 Later, we lived in San Diego for a few years before eventually settling in Santa Cruz (about an hour south of Silicon Valley/San Francisco), where I lived from 14-25. While living in Santa Cruz, I attended [Cabrillo College](http://www.cabrillo.edu/) and the [University of California Santa Cruz](https://www.ucsc.edu/), where I completed a BA and MA in Music Composition. Later, I moved to Columbus, Ohio, where I completed a PhD at [Ohio State University](https://www.osu.edu/), studying with [David Huron](https://musiccog.ohio-state.edu/home/index.php/David_Huron). Every job I've ever worked was as a musician!
 
@@ -26,7 +26,7 @@ Later, we lived in San Diego for a few years before eventually settling in Santa
 
 **NC-S:** I am primarily a guitarist (_see below_), but I also play bass, drums, and keyboards. I started out entirely as a pop musician, playing in rock, pop and reggae bands. However, unlike a lot of pop/vernacular musicians, I learned to read music from the beginning. Before I even got very skilled at any instrument, I spent a lot of time composing music on the computer, using score-based software (like [Sibelius](http://www.sibelius.com/download/index.html)) as well as more professional music sequencing programs ([Reason](https://www.propellerheads.se/en/reason), [Sonar](http://www.cakewalk.com/) etc.)
 
-![]({{ site.baseurl }}/assets/img/Nat-guitar.png)
+![]({{ site.url }}/assets/img/Nat-guitar.png)
 
 I continued to focus on composition through my undergraduate and early graduate studies at the [University of California Santa Cruz](https://www.ucsc.edu/). At UCSC, I got to study with great algorithmic and computer-based music composers like [David Cope](http://artsites.ucsc.edu/faculty/cope/biography.htm), [Paul Nauert](http://music.ucsc.edu/faculty/Paul-Nauert) and [David Evan Jones](http://music.ucsc.edu/faculty/david-evan-jones). I also played a lot with [UCSC's Gamelan ensembles](http://music.ucsc.edu/ensembles/west-javanese-gamelan-ensemble). For my Master's thesis/performance, I composed a duet for Gamelan and fretless electric guitar.
 
@@ -42,7 +42,7 @@ Finally, I worked a bit as a sound engineer/producer, which I studied at Cabrill
 
 **NC-S:** I've long used computers for creating (and recording) music, but I only began using them to study music in the last year of my Masters study, and it wasn't until my PhD studies that I really started to learn how to study music with computers. [Dr. Huron](https://musiccog.ohio-state.edu/home/index.php/David_Huron) is one of founding pioneers of what he calls "empirical and systematic musicology," which includes computer-based corpus research, so I've had the honor of learning straight from a master. (_see below for an example from Nat's PhD dissertation, studying rhyme in rap music._)
 
-![]({{ site.baseurl }}/assets/img/MetricPositions.png)
+![]({{ site.url }}/assets/img/MetricPositions.png)
 
 I love the computer-based approach because I love music and music theory, and believe that is the best way to really dig into and understand music at a high level beyond studying individual pieces. Those of us trained by Huron learn to conduct research using scientific methodologies. I am passionate about bringing scientific rigor to humanistic questions, and computers are just one approach to this. However, using a computer and/or big datasets doesn't automatically make research scientific; one can do "traditional" humanistic research with computers.
 
@@ -62,7 +62,7 @@ Key elements of scientific methodologies include: proposing and testing hypothes
 
 At SIMSSA, we spend a lot of time and energy going from "original" musical scores to digital representations--which is a little like making a digital transcription of a paper score--and so all the methodological issues of transcription come into play. A great example, which I've become painfully aware of recently, is the lack of lyrics in most digital music corpora. Generally, researchers have assumed that the lyrics aren't that important and haven't bothered with them, which will inevitably shape any research that makes use of their data. (_see below for an example of Nat's previous work on Rhyme in rap music, from his PhD dissertation._)
 
-![]({{ site.baseurl }}/assets/img/Rhyme.png)
+![]({{ site.url }}/assets/img/Rhyme.png)
 
 **EH:**	What’s up next for your first year as a SIMSSA postdoc?
 

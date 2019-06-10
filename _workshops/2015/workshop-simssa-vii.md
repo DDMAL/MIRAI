@@ -13,24 +13,24 @@ SIMSSA Workshop VII took place at [MedRen](http://medren2015.ulb.ac.be/) in Brus
 
 Guests included:
 
-- Jennifer Bain, Dalhousie University
-- Ashley Burgoyne, University of Amsterdam
-- Julia Craig-McFeely, Oxford University
-- Julie Cumming, McGill University
-- Karen Desmond, McGill University
-- Dan Donnelly, University of Toronto
-- Ichiro Fujinaga, McGill University
-- Andrew Hankinson, McGill University
-- Jane Hatter, University of Utah
-- Kate Helsen, Western University
-- Alessandra Ignesti, McGill University
-- Jan Koláček, Charles University, Prague
-- Debra Lacoste, Conrad Grebel University College
-- Elsa de Luca, Bristol University
-- Sarah Ann Long, Michigan State University
-- Cory McKay, Marianapolis College
-- Alex Morgan, McGill University
-- Catherine Motuz, McGill University
-- Laurent Pugin, RISM
-- Peter Schubert, McGill University
-- Masako Tanzawa
+* Jennifer Bain, Dalhousie University
+* Ashley Burgoyne, University of Amsterdam
+* Julia Craig-McFeely, Oxford University
+* Julie Cumming, McGill University
+* Karen Desmond, McGill University
+* Dan Donnelly, University of Toronto
+* Ichiro Fujinaga, McGill University
+* Andrew Hankinson, McGill University
+* Jane Hatter, University of Utah
+* Kate Helsen, Western University
+* Alessandra Ignesti, McGill University
+* Jan Koláček, Charles University, Prague
+* Debra Lacoste, Conrad Grebel University College
+* Elsa de Luca, Bristol University
+* Sarah Ann Long, Michigan State University
+* Cory McKay, Marianapolis College
+* Alex Morgan, McGill University
+* Catherine Motuz, McGill University
+* Laurent Pugin, RISM
+* Peter Schubert, McGill University
+* Masako Tanzawa

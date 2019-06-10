@@ -8,27 +8,29 @@ location: Milwaukee, WI
 author: jhatter
 upload: ""
 ---
+
 Working group and discussion of SIMSSA at the AMS/SMT in Milwaukee.
 
 Guests included:
-- Barbara Swanson
-- Jon Wild
-- Peter Schubert
-- Barbara Mackenzie
-- Catherine Motuz
-- Christopher Antila
-- Clare Bokulich
-- Cory Mckay
-- Dan Donnelly
-- Ichiro Fujinaga
-- Jacob Sagrans
-- Jane Hatter
-- Jennifer Bain
-- Jesse Rodin
-- Julie Cumming
-- Karen Desmond
-- Laurent Pugin
-- Mauro Calcagno
-- Mitch Brodsky
-- René Rusch
-- Rory O'Connor
+
+* Barbara Swanson
+* Jon Wild
+* Peter Schubert
+* Barbara Mackenzie
+* Catherine Motuz
+* Christopher Antila
+* Clare Bokulich
+* Cory Mckay
+* Dan Donnelly
+* Ichiro Fujinaga
+* Jacob Sagrans
+* Jane Hatter
+* Jennifer Bain
+* Jesse Rodin
+* Julie Cumming
+* Karen Desmond
+* Laurent Pugin
+* Mauro Calcagno
+* Mitch Brodsky
+* René Rusch
+* Rory O'Connor

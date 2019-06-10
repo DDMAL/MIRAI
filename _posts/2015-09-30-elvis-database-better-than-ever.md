@@ -32,21 +32,21 @@ Here are a few of the cool things that came out of this work.
 ### Suggestions and pop-up rules on every upload field.
 <br>
 <br>
-![]({{ site.baseurl }}/assets/img/image00.png)
+![]({{ site.url }}/assets/img/image00.png)
 
 In order to make it easier for users to get a quick understanding of what the database already contains, and the rules for adding new things, I’ve added suggestions and pop-up rules to every field in the upload form. The suggestions are based of off live searches of the database, and the popup rules allow me to communicate the most important rules about the field in the context where they are important. Since there are dozens of rules for uploading pieces, putting them in context is extremely important!
 <br>
 <br>
 ### Creating movements, uploading files — all on one page.
 <br>
-![]({{ site.baseurl }}/assets/img/image02.png)
+![]({{ site.url }}/assets/img/image02.png)
 <br>
 The upload form was designed to allow users to communicate the important information about a piece of music as intuitively as possible, following mental models of music instead of just the database's internal structure. When uploading, the user can create as many movements as they want all on the same page, and can just as easily upload files to represent these movements. Developing this feature required close collaboration with testers in order to create an interface which was easy to use while supporting many use-cases.
 <br>
 ### Advanced search — as fast as you can type.
 <br>
 <br>
-![]({{ site.baseurl }}/assets/img/image01-20150930152238.png)
+![]({{ site.url }}/assets/img/image01-20150930152238.png)
 <br>
 <br>
 Our new advanced search allows simultaneous searching across over a dozen fields, and returns results nearly instantly on the same page. Users can quickly and easily narrow their search even further by selecting from a list of facets, allowing anyone to find exactly the items they’re looking for, and even be guided towards unexpected and interesting results.

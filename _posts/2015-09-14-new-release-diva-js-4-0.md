@@ -16,7 +16,7 @@ upload: ""
 
 Last week, we released Diva.js 4.0 (Document Image Viewer with AJAX), a new version of our open-source document image viewer. [Evan Magoni](https://github.com/magoni) is the lead developer on Diva in [our lab here at McGill](https://ddmal.music.mcgill.ca/), and we’re excited to share what he’s been working on. Using Diva on their own websites, libraries, archives, and museums can present high-resolution document page images in a user-friendly interface that has been optimized for speed and flexibility.
 
-[![]({{ site.baseurl }}/assets/img/diva-website600.png)](http://ddmal.github.io/diva.js/)
+[![]({{ site.url }}/assets/img/diva-website600.png)](http://ddmal.github.io/diva.js/)
 
 Some highlights of version 4.0 include:
 
@@ -26,7 +26,7 @@ Some highlights of version 4.0 include:
 
 Several demos are available at [http://ddmal.github.io/diva.js/try/](http://ddmal.github.io/diva.js/try/)
 
-[![]({{ site.baseurl }}/assets/img/screenshot600.png)](http://ddmal.github.io/diva.js/try/iiif-highlight-pages/)
+[![]({{ site.url }}/assets/img/screenshot600.png)](http://ddmal.github.io/diva.js/try/iiif-highlight-pages/)
 
 Other improvements include:
 
@@ -38,6 +38,6 @@ Other improvements include:
 
 For more information and documentation visit [http://ddmal.github.io/diva.js/](http://ddmal.github.io/diva.js/)
 
-![]({{ site.baseurl }}/assets/img/divalogo.png)
+![]({{ site.url }}/assets/img/divalogo.png)
 
 Diva.js is developed by the [Distributed Digital Music Archives and Libraries laboratory](https://ddmal.music.mcgill.ca/), part of the [Music Technology Area of the Schulich School of Music at McGill University](http://www.music.mcgill.ca/musictech/) and is funded by the [Social Sciences and Humanities Research Council of Canada](http://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx).

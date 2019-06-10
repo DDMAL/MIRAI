@@ -14,11 +14,11 @@ Cory McKay is one of our SIMSSA Co-Investigators, and a professor at Marianapoli
 
 jSymbolic extracts statistical descriptors from symbolic music files. These descriptors include the familiar categories of pitch, melody, texture, rhythm, instrumentation, dynamics, and chords (coming soon!). Currently jSymbolic reads MIDI and MEI files, and saves features as ACE XML (with Weka ARFF and CSV coming soon).
 
-![A sample of some of the information extracted.]({{ site.baseurl }}/assets/img/jSymbolicMendelssohn-20150806125434.jpg)
+![A sample of some of the information extracted.]({{ site.url }}/assets/img/jSymbolicMendelssohn-20150806125434.jpg)
 
 These features have some fun applications in terms of machine learning and doing research and analysis with ELVIS — check out Cory’s presentation below for more detail and some neat examples of what we can do.
 
-[PDF]({{ site.baseurl }}/assets/files/jSymbolicELVIS.pdf) and [Powerpoint]({{ site.baseurl }}/assets/files/jSymbolicELVIS.pptx)
+[PDF]({{ site.url }}/assets/files/jSymbolicELVIS.pdf) and [Powerpoint]({{ site.url }}/assets/files/jSymbolicELVIS.pptx)
 
 
 

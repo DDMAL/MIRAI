@@ -1,27 +1,54 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Toggleable sidebar -->
-<div class="sidebar" id="sidebar">
-  <div class="top-nav-space"></div>
-  <nav class="sidebar-nav" data-options="scrolltop: false;">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+<div class="navbar navbar-expand-sm navbar-default navbar-fixed-top" role="navigation">
+        <div class="container" id="nav-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ site.url }}/">SIMSSA</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav nav mr-auto">
+<!--                     <li class="active"><a href="/">Home</a></li> -->
 
-    {% comment %}
-      The code below dynamically generates a sidebar nav of pages with
-      `layout: page` in the front-matter. See readme for usage.
-    {% endcomment %}
 
-    {% assign pages_list = site.pages | sort:"url" %}
-    {% for node in pages_list %}
-      {% if node.title != null %}
-        {% if node.layout == "page" %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+                    <li><a href="{{ site.url }}/about">About</a></li>
+                    <li><a href="{{ site.url }}/people">Participants</a></li>
+                    <!-- <li><a href="/publications">Publications</a></li> -->
 
-  </nav>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">Activities<span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        {% for activity in site.activities %}
+                          {% if activity.title != 'Activities' %}
+                            <li><a href='{{ site.url }}{{ activity.url }}' target='_top' >{{ activity.title }}</a></li>
+                          {% endif %}
+                        {% endfor %}
+                      </ul>
+                    </li>
 
-</div>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">Projects and links<span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        {% for project in site.projects %}
+                            <li><a href='{{ project.link }}' target='_top' >{{ project.title }}</a></li>
+                        {% endfor %}
+                        <hr id="menu-divider">
+                        <li><a href="http://github.com/DDMAL" target="_blank">Github</a></li>
+                        <li><a href="http://twitter.com/simssaproject" target="_blank">Twitter</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="{{ site.url }}/blog">Blog</a></li>
+                    <li><a href="{{ site.url }}/opportunities">Opportunities</a></li>
+
+                    <li><a href="{{ site.url }}/contact">Contact us</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>

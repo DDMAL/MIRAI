@@ -7,11 +7,11 @@ permalink:           pretty
 title:               SIMSSA
 tagline:             'Single Interface for Music Score Searching and Analysis'
 description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 'https://evansavage.github.io/'
-baseurl:             '/simssa-website'
-paginate:            5
-plugins_dir:         [jekyll-paginate]
-paginate_path:       blog/page:num
+url:                 'simssa.github.io'
+baseurl:             ''
+# paginate:            5
+# plugins_dir:         [jekyll-paginate]
+# paginate_path:       blog/page:num
 gem "github-pages", group: :jekyll_plugins
 permalinks:          true
 
@@ -37,6 +37,22 @@ collections:
     output: true
   workshops:
     output: true
+  presentations:
+    output: true
+  opportunities:
+    output: true
+  media:
+    output: true
+  activities:
+    output: true
+  projects:
+    output: true
+
+scholar:
+  style: _bibliography/SIMSSA-citations.csl
+  sort_by: author
+  use_raw_bibtex_entry: true
+  group_by: year
 
 # About/contact
 author:

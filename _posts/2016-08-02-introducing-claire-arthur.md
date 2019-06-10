@@ -15,7 +15,7 @@ upload: ""
 
 _In today’s post, I’m excited to introduce our new post-doc, Claire Arthur! She comes to us most recently from Ohio State University, where she defended her dissertation this past May working under David Huron. She’ll be heading up our analysis axis alongside Julie Cumming and continuing postdoc Reiner Krämer. She's pictured below in Athens, Greece._
 
-![]({{ site.baseurl }}/assets/img/claire_landscape.png)
+![]({{ site.url }}/assets/img/claire_landscape.png)
 
 **Emily Hopkins:** Where are you originally from? What are some highlights: places you’ve lived, schools you’ve studied at, jobs you’ve done?
 
@@ -37,11 +37,11 @@ _In today’s post, I’m excited to introduce our new post-doc, Claire Arthur! 
 
 **CA:** My dissertation took an empirical approach to the topic of musical ‘qualia’ (or the ‘feel’ of some musical object), specifically looking at the effects of the local musical context.  So, we think of scale-degree 7 (or ‘ti’) as having a leading quale; but what happens when you put it in the context of a mediant (III) chord?  Similarly, certain duration patterns might evoke certain qualia, but those qualia might be subject to change given the metric framework.  My work used corpus study to investigate the changes in melodic probabilities when harmonic accompaniment was considered.  Building on the notion that qualia arise from statistical learning, I then carried out various perceptual experiments demonstrating that the qualia can change depending on local contextual information.
 
-![]({{ site.baseurl }}/assets/img/tense_and_sad_600.png)
+![]({{ site.url }}/assets/img/tense_and_sad_600.png)
 
  _**Scale-degree qualia ratings.** Qualia ratings for each scale-degree across harmonic contexts. There is one graph per slider. On the x-axis, each Roman numeral represents the final chord of each possible progression. Scale-degrees are listed on the y-axis. Each circle represents the average rating across all participants for that particular scale-degree following the given harmonic context. Colour codings indicate which side of the slider the value falls on. The larger the circle, the more extreme the average rating._
 
-![]({{ site.baseurl }}/assets/img/unstable_details.PNG)
+![]({{ site.url }}/assets/img/unstable_details.PNG)
 
 _**Rhythm qualia ratings.** Dots located along the x-axis indicate the proportion of participants who checked "unstable/weird" as applying to the given rhythm, represented along the left in both traditional notation as well as with the onset/offset notation. Colour codings group rhythms that are rotations (i.e. phase-shifted) of each other.  Note how patterns with onsets in strong positions are less likely to be heard as unstable._
 
@@ -61,7 +61,7 @@ I think my stance on computer-assisted research in music is probably similar to 
 
 **CA:** When I arrived at Ohio State, I immediately had projects I wanted to work on, and those projects involved either extracting information from symbolic music notation, setting up basic computer programs to run perceptual experiments, and tools for analyzing the data from both.  Unfortunately I knew how to do none of those things at the time!  And the music department at Ohio State doesn’t have lab techs, so it’s really important to learn this stuff (although I had a lot of help from David Huron and fellow CSML members).  So I basically dove into trying to develop all three skills simultaneously, which, for me, meant learning some Humdrum (and Bash), some R, some Matlab, and a little bit of Python.  Once I started to learn them, I realized (just as with any skill) how much there was to know, and how little I actually knew.  But at the same time, it opened up this whole new world for me. It was like someone turning on the lights. I’m now a systematic musicologist for life.
 
-![]({{ site.baseurl }}/assets/img/claire_guitar-20160802114437.png)
+![]({{ site.url }}/assets/img/claire_guitar-20160802114437.png)
 
 **EH:** In addition to your work in music theory and cognition, what other musical activities have you been involved in?
 

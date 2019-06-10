@@ -5,22 +5,69 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: about.html
-  label: About
-- type: jekyll-posts
-  label: Blog
-  create: all
+  path: index.md
+  label: Home
 - type: document
-  path: contact.html
-  label: Contact
-  match: "**/*"
+  path: about.md
+  label: About
 - type: directory
   path: _participants
   label: Participants
   create: all
   match: "**/*"
+  templates:
+  - participant
+- type: directory
+  path: _activities
+  label: Activities
+  create: all
+  match: "**/*"
+  exclude: "/**/p*.md"
+  templates:
+  - page
+  - page-with-photo-header
+- type: directory
+  path: _workshops
+  label: Workshops
+  create: all
+  match: "**/*"
+  templates:
+  - workshop
+- type: directory
+  path: _projects
+  label: Projects
+  create: all
+  match: "**/*"
+  templates:
+  - project
+- type: jekyll-posts
+  label: Blog
+  create: all
+  templates:
+  - blog-post
+- type: directory
+  path: _opportunities
+  label: Opportunities
+  create: all
+  match: "**/*"
+  templates:
+  - page
+  - page-with-photo-header
+- type: document
+  path: contact.md
+  label: Contact
+- type: directory
+  path: _presentations
+  label: Presentations
+  create: all
+  match: "**/*"
+- type: directory
+  path: _publications
+  label: Publications
+  create: all
+  match: "**/*"
 upload_dir: assets/img
-public_path: "{{ site.baseurl }}/assets/img"
+public_path: "{{ site.url }}/assets/img"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
@@ -33,3 +80,5 @@ build:
   - JEKYLL_ENV=production
   preview_output_directory: _site
   output_directory: _site
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
+    --port 8080 --host 0.0.0.0 -d _site

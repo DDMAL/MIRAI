@@ -1,0 +1,35 @@
+---
+label: Page with Photo Header
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: page_photo_header
+  config:
+    required: true
+  description: Indicates that that the page will have a header photo, should not have
+    to change
+- type: select
+  name: image_class
+  config:
+    source:
+      type: simple
+    options:
+    - headerimage
+    - headerimage_people
+    required: true
+  label: Image Class
+  description: Choose which header photo to use for the page
+  default: headerimage
+pages:
+- contact.md
+- about.md

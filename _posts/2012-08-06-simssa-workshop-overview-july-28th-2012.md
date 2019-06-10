@@ -31,15 +31,15 @@ Laurent also spoke about the need to begin OMR even though the system isn't perf
 
 Finally, Julie and Christopher gave us an overview of the **ELVIS project**, which has been mentioned on this blog and which will become the focus of many posts to come!
 
-![]({{ site.baseurl }}/assets/img/IAML_Group_Photo.jpg)
+![]({{ site.url }}/assets/img/IAML_Group_Photo.jpg)
 
 The presentations from the workshop:
-- [Andrew Hankinson— The Music Encoding Initiative 2012]({{ site.baseurl }}/assets/files/hankinson12mei.pdf)
-- [Andrew Hankinson—Optical Music Recognition "in the Cloud"]({{ site.baseurl }}/assets/files/hankinson12rodan.pdf)
-- [Wendy Liu— Diva.js: A web-based document viewer for high-resolution images]({{ site.baseurl }}/assets/files/liu12diva.pdf)
-- [Brian Stern—User Interaction in Optical Music Recognition]({{ site.baseurl }}/assets/files/stern12interaction.pdf)
-- [Anton Khelou—A Workflow System for Document Image Analysis]({{ site.baseurl }}/assets/files/khelou12workflow.pdf)
-- [Gabriel Vigliensoni— Shape classification and pitch detection in manuscript sources]({{ site.baseurl }}/assets/files/vigliensoni12classification.pdf)
-- [Greg Burlet—NEON.js: Neume Editor Online]({{ site.baseurl }}/assets/files/burlet12neon.pdf)
-- [Alastair Porter—Distributed Search for Large Collections of Symbolic Music]({{ site.baseurl }}/assets/files/porter12search.pdf)
-- [Julie Cumming—ELVIS: Electronic Locator of Vertical Interval Successions]({{ site.baseurl }}/assets/files/cumming12elvis.pdf)
+- [Andrew Hankinson— The Music Encoding Initiative 2012]({{ site.url }}/assets/files/hankinson12mei.pdf)
+- [Andrew Hankinson—Optical Music Recognition "in the Cloud"]({{ site.url }}/assets/files/hankinson12rodan.pdf)
+- [Wendy Liu— Diva.js: A web-based document viewer for high-resolution images]({{ site.url }}/assets/files/liu12diva.pdf)
+- [Brian Stern—User Interaction in Optical Music Recognition]({{ site.url }}/assets/files/stern12interaction.pdf)
+- [Anton Khelou—A Workflow System for Document Image Analysis]({{ site.url }}/assets/files/khelou12workflow.pdf)
+- [Gabriel Vigliensoni— Shape classification and pitch detection in manuscript sources]({{ site.url }}/assets/files/vigliensoni12classification.pdf)
+- [Greg Burlet—NEON.js: Neume Editor Online]({{ site.url }}/assets/files/burlet12neon.pdf)
+- [Alastair Porter—Distributed Search for Large Collections of Symbolic Music]({{ site.url }}/assets/files/porter12search.pdf)
+- [Julie Cumming—ELVIS: Electronic Locator of Vertical Interval Successions]({{ site.url }}/assets/files/cumming12elvis.pdf)

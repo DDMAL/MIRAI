@@ -12,7 +12,7 @@ categories:
   - folk music
 ---
 
-Here is a  [PDF of the presentation](http://simssa.ca{{ site.baseurl }}/assets/files/RiskFingerprintAlgorithm2015-03-20.pdf) that Lillio Mok and I gave today at the [Workshop on Digital Musicology: Revisiting the Collaborative Process Between Music Researchers and Computer Programmers](http://www.cirmmt.org/activities/workshops/research/digital_musicology/digital_musicology). Thanks to [CIRMMT](http://www.cirmmt.org) (Research Axis 2) for hosting the conference and to [Dr. Frans Wiering](http://www.uu.nl/medewerkers/FWiering), the workshop keynote, for his insightful comments. The attached PDF combines our Powerpoint from today with a more detailed presentation that we gave to the ELVIS group a few weeks ago.
+Here is a  [PDF of the presentation](http://simssa.ca{{ site.url }}/assets/files/RiskFingerprintAlgorithm2015-03-20.pdf) that Lillio Mok and I gave today at the [Workshop on Digital Musicology: Revisiting the Collaborative Process Between Music Researchers and Computer Programmers](http://www.cirmmt.org/activities/workshops/research/digital_musicology/digital_musicology). Thanks to [CIRMMT](http://www.cirmmt.org) (Research Axis 2) for hosting the conference and to [Dr. Frans Wiering](http://www.uu.nl/medewerkers/FWiering), the workshop keynote, for his insightful comments. The attached PDF combines our Powerpoint from today with a more detailed presentation that we gave to the ELVIS group a few weeks ago.
 
 Some background on the project:
 

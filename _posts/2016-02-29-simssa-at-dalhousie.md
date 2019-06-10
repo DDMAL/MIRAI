@@ -13,7 +13,7 @@ Hello everyone! Things have been a little quiet on the blog, but there's lots of
 
 First up is Barbara Swanson. Currently a postdoctoral fellow at York University, she was a postdoc at Dalhousie in 2014-15 and continues to work on the SIMSSA project with current Dalhousie students. Originally from Regina, SK, Barbara has lived in Halifax, Hamilton, and Cleveland, where she did her doctorate.
 
-![]({{ site.baseurl }}/assets/img/BarbaraSwanson300.png)
+![]({{ site.url }}/assets/img/BarbaraSwanson300.png)
 
 **Emily Hopkins:** What is your involvement with the SIMSSA Project?
 
@@ -35,7 +35,7 @@ First up is Barbara Swanson. Currently a postdoctoral fellow at York University,
 
 Next, I heard from Zack Harrison. Currently enrolled in his first year of an MA in Musicology, he did his undergradutate degree in Tuba Performance at the University of Windsor.
 
-![]({{ site.baseurl }}/assets/img/ZackHarrison350.png)
+![]({{ site.url }}/assets/img/ZackHarrison350.png)
 
 **EH:** What is your involvement with the SIMSSA Project?
 
@@ -57,7 +57,7 @@ Next, I heard from Zack Harrison. Currently enrolled in his first year of an MA 
 
 The final interview is with Clare Neil. Clare is in the second year of her Musicology MA; she is graduating in the spring and has plans to pursue a PhD. Originally from Brandon, MB, Clare did her Bachelor's in Toronto at York University.
 
-![]({{ site.baseurl }}/assets/img/ClareNeil300.png)
+![]({{ site.url }}/assets/img/ClareNeil300.png)
 
 **EH:** What is your involvement with the SIMSSA Project?
 

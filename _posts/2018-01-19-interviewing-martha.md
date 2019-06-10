@@ -14,19 +14,19 @@ upload: ""
 
 _Martha Thomae is a PhD student in the Music Tech Department, working on mensural notation for the SIMSSA Project. Originally from Guatemala, she came to Montreal for her Master's in Music Technology in 2015 and she started her PhD here this past fall. She's pictured below at the beach in Calahonda, Motril, in the Granada province of Spain. Music Theory PhD student Sam Howes (read our interview with him in 2016 [here](http://simssa.ca/blog/from-module-to-schema-an-interview-with-sam-howes)) interviewed her about her work on her Master's thesis and some more current projects._
 
-![]({{ site.baseurl }}/assets/img/martha-calahonda.png)
+![]({{ site.url }}/assets/img/martha-calahonda.png)
 
 **Sam Howes:** Most musicians today have never seen mensural music. Could you give us a little introduction to this method of music notation?
 
 **Martha Thomae:** Sure, mensural music refers to music written in mensural notation, a system that was used between the 1250s and the 1600s for vocal polyphonic music. Mensural notation is the immediate predecessor of our common Western music notation (CWMN) system. You can see already similarities between the two (Figure 1, below). Mensural notation already uses staff lines and clefs to denote pitch, and there are various note shapes used for the different note values. Actually, mensural notation was the system that introduced the idea of using different note shapes to represent distinct values into the Western music tradition.
 
-![]({{ site.baseurl }}/assets/img/martha-1.png)
+![]({{ site.url }}/assets/img/martha-1.png)
 
 _Figure 1: Example of a mensural piece. Kyrie by J. Barbireau, early sixteenth century. As most mensural music, it is written in separate parts (i.e., the voices are written in different areas of the page). The red circles show the clefs for the first line of each of the four voices of this piece. (Image obtained from Wikipedia)_
 
 But there is one important difference between the two systems and that is that note values in mensural notation are not absolute but rather context-dependent. The same note can have two values: perfect (ternary value, similar to that of a dotted note) and imperfect (duple value, similar to an undotted note). While all notes have a default value given by what is called the “mensuration” (the older idea of meter), the value can be modified by the context (this is, the notes preceding or following the note). The main two context-related modifications are imperfection (when a perfect note is changed to imperfect) and alteration (when a note is twice as long). Principles regarding the contexts in which these modifications take place have been outlined in Franco’s Ars Cantus Mensurabilis (ca. 1280), these are known as principles of imperfection and alteration. Figure 2 (below) shows an example of such modifications.
 
-![]({{ site.baseurl }}/assets/img/martha-2.png)
+![]({{ site.url }}/assets/img/martha-2.png)
 
 _Figure 2: In this excerpt the long (blue box) is perfect by default, which means it is equivalent to three breves (purple box). The barlines were added to divide the notes into groups equivalent to three breves. The blue and purple boxes show the default values of the long and the breve, respectively. On the other hand, the green and red boxes show their contextually modified durations. The long in the green box is an example of imperfection (i.e., the perfect long losses one third of its value and becomes imperfect) and the breve in the red box is an example of alteration (i.e., the note’s value gets doubled)._
 
@@ -52,19 +52,19 @@ I have worked in two projects that deal with this context-dependency issue in di
 
 First, Karen Desmond’s Measuring Polyphony Project. In this project, we deal with the context-dependent nature of note duration by extracting the duration information of the notes of a mensural piece from a modern transcription of the piece (this is, a transcription of the piece into modern values). We are taking modern transcriptions of the repertoire and translate them back into mensural notation. The modern transcriptions are entered into Sibelius and articulation marks are added to account for mensural notation specificities that are not generally included in modern transcriptions (Figure 3, below).
 
-![]({{ site.baseurl }}/assets/img/martha-3.png)
+![]({{ site.url }}/assets/img/martha-3.png)
 
 _Figure 3: Example of an edited modern transcription (bottom) of a mensural piece (top). The articulation marks of the modern transcription are a way to account for mensural notation specificities that do not exist in CWMN, such as plicas (purple and pink circles), dots of division (red arrows), downward stems (green box) and alterations._
 
 Through a series of processes, these edited-Sibelius files are transformed into symbolic files that encode the piece in the original mensural notation (Figure 4, below).
 
-![]({{ site.baseurl }}/assets/img/martha-4.png)
+![]({{ site.url }}/assets/img/martha-4.png)
 
 _Figure 4: Three-step methodology to obtain the Mensural MEI file that encodes the mensural piece in the original notation and with the right contextual duration of all of its notes. First step, entering a modern transcription into Sibelius (which can be done by importing a midi or MusicXML file) and adding articulation marks to account for mensural notation specificities. Second step, use of the SibMEI plugin to obtain CMN MEI file that encodes the edited modern transcription in common music notation. Third step, use the Mensural MEI Translator to translate the encoding of the modern transcription into the encoding of the original mensural piece, which is stored in a Mensural MEI file._
 
 Second, the [scoring-up tool](https://github.com/ELVIS-Project/scoring-up) I developed for my MA thesis. In this project, the program itself figures out the duration of the notes by using the principles of imperfection and alteration summarized in Franco’s Ars Cantus Mensurabilis. The result of the program is a file that contains all the information for the mensural piece to be rendered in the original notation but in score format (rather than the usual separate-parts layout of the original piece).
 
-![]({{ site.baseurl }}/assets/img/martha-5.png)
+![]({{ site.url }}/assets/img/martha-5.png)
 
 _Figure 5: The scoring-up tool takes a set of Mensural MEI files that encode each of the voices of the piece, including only pitch and note shape information. These input files could be obtained by performing Optical Music Recognition (i.e., computer recognition of music glyphs) on the original sources. The output consists of a single file that encodes all the information of the input files plus the duration of all notes, representing the piece as a mensural score._
 

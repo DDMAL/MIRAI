@@ -1,7 +1,6 @@
 ---
 label: Blog Post
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: title
@@ -30,5 +29,3 @@ fields:
   description: The author of the blog post
   config:
     required: true
-pages:
-- _posts/2019-01-28-test-post-for-meeting.md

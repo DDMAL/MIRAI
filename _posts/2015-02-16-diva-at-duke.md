@@ -12,7 +12,7 @@ We always love hearing how our tools are helping libraries and archives, even if
 
 The David M. Rubinstein Rare Book & Manuscript Library has been engaged in a project to digitize their collection of early Greek manuscripts dating from the 9th to 17th centuries. Each book is captured at a [very high resolution](http://blogs.library.duke.edu/bitstreams/2015/02/05/indiana-jones-greek-manuscripts/). They then convert their digitized images to the Pyramid TIFF format, and [present them online](http://library.duke.edu/digitalcollections/earlymss/?page=1). By the end of 2015 they are hoping to have all 106 of their Early Manuscripts Collection digitized and available online.
 
-![Detail from a New Testament Gospel, Duke University Digital Collections](http://simssa.ca{{ site.baseurl }}/assets/img/duke_mss_detail.png)
+![Detail from a New Testament Gospel, Duke University Digital Collections](http://simssa.ca{{ site.url }}/assets/img/duke_mss_detail.png)
 <div style="text-align:center;width:100%;padding-bottom:10px">Detail from a <a href="http://library.duke.edu/digitalcollections/earlymss_emsgk01006/">New Testament Gospel</a>, Duke University Digital Collections</div>
 
 Additionally, they have significant documents like a [manuscript copy of the Haitian Declaration of Independence](http://library.duke.edu/digitalcollections/rubenstein_hdims01001/) available for close scrutiny.
