@@ -28,6 +28,10 @@ section.page {
   mix-blend-mode: add;
 }
 
+.box h1 {
+  margin-top: 8%;
+}
+
 .logo_img {
     max-height: 100%;
     max-width: 100%;
@@ -109,6 +113,13 @@ section.page {
     }
 }
 
+@media (max-width: 992px) {
+  .box h1 {
+    font-size: 50px;
+    margin-top: 10%;
+  }
+}
+
 @media (max-width: 500px) {
   .box {
     height: 200px;
@@ -118,6 +129,10 @@ section.page {
   }
   body {
     font-size: 14px;
+  }
+  .box h1 {
+    font-size: 30px;
+    margin-top: 15%;
   }
 }
 
