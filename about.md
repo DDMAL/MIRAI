@@ -2,14 +2,12 @@
 layout: page_photo_header
 title: About MIRAI
 image_class: headerimage
-
+lang: en
+lang-ref: about
 ---
 
-# I. Scientific Program
 
-<br>  
-
-## State of Knowledge
+## I. State of Knowledge
 
 <br>  
 
@@ -22,23 +20,7 @@ Although the computer-aided study of music information has a long history, few p
 
 <br>  
 
-## Scope of the Theme and Relevance of the Theoretical and Conceptual Tools
-
-<br>  
-
-We need new infrastructure, a 21st-century global music library to collect musical information (scores, audio, text, and metadata) and make it accessible by providing tools for searching and analysis. Our research program, Music Information, Research, and Infrastructure (**MIRAI**), is building this infrastructure by
-
-* designing the workflows to gather musical information;
-* converting and formatting this information to be easily accessible by people and computers;
-* conducting research on the information behavior of music scholars; and
-* developing user-centered analytical tools to navigate and promote research using this data.
-
-The main goal of our research program is to study and answer questions about how humans interact
-with music as information, using computational tools to gain new insights into musical search, information retrieval, and analysis. Our research program may be described as “data-intensive musicology,” a comprehensive research program for music information retrieval and computer-aided musicology with large amounts of music information. The research supported by MIRAI will provide unprecedented access to user-oriented tools for analyzing large databases of music (tens of millions of recordings and musical scores).
-
-<br>
-
-## Innovation and Complementarity in the Research Axes
+## II. Innovation and Complementarity in the Research Axes
 
 <br>
 
@@ -55,6 +37,26 @@ Both axes examine how users interact with digital music and continually improve 
 The two research axes are independent but complementary. Content that is not searchable in intelligent ways is not useful. Search and analysis algorithms require content to work on. Work can proceed on the two axes independently, but ultimately it is the combination that makes our research program valuable. The “User Interface” box in Figure 1 points to a feature of our program that applies to both axes: tools that are easy to use have the potential for broad impact. With our complementary research axes, the MIRAI team is building efficient and user-friendly tools to accommodate large-scale distributed processing. With these tools, libraries and archives anywhere in the world will be able to process their music collections and make them available to wider audiences for study, performance, and appreciation.
 
 <br>  
+
+## III. The SIMSSA Team
+
+<br>  
+
+We are a [diverse team](https://simssa.ca/people) dedicated to accomplishing this mission. SIMSSA includes music scholars, performers, librarians, and music technologists, working to create new tools for research and analysis of the collections of our partner museums, research libraries, and universities. Document processing and OMR correction for this collection will be carried out by musicians, students, and scholars around the world.
+
+
+
+<br>  
+
+<br>  
+
+
+**BREAK**
+
+<br>  
+
+<br>  
+
 
 ## Intensity of Scientific Activity: Highlights of Research Achievements During the FRQSC Emerging Team Grant (2014–2015)
 
