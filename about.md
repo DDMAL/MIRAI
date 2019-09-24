@@ -53,7 +53,7 @@ We are a [diverse team](https://simssa.ca/people) dedicated to accomplishing thi
 
 **BREAK**
 
-<br>  
+<!-- <br>  
 
 <br>  
 
@@ -601,4 +601,4 @@ Vigliensoni, G., C. McKay, and I. Fujinaga. 2010. “Using jWebMiner 2.0 to Impr
 Weiss, S. F., and I. Fujinaga. 2010. “New Evidence for the Origin of Kettledrums in Western Europe.”
 *Journal of the American Music Instrument Society* 37: 5–18.
 
-Winters, R. M., and J. Cumming. 2014. “Sonification of Symbolic Music in the ELVIS Project.” In *Proceedings of the 20th International Conference on Auditory Display (ICAD–2014)*. New York, NY. hdl.handle.net/1853/52072.
+Winters, R. M., and J. Cumming. 2014. “Sonification of Symbolic Music in the ELVIS Project.” In *Proceedings of the 20th International Conference on Auditory Display (ICAD–2014)*. New York, NY. hdl.handle.net/1853/52072. -->

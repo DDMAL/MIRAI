@@ -31,7 +31,7 @@ transform the existing CANTUS database (directed by **Lacoste**) of nearly 400,0
 
 <br>  
 
-The ELVIS Database (elvisproject.ca/) is an open, crowd-sourced database of music in symbolic notation, maintained by MIRAI. This summer, undergraduate student Alex Parmentier improved the search capabilities of the database, making it more powerful and adaptable, and added new functions allowing users to upload new pieces and modify pieces they have uploaded. In collaboration with our project manager and graduate students in musicology, he clarified guidelines for data entry and made the interface more attractive and user friendly. Our continued building of the database (now totalling over 6,000 movements and pieces) has made large-scale corpus studies possible.
+The ELVIS Database (<https://elvisproject.ca/>) is an open, crowd-sourced database of music in symbolic notation, maintained by MIRAI. This summer, undergraduate student Alex Parmentier improved the search capabilities of the database, making it more powerful and adaptable, and added new functions allowing users to upload new pieces and modify pieces they have uploaded. In collaboration with our project manager and graduate students in musicology, he clarified guidelines for data entry and made the interface more attractive and user friendly. Our continued building of the database (now totalling over 6,000 movements and pieces) has made large-scale corpus studies possible.
 
 <br>  
 
@@ -39,7 +39,7 @@ The ELVIS Database (elvisproject.ca/) is an open, crowd-sourced database of musi
 
 <br>  
 
-Our open-source software for analyzing counterpoint, VIS, and its corresponding web application (counterpoint.elvisproject.ca/) make large-scale corpus studies accessible to music theorists and musicologists without programming experience. Within the last year, we have made significant improvements to the stability and flexibility of VIS. In summer 2015, Ryan Bannon (undergraduate student and lead programmer on VIS) began integrating VIS into Rodan, a workflow engine developed by **Hankinson**. This integration involved the low-level code integration of VIS tasks into Rodan such that they can be realized as individual atomic workflow tasks, and the development of a user-friendly web application that allows researchers to generate VIS-based workflows via a graphical user interface. We are on schedule to release our web application in spring 2016.
+Our open-source software for analyzing counterpoint, VIS, and its corresponding web application (<https://counterpoint.elvisproject.ca/>) make large-scale corpus studies accessible to music theorists and musicologists without programming experience. Within the last year, we have made significant improvements to the stability and flexibility of VIS. In summer 2015, Ryan Bannon (undergraduate student and lead programmer on VIS) began integrating VIS into Rodan, a workflow engine developed by **Hankinson**. This integration involved the low-level code integration of VIS tasks into Rodan such that they can be realized as individual atomic workflow tasks, and the development of a user-friendly web application that allows researchers to generate VIS-based workflows via a graphical user interface. We are on schedule to release our web application in spring 2016.
 
 <br>  
 
@@ -47,7 +47,7 @@ Our open-source software for analyzing counterpoint, VIS, and its corresponding 
 
 <br>  
 
-jSymbolic is a software tool developed by **McKay** for analyzing symbolic music files by extracting a range of characteristic statistical information (called “features”) relating to musical elements such as pitch, rhythm, harmony, instrumentation, dynamics, and texture. In 2015, **McKay** and Tristano Tenaglia (undergraduate student) developed a new version that can extract features from MEI files (Music Encoding Initiative: an open-source, computer-readable music encoding format) and from windowed sections of a score (rather than the score in its entirety). Additionally, jSymbolic is now able to export features into WEKA ARFF, which will be useful for machine learning, facilitating such tasks as composer, style, or genre recognition.
+[jSymbolic](http://jmir.sourceforge.net/jSymbolic.html) is a software tool developed by **McKay** for analyzing symbolic music files by extracting a range of characteristic statistical information (called “features”) relating to musical elements such as pitch, rhythm, harmony, instrumentation, dynamics, and texture. In 2015, **McKay** and Tristano Tenaglia (undergraduate student) developed a new version that can extract features from MEI files (Music Encoding Initiative: an open-source, computer-readable music encoding format) and from windowed sections of a score (rather than the score in its entirety). Additionally, jSymbolic is now able to export features into WEKA ARFF, which will be useful for machine learning, facilitating such tasks as composer, style, or genre recognition.
 
 <br>  
 
@@ -55,4 +55,4 @@ jSymbolic is a software tool developed by **McKay** for analyzing symbolic music
 
 <br>  
 
-**McKay** has also developed a new Java application and library called jMei2Midi, which can convert MEI files to the widely recognized MIDI file format. This allows us to process music accessible only in MEI with software not yet able to read MEI files. jMei2Midi’s general parsing libraries will also provide a useful resource for developers in the process of incorporating MEI-parsing capabilities into their own software.
+**McKay** has also developed a new Java application and library called [jMei2Midi](http://jmir.sourceforge.net/jMei2Midi.html), which can convert MEI files to the widely recognized MIDI file format. This allows us to process music accessible only in MEI with software not yet able to read MEI files. jMei2Midi’s general parsing libraries will also provide a useful resource for developers in the process of incorporating MEI-parsing capabilities into their own software.
