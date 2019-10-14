@@ -18,7 +18,7 @@ upload: ""
 
 On 28 May 2018, we hosted our fourteenth SIMSSA Workshop at Mcgill University.
 
-![]({{ site.baseurl }}/assets/img/SIMSSAXIV-groupshot.png)
+![]({{ site.url }}{{ site.baseurl }}/assets/img/SIMSSAXIV-groupshot.png)
 
 Guest speakers included:
 

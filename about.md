@@ -30,7 +30,7 @@ The Searching & Analysis axis creates tools and techniques for searching and ana
 
 Both axes examine how users interact with digital music and continually improve the tools we have developed (Hankinson et al. 2012b, 2012c, 2009, Burlet et al. 2012). Figure 1 shows the overall structure with examples of research projects under each axis.
 
-![]({{ site.baseurl }}/assets/img/Structure_of_MIRAI.png)
+![]({{ site.url }}{{ site.baseurl }}/assets/img/Structure_of_MIRAI.png)
 
 <br>  
 

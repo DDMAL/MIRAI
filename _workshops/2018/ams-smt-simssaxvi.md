@@ -16,7 +16,7 @@ upload: ""
 
 Workshop on SIMSSA XVI took place in San Antonio, Texas, adjacent to the joint meeting of the American Musicological Society and the Society for Music Theory (AMS/SMT 2018).
 
-![image]({{ site.baseurl }}/assets/img/simssaxvi-amssmt.png)
+![image]({{ site.url }}{{ site.baseurl }}/assets/img/simssaxvi-amssmt.png)
 
 Presenters:
 

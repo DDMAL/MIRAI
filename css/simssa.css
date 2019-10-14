@@ -46,7 +46,7 @@ section.page {
 }
 
 .jumbotron {
-    background: url('{{ site.baseurl }}/assets/jumbobg.jpg') center;
+    background: url('{{ site.url }}{{ site.baseurl }}/assets/jumbobg.jpg') center;
     height: 296px;
 }
 
@@ -68,7 +68,7 @@ section.page {
     opacity: 0.25;
     height: 200px;
     padding-top: 95px;
-    background: url('{{ site.baseurl }}/assets/Cantus_A.jpg') center;
+    background: url('{{ site.url }}{{ site.baseurl }}/assets/Cantus_A.jpg') center;
 }
 .headerimage_people:before {
     content:"";
@@ -81,7 +81,7 @@ section.page {
     opacity: 0.25;
     height: 200px;
     padding-top: 95px;
-    background: url('{{ site.baseurl }}/assets/nuns.jpg') center;
+    background: url('{{ site.url }}{{ site.baseurl }}/assets/nuns.jpg') center;
 }
 .title{
     position: relative;
