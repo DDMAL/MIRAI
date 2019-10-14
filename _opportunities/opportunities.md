@@ -9,13 +9,13 @@ permalink: "/opportunities/"
 
 ## We are hiring a Postdoctoral Researcher in Music Information Retrieval!
 
-For details on how to apply please see [here.]({{ site.url }}/opportunities/postdoc-analysis)
+For details on how to apply please see [here.]({{ site.baseurl }}/opportunities/postdoc-analysis)
 
 <br>
 
 ## Call for Summer Software Developers (Undergraduate and Graduate Students)
 
-We are now accepting applications for Summer 2019. For details on how to apply please see [here.]({{ site.url }}/opportunities/summer-developers)
+We are now accepting applications for Summer 2019. For details on how to apply please see [here.]({{ site.baseurl }}/opportunities/summer-developers)
 
 <br>
 
