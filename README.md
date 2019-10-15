@@ -1,6 +1,6 @@
-# [SIMSSA](https://ddmal.github.io/simssa-website/)
+# [MIRAI](https://miraiqc.ca/)
 
-This is the repository for the SIMSSA website distributed via GitHub Pages. It is a static website built using Jekyll, meaning that there is no backend presence, and the entirety of the site is stored in this repository, blog contents included. The formatting was adapted from the previous statamic theme, with adjustments to the blog, navbar, and responsiveness.
+This is the repository for the MIRAI website distributed via GitHub Pages. It is a static website built using Jekyll, meaning that there is no backend presence, and the entirety of the site is stored in this repository, blog contents included. The formatting was adapted from the previous statamic theme, with adjustments to the blog, navbar, and responsiveness.
 
 
 ## Contents
