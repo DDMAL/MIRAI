@@ -38,11 +38,11 @@ The two research axes are independent but complementary. Content that is not sea
 
 <br>  
 
-## III. The SIMSSA Team
+## III. The MIRAI Team
 
 <br>  
 
-We are a [diverse team](https://simssa.ca/people) dedicated to accomplishing this mission. SIMSSA includes music scholars, performers, librarians, and music technologists, working to create new tools for research and analysis of the collections of our partner museums, research libraries, and universities. Document processing and OMR correction for this collection will be carried out by musicians, students, and scholars around the world.
+We are a [diverse team](https://miraiqc.ca/people/) dedicated to accomplishing this mission. MIRAI includes music scholars, performers, librarians, and music technologists, working to create new tools for research and analysis of the collections of our partner museums, research libraries, and universities. Document processing and OMR correction for this collection will be carried out by musicians, students, and scholars around the world.
 
 
 
