@@ -30,7 +30,8 @@ section.page {
 
 .box h1 {
   margin-top: 8%;
-  color: gainsboro;
+  color: black;
+  opacity: 1;
 }
 
 .logo_img {
@@ -47,10 +48,21 @@ section.page {
 }
 
 .jumbotron {
-    background: url('{{ site.url }}{{ site.baseurl }}/assets/img/jared-arango-1-mh6U3qeGQ-unsplash.jpg');
+  height: 296px;
+}
+
+.jumbotron:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('{{ site.url }}{{ site.baseurl }}/assets/img/tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg');
     height: 296px;
     background-size: cover;
     background-position: center;
+    opacity: 0.4;
 }
 
 .jumbotron h2 {
