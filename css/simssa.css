@@ -30,6 +30,7 @@ section.page {
 
 .box h1 {
   margin-top: 8%;
+  color: gainsboro;
 }
 
 .logo_img {
@@ -46,8 +47,10 @@ section.page {
 }
 
 .jumbotron {
-    background: url('{{ site.url }}{{ site.baseurl }}/assets/jumbobg.jpg') center;
+    background: url('{{ site.url }}{{ site.baseurl }}/assets/img/jared-arango-1-mh6U3qeGQ-unsplash.jpg');
     height: 296px;
+    background-size: cover;
+    background-position: center;
 }
 
 .jumbotron h2 {
@@ -68,7 +71,9 @@ section.page {
     opacity: 0.25;
     height: 200px;
     padding-top: 95px;
-    background: url('{{ site.url }}{{ site.baseurl }}/assets/Cantus_A.jpg') center;
+    background: url('{{ site.url }}{{ site.baseurl }}/assets/img/tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .headerimage_people:before {
     content:"";
@@ -81,7 +86,9 @@ section.page {
     opacity: 0.25;
     height: 200px;
     padding-top: 95px;
-    background: url('{{ site.url }}{{ site.baseurl }}/assets/nuns.jpg') center;
+    background: url('{{ site.url }}{{ site.baseurl }}/assets/img/tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .title{
     position: relative;
