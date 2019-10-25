@@ -9,15 +9,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ site.url }}/">MIRAI</a>
+                <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">MIRAI</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav nav mr-auto">
 <!--                     <li class="active"><a href="/">Home</a></li> -->
 
 
-                    <li><a href="{{ site.url }}/about">About</a></li>
-                    <li><a href="{{ site.url }}/people">Participants</a></li>
+                    <li><a href="{{ site.url }}{{ site.baseurl }}/about">About</a></li>
+                    <li><a href="{{ site.url }}{{ site.baseurl }}/people">Participants</a></li>
                     <!-- <li><a href="/publications">Publications</a></li> -->
 
                     <li class="dropdown">
@@ -25,7 +25,7 @@
                       <ul class="dropdown-menu" role="menu">
                         {% for activity in site.activities %}
                           {% if activity.title != 'Activities' %}
-                            <li><a href='{{ site.url }}{{ activity.url }}' target='_top' >{{ activity.title }}</a></li>
+                            <li><a href='{{ site.url }}{{ site.baseurl }}{{ activity.url }}' target='_top' >{{ activity.title }}</a></li>
                           {% endif %}
                         {% endfor %}
                       </ul>
@@ -43,9 +43,9 @@
                       </ul>
                     </li> -->
 
-                    <!-- <li><a href="{{ site.url }}/opportunities">Opportunities</a></li> -->
+                    <!-- <li><a href="{{ site.url }}{{ site.baseurl }}/opportunities">Opportunities</a></li> -->
 
-                    <li><a href="{{ site.url }}/contact">Contact us</a></li>
+                    <li><a href="{{ site.url }}{{ site.baseurl }}/contact">Contact us</a></li>
 
                 </ul>
             </div>

@@ -16,8 +16,8 @@ section.page {
 }
 
 .box {
-  # margin: 1em auto;
-  max-width: 100%;
+  /* margin: 1em auto; */
+  max-width: 58%;
   height: 275px;
   width: 800px;
   position: relative;
@@ -30,6 +30,8 @@ section.page {
 
 .box h1 {
   margin-top: 8%;
+  color: black;
+  opacity: 1;
 }
 
 .logo_img {
@@ -46,8 +48,21 @@ section.page {
 }
 
 .jumbotron {
-    background: url('{{ site.url }}/assets/jumbobg.jpg') center;
-    height: 296px;
+  height: 365px;
+}
+
+.jumbotron:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('{{ site.url }}{{ site.baseurl }}/assets/img/tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg');
+    height: 365px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
 }
 
 .jumbotron h2 {
@@ -68,7 +83,9 @@ section.page {
     opacity: 0.25;
     height: 200px;
     padding-top: 95px;
-    background: url('{{ site.url }}/assets/Cantus_A.jpg') center;
+    background: url('{{ site.url }}{{ site.baseurl }}/assets/img/tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .headerimage_people:before {
     content:"";
@@ -81,7 +98,9 @@ section.page {
     opacity: 0.25;
     height: 200px;
     padding-top: 95px;
-    background: url('{{ site.url }}/assets/nuns.jpg') center;
+    background: url('{{ site.url }}{{ site.baseurl }}/assets/img/tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
 }
 .title{
     position: relative;
@@ -118,13 +137,16 @@ section.page {
     font-size: 50px;
     margin-top: 10%;
   }
+  .jumbotron, .jumbotron:before {
+    height: 296px;
+  }
 }
 
 @media (max-width: 500px) {
   .box {
     height: 200px;
   }
-  .jumbotron {
+  .jumbotron, .jumbotron:before {
     height: 200px;
   }
   body {
@@ -139,5 +161,8 @@ section.page {
 @media (max-width: 768px) {
   #menu-divider {
     width: 40%;
+  }
+  .box {
+    max-width: 93%;
   }
 }
