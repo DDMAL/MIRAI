@@ -1,7 +1,7 @@
 ---
 layout: page_photo_header
 title: About MIRAI
-image_class: headerimage_people
+image_class: headerimage
 lang: en
 lang-ref: about
 ---
