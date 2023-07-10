@@ -1,15 +1,15 @@
 body {
-    -webkit-font-smoothing: antialiased;
-    font-size: 16px;
-    background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  background-color: #ffffff;
 }
 
 section {
-    padding: 3em 0;
+  padding: 3em 0;
 }
 
 section.page {
-    padding: 1em;
+  padding: 1em;
 }
 
 .box {
@@ -32,16 +32,16 @@ section.page {
 }
 
 .logo_img {
-    max-height: 100%;
-    max-width: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .jumbotron {
@@ -49,61 +49,63 @@ section.page {
 }
 
 .jumbotron:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url('../assets/img/tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg');
-    height: 365px;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.4;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('../assets/img/tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg');
+  height: 365px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
 }
 
 .jumbotron h2 {
-    margin-top: 4.5em;
-    text-shadow: 0px 0px 12px rgba(255, 255, 255, 1.0);
-    color: #333;
-    font-size: 28px;
+  margin-top: 4.5em;
+  text-shadow: 0px 0px 12px rgba(255, 255, 255, 1.0);
+  color: #333;
+  font-size: 28px;
 }
 
 .headerimage:before {
-    content:"";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -10;
-    opacity: 0.25;
-    height: 200px;
-    padding-top: 95px;
-    background: url('../assets/img/tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+  opacity: 0.25;
+  height: 200px;
+  padding-top: 95px;
+  background: url('../assets/img/tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
 }
+
 .headerimage_people:before {
-    content:"";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -10;
-    opacity: 0.25;
-    height: 200px;
-    padding-top: 95px;
-    background: url('../assets/img/tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+  opacity: 0.25;
+  height: 200px;
+  padding-top: 95px;
+  background: url('../assets/img/tomasz-frankowski-kBUfvkbFIoE-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
 }
-.title{
-    position: relative;
-    top: 45px;
-    left: 110px;
-    z-index: 1;
+
+.title {
+  position: relative;
+  top: 45px;
+  left: 110px;
+  z-index: 1;
 }
 
 #menu-divider {
@@ -113,20 +115,21 @@ section.page {
 
 
 @media (min-width: 768px) {
-    .jumbotron h2 {
-        margin-top: 80px;
-        font-size: 40px;
-    }
-    .dropdown:hover .dropdown-menu {
-        display: block;
-    }
+  .jumbotron h2 {
+    margin-top: 80px;
+    font-size: 40px;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
 
 @media (min-width: 992px) {
-    .jumbotron h2 {
-        margin-top: 80px;
-        max-width: 66%;
-    }
+  .jumbotron h2 {
+    margin-top: 80px;
+    max-width: 66%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -134,7 +137,9 @@ section.page {
     font-size: 50px;
     margin-top: 10%;
   }
-  .jumbotron, .jumbotron:before {
+
+  .jumbotron,
+  .jumbotron:before {
     height: 296px;
   }
 }
@@ -143,12 +148,16 @@ section.page {
   .box {
     height: 200px;
   }
-  .jumbotron, .jumbotron:before {
+
+  .jumbotron,
+  .jumbotron:before {
     height: 200px;
   }
+
   body {
     font-size: 14px;
   }
+
   .box h1 {
     font-size: 30px;
     margin-top: 15%;
@@ -159,6 +168,7 @@ section.page {
   #menu-divider {
     width: 40%;
   }
+
   .box {
     max-width: 93%;
   }
